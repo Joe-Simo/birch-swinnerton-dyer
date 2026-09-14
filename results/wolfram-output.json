@@ -1,0 +1,17 @@
+{
+  "coefficients": [
+    {"n": 1, "A32": 2, "B8": 2, "a": 1},
+    {"n": 17, "A32": 4, "B8": 16, "a": -4},
+    {"n": 41, "A32": 16, "B8": 32, "a": 0}
+  ],
+  "points41": [
+    {"x": -9, "y": 120, "residual": 0},
+    {"x": 841, "y": 24360, "residual": 0}
+  ],
+  "matrices": [
+    {"determinant": "t^2", "specializedNullity": 1, "jetNullities": [1, 2, 2, 2, 2]},
+    {"determinant": "t^2", "specializedNullity": 1, "jetNullities": [1, 2, 2, 2, 2]},
+    {"determinant": "t^3", "specializedNullity": 1, "jetNullities": [1, 2, 3, 3, 3]},
+    {"determinant": "t^4", "specializedNullity": 2, "jetNullities": [2, 4, 4, 4, 4]}
+  ]
+}
