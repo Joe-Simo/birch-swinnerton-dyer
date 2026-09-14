@@ -1,0 +1,9 @@
+Actual WolframLanguageEvaluator response; transcription of returned text.
+Input: src/check-modules.wl. Requested timeConstraint: 20 seconds. Status: returned with warning.
+
+Symbol::undefined2: Warning: Global symbols "T, T, T, T, T, T" are undefined.
+General::messages: Messages were generated which may indicate errors.
+
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "module_checks" -> {<|"e" -> 1, "presentation" -> {{0, T}, {-T, 0}}, "determinant" -> T^2, "special_fiber_dimension" -> 2, "skew" -> True, "alternating" -> True, "inverse_over_Q_T" -> True|>, <|"e" -> 2, "presentation" -> {{0, T^2}, {-T^2, 0}}, "determinant" -> T^4, "special_fiber_dimension" -> 2, "skew" -> True, "alternating" -> True, "inverse_over_Q_T" -> True|>, <|"e" -> 3, "presentation" -> {{0, T^3}, {-T^3, 0}}, "determinant" -> T^6, "special_fiber_dimension" -> 2, "skew" -> True, "alternating" -> True, "inverse_over_Q_T" -> True|>, <|"e" -> 4, "presentation" -> {{0, T^4}, {-T^4, 0}}, "determinant" -> T^8, "special_fiber_dimension" -> 2, "skew" -> True, "alternating" -> True, "inverse_over_Q_T" -> True|>}, "selmer_order_checks" -> {<|"m" -> 1, "E17_order_Sel_2^m" -> 16, "E41_order_Sel_2^m" -> 16|>, <|"m" -> 2, "E17_order_Sel_2^m" -> 16, "E41_order_Sel_2^m" -> 64|>, <|"m" -> 3, "E17_order_Sel_2^m" -> 16, "E41_order_Sel_2^m" -> 256|>, <|"m" -> 4, "E17_order_Sel_2^m" -> 16, "E41_order_Sel_2^m" -> 1024|>}, "tests" -> {True, True, True, True, True}|>
+
+Audit note (not kernel output): T was deliberately left as an indeterminate. This response is a symbolic check, not a proof-assistant build. The all-e and all-m claims are proved in the checkpoint, not inferred from these four examples.

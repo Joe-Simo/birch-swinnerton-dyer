@@ -1,0 +1,15 @@
+{
+  "name": "bsd-research-checkpoint",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Exact, bounded mathematical checks; not a BSD proof.",
+  "scripts": {
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "npm run build && node --test dist/tests/check.test.js",
+    "experiment": "npm run build && node dist/src/run.js"
+  },
+  "devDependencies": { "typescript": "5.8.3" }
+}

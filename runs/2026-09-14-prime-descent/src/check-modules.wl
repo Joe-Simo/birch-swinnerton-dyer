@@ -1,0 +1,4 @@
+ClearAll[T, x1, x2, y1, y2, e];
+moduleChecks = Table[Module[{a, b}, a = {{0, T^e}, {-T^e, 0}}; b = {{0, T^-e}, {-T^-e, 0}}; <|"e" -> e, "presentation" -> a, "determinant" -> Det[a], "special_fiber_dimension" -> 2 - MatrixRank[a /. T -> 0], "skew" -> Simplify[Transpose[b] == -b], "alternating" -> Simplify[{x1,x2}.b.{x1,x2} == 0], "inverse_over_Q_T" -> Simplify[a.(-b) == IdentityMatrix[2]]|>], {e, 1, 4}];
+selmerOrders = Table[<|"m" -> m, "E17_order_Sel_2^m" -> 4*4, "E41_order_Sel_2^m" -> 4*2^(2*m)|>, {m, 1, 4}];
+<|"version" -> $Version, "module_checks" -> moduleChecks, "selmer_order_checks" -> selmerOrders, "tests" -> {And @@ Lookup[moduleChecks,"skew"], And @@ Lookup[moduleChecks,"alternating"], And @@ Lookup[moduleChecks,"inverse_over_Q_T"], selmerOrders[[1,"E17_order_Sel_2^m"]] == selmerOrders[[1,"E41_order_Sel_2^m"]], selmerOrders[[2,"E17_order_Sel_2^m"]] != selmerOrders[[2,"E41_order_Sel_2^m"]]}|>

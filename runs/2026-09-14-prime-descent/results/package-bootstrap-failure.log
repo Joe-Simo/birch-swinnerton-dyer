@@ -1,0 +1,6 @@
+Failed optional package provisioning; no successful install is claimed.
+7 verbose title npm install @biomejs/biome typescript @types/node
+8 verbose argv "install" "--save-dev" "--save-exact" "@biomejs/biome" "typescript" "@types/node" "--cache" ".npm-cache" "--no-audit" "--no-fund"
+14 silly fetch manifest @biomejs/biome@*
+16 http fetch GET https://registry.npmjs.org/@biomejs%2fbiome attempt 1 failed with EAI_AGAIN
+17 http fetch GET https://registry.npmjs.org/@biomejs%2fbiome attempt 2 failed with EAI_AGAIN

@@ -1,0 +1,67 @@
+v22.16.0
+Version 5.8.3
+
+> bsd-research-checkpoint@0.1.0 lint
+> tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false
+
+
+> bsd-research-checkpoint@0.1.0 typecheck
+> tsc --noEmit
+
+
+> bsd-research-checkpoint@0.1.0 test
+> npm run build && node --test dist/tests/check.test.js
+
+
+> bsd-research-checkpoint@0.1.0 build
+> tsc
+
+TAP version 13
+# PASS integer square-root boundaries
+# PASS large-integer square root is lossless
+# PASS negative square root rejected
+# PASS factor exponent retained
+# PASS independent small residue fixtures
+# PASS composite Legendre modulus rejected
+# PASS binary dependence and empty matrix
+# PASS negative row rejected
+# PASS Monsky rank-zero fixtures
+# PASS Monsky rank-one upper-bound fixtures
+# PASS identical rank-two Selmer fixtures
+# PASS nonsquarefree model excluded from Monsky formula
+# PASS even model excluded from odd Monsky formula
+# PASS authenticated Tunnell coefficient fixtures
+# PASS full sign-count fixtures
+# PASS zero-coordinate multiplicity fixture
+# PASS unregistered counting bound rejected
+# PASS unregistered polynomial bound rejected
+# PASS rank-two point witnesses satisfy exact equation
+# PASS incorrect point cannot yield a certificate
+# PASS squareclass square factors removed
+# PASS omitted squareclass prime rejected
+# PASS torsion and rational Kummer classes independent
+# PASS duplicated point cannot prove independence
+# PASS self-dual module length differs from fiber dimension
+# PASS graded length decomposition
+# PASS invalid cyclic exponent rejected
+# PASS same trivial first Cassels pairing at 41 and 113
+# PASS same inferred Selmer-4 order at 41 and 113
+# PASS nondegenerate first pairing separates 17
+# PASS false norm witness rejected
+# PASS wrong sign convention for mu rejected
+# Subtest: dist/tests/check.test.js
+ok 1 - dist/tests/check.test.js
+  ---
+  duration_ms: 41.346988
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 48.58408
+PASS exact JSON replay is byte-identical

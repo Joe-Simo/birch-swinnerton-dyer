@@ -1,0 +1,4 @@
+ClearAll[p, mu, tau, pairs, certificate];
+pairs = {{17, -3, 1}, {41, 5, 3}, {113, 9, 7}};
+certificate[{p_, mu_, tau_}] := Module[{j, rank, residues}, j = JacobiSymbol[-mu, p]; rank = If[j == -1, 2, 0]; residues = Sort[DeleteDuplicates[Mod[Range[1, p - 1]^2, p]]]; <|"p" -> p, "mu" -> mu, "tau" -> tau, "norm_identity" -> (p == 2 mu^2 - tau^2), "sign_convention" -> (Mod[mu - p, 4] == 0), "symbol" -> j, "symbol_by_residue_enumeration" -> If[MemberQ[residues, Mod[-mu, p]], 1, -1], "pairing_rank" -> rank, "Sel2_order" -> 16, "Sel4_order_from_exact_sequence" -> 2^(6 - rank)|>];
+<|"version" -> $Version, "certificates" -> (certificate /@ pairs), "same_abstract_Sel4_check" -> {4^2 * 2^2 == 64, 2^4 == 16, 2^2 == 4}, "limitation" -> "This checks exact scalar inputs and group orders, not the arithmetic theorems linking them to elliptic curves."|>
