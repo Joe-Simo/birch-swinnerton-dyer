@@ -1,0 +1,162 @@
+{
+  "project": "Birch–Swinnerton-Dyer",
+  "session_date": "2026-09-14",
+  "status": "We have not solved the Birch–Swinnerton-Dyer problem yet.",
+  "complete_candidate": false,
+  "verification": "Elementary lemmas self-reviewed; established external dependencies explicitly qualified; no formal or expert verification of a complete solution.",
+  "target": "For every nonsingular elliptic curve E over Q, ord_(s=1) L(E,s) = rank_Z E(Q).",
+  "workspace": "/mnt/data/04-birch-swinnerton-dyer",
+  "private_repository": "Joe-Simo/birch-swinnerton-dyer",
+  "remote_source_commit": "b75f599ad1ed196f57e9b44ab93bf7c287e6541e",
+  "remote_source_tree": "c5edc7495ffefebbf5a3a020ff7e0e5d3b9742ed",
+  "source_byte_comparison": "All 11 remote file blob hashes match the local source/output bytes.",
+  "storage_scope": "The 11 files marked true below are committed remotely at the pinned source revision. The complete prompt, full F1/A1/F2 outputs and actual logs are in the local downloadable package, not in that source revision. A local sandbox is not a promised durable cross-session backup.",
+  "completed": {
+    "F1": {
+      "odd_squarefree_inputs": 209,
+      "maximum_n": 511,
+      "nonzero_coefficients": 83,
+      "zero_coefficients": 126,
+      "nonzero_coefficients_with_positive_pure_Selmer_dimension": 25
+    },
+    "A1": {
+      "prescribed_exponent_cases": 155,
+      "explicit_fixtures": 8,
+      "symmetry_fixtures": 6,
+      "singular_rejections": 2
+    },
+    "F2": {
+      "zero_pure_Selmer_dimension": 58,
+      "conflicts": 0,
+      "even_analytic_order_at_least_2": 18,
+      "odd_analytic_order_at_least_1": 108
+    }
+  },
+  "tests": "Strict TypeScript checking and compilation passed; exact F1 repeat is byte-identical; Python syntax compilation and A1/F2/assertion checks passed; saved Wolfram values match. No standalone linter or Python static type-checker run is claimed.",
+  "remaining_obligations": [
+    "All-curves/all-ranks arithmetic-to-complex-order mechanism remains unproved.",
+    "Iwasawa control/main-conjecture hypotheses, higher-block nondegeneracy, Sha corank and complex/p-adic comparison are not silently assumed.",
+    "Original Monsky appendix proof-level audit remains incomplete; the exact restated theorem is recorded.",
+    "E_41 analytic order is even and >=2; no upper bound or nonzero second derivative has been certified."
+  ],
+  "next_executable_step": "Inspect Howard Section 4 Theorem 4.2 and Corollary 4.3 alongside Burungale–Tian Section 3 to isolate the arithmetic input excluding higher augmentation blocks; audit its current proven scope. Do not reopen parity/duality-only or finite-Selmer-equals-rank shortcuts without new input.",
+  "reproduce": [
+    "tsc --noEmit",
+    "tsc",
+    "node results/build/family.js > results/family.json",
+    "python3 experiments/specialization.py",
+    "python3 experiments/converse.py",
+    "python3 experiments/check_saved.py"
+  ],
+  "process_status": "All recorded experiments completed; no background process claimed.",
+  "files": [
+    {
+      "path": "RESEARCH.md",
+      "bytes": 17631,
+      "sha256": "8f49d8ed9b0206fc1508b5dd396b8c8309c270be2b8fd73d358f821141dc9c33",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "RESEARCH_PROMPT.txt",
+      "bytes": 35736,
+      "sha256": "e3b3ea85c1b3fb491b2a95f1b8601f16c9e287883bf96109767d5cdc33a68fb2",
+      "in_remote_source_commit": false
+    },
+    {
+      "path": "experiments/CONTRACT.md",
+      "bytes": 4919,
+      "sha256": "9137b13c4a707566826028d9a20e5b25210cd96c5d9822a264a0fc642ded3edb",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "experiments/check_saved.py",
+      "bytes": 1357,
+      "sha256": "e42677b1e9995af1b9e10b974390529135610e4deaf95b5a494a078f05fed415",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "experiments/converse.md",
+      "bytes": 3054,
+      "sha256": "f465a0e45d4c43d839ff47b6eb45604bb9905cc10c3541717b19ba1b779e4707",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "experiments/converse.py",
+      "bytes": 1762,
+      "sha256": "68b7a452533062d7cff0169f91c3ffa168419b3abc5c650ea19e4b6213693a40",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "experiments/family.ts",
+      "bytes": 10306,
+      "sha256": "11bf4f28eb664470191e9a05eee9b3cad7bb72016eecb4202677d99de915e958",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "experiments/specialization.py",
+      "bytes": 6250,
+      "sha256": "bc74123c611c49a650bb94638140076154816b15c9edc4e28d69b2ce82b49441",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "experiments/wolfram-check.wl",
+      "bytes": 1040,
+      "sha256": "03a1171fa8386ec08ffb399aa371919deba105c430f36dff8f4e32b1392f361a",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "results/converse-run.log",
+      "bytes": 131,
+      "sha256": "1e893bb618fb7ae7bfd484bee381d7d06387f6dab58de8b1bdb710d993219426",
+      "in_remote_source_commit": false
+    },
+    {
+      "path": "results/converse.json",
+      "bytes": 2445,
+      "sha256": "0e84523d0e1b4ff78b524247421330c016f72f7cea95e5e431abcfd43fadbe44",
+      "in_remote_source_commit": false
+    },
+    {
+      "path": "results/family.json",
+      "bytes": 120998,
+      "sha256": "933fb17847bc08ccf28df2f47fcfffde49381764107662cf924e52ef6a94f72b",
+      "in_remote_source_commit": false
+    },
+    {
+      "path": "results/specialization-run.log",
+      "bytes": 1751,
+      "sha256": "447e24ba61894e3100971454ddd9483208126bb35bd9618790e3f7c0730eeeee",
+      "in_remote_source_commit": false
+    },
+    {
+      "path": "results/specialization.json",
+      "bytes": 103357,
+      "sha256": "f9fc9bc0f8131d4656f0add94663250dd8aa04f86bd19e9f50b691b6fd365f18",
+      "in_remote_source_commit": false
+    },
+    {
+      "path": "results/verification.log",
+      "bytes": 2726,
+      "sha256": "ca2d49dc30b0a22435b916060158e5b24a99fafad43e04b0efca078b9d975e87",
+      "in_remote_source_commit": false
+    },
+    {
+      "path": "results/wolfram-output.json",
+      "bytes": 623,
+      "sha256": "449d775ef164f493ab8581b061cf97f4a9310e44a22e488c1a907a6ecc5f584a",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "sources/REGISTER.md",
+      "bytes": 8648,
+      "sha256": "320bb924fb3ec5d3d997ec6387accf8dfc205c83b1320c233a5c8ff7c44d71e2",
+      "in_remote_source_commit": true
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 438,
+      "sha256": "f8788e3e7e032e1a329f035ce81b195595aac859b7159ba3281500c60b7e2f57",
+      "in_remote_source_commit": true
+    }
+  ]
+}
