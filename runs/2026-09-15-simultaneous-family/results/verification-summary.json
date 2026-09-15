@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "assertions": {"typescript": 232, "python": 243, "breakdown": {"typescript_core": 198, "python_core": 213, "typescript_filter": 34, "python_filter": 30}},
+  "finite_population": {"parameter_pairs": 8, "family_point_witnesses": 16, "auxiliary_affine_E0_points": 7, "auxiliary_affine_quartic_points": 6, "auxiliary_finite_field_primes": [5, 7], "auxiliary_modulus": 16},
+  "commands": [
+    {"command": "npm run lint", "returncode": 0, "seconds": 1.7072},
+    {"command": "npm run typecheck", "returncode": 0, "seconds": 1.5281},
+    {"command": "npm test", "returncode": 0, "seconds": 1.6095},
+    {"command": "npm run test:symbolic", "returncode": 0, "seconds": 3.4577}
+  ],
+  "versions": {"node": "v22.16.0", "typescript": "Version 5.8.3", "python": "3.13.5", "sympy": "1.14.0", "wolfram": "15.0.1"},
+  "typescript_replays_byte_identical": true,
+  "preexisting_local_files_unchanged": 18,
+  "wolfram": "Three returned calls: two core calls with preserved global-symbol warnings, one auxiliary call without warnings. All returned certificate values agree.",
+  "corrected_fixture": "An overinclusive expected auxiliary residue set was replaced by {2,6,8}; see followup-test-correction.txt.",
+  "evidence_limit": "All-parameter independence, infinitude and prime completeness rely on written proofs and named established inputs, not finite tests; no independent expert or formal verification, analytic-order theorem or general BSD solution.",
+  "storage_scope": "This private checkpoint preserves the core proof snapshot, final checkpoint, prime-filter proof and checkers. Expanded local records and all raw logs are in the conversation archive, not claimed mirrored here in full."
+}
