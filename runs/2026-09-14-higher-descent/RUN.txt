@@ -1,0 +1,19 @@
+BSD checkpoint 002 reproduction
+
+New checker (from either archive root or Git repository root):
+  python3 runs/2026-09-14-higher-descent/src/check_higher.py
+Requires Python 3.10+ and SymPy; observed Python 3.13.5, SymPy 1.14.0.
+Compare its output with results/exact-certificate.json in this run directory.
+
+The earlier TypeScript project lives at the archive root, but at
+runs/2026-09-14-prime-descent in the private Git repository. Change to that
+location before running npm run lint, npm run typecheck, and npm test.
+Observed Node 22.16.0 and TypeScript 5.8.3. No dependency install was performed
+for this continuation. Python syntax compilation is not static type checking.
+
+src/check_higher.wl contains the separate stateless Wolfram calculation;
+results/wolfram-output.txt preserves its actual response. Read RESEARCH.md
+for the indispensable all-place proof, theorem hypotheses and limitations.
+The local source-ledger and checkpoint-001 paths mentioned there refer to the
+archive; their remote mathematical counterpart is the preceding run's RESEARCH.md.
+No successful computation by itself proves universal BSD.

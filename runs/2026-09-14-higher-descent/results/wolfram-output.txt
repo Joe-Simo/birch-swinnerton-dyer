@@ -1,0 +1,10 @@
+Actual WolframLanguageEvaluator response text, transcribed without changing values.
+Input: src/check_higher.wl; requested timeConstraint: 40 seconds. Returned successfully.
+
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "checks" -> {True, True, True, True, True, True, True, True, True, True, True}, "local_rows" -> {<|"prime" -> 3, "equation_residues" -> {0, 0}, "F_residue" -> 1, "jacobian_rank" -> 2, "psi_residue" -> 1, "Hilbert" -> 1|>, <|"prime" -> 5, "equation_residues" -> {0, 0}, "F_residue" -> 2, "jacobian_rank" -> 2, "psi_residue" -> 1, "Hilbert" -> 1|>, <|"prime" -> 7, "equation_residues" -> {0, 0}, "F_residue" -> 1, "jacobian_rank" -> 2, "psi_residue" -> 1, "Hilbert" -> 1|>, <|"prime" -> 11, "equation_residues" -> {0, 0}, "F_residue" -> 5, "jacobian_rank" -> 2, "psi_residue" -> 1, "Hilbert" -> 1|>, <|"prime" -> 13, "equation_residues" -> {0, 0}, "F_residue" -> 11, "jacobian_rank" -> 2, "psi_residue" -> 1, "Hilbert" -> 1|>, <|"prime" -> 17, "equation_residues" -> {0, 0}, "F_residue" -> 5, "jacobian_rank" -> 2, "psi_residue" -> 1, "Hilbert" -> 1|>, <|"prime" -> 19, "equation_residues" -> {0, 0}, "F_residue" -> 8, "jacobian_rank" -> 2, "psi_residue" -> 1, "Hilbert" -> 1|>, <|"prime" -> 113, "equation_residues" -> {0, 0}, "F_residue" -> 38, "jacobian_rank" -> 2, "psi_residue" -> 16, "Hilbert" -> -1|>}, "discriminant_factors" -> {{2, 26}, {113, 6}}, "Hensel" -> {-1408, -470, 7, 1}, "resultant" -> 28692262021513216, "global_pairing_product" -> -1, "first_pairing_sign" -> 1|>
+
+Scope note (not kernel output): the finite product is extended to all places by
+RESEARCH.md Section 4. Wolfram does not independently prove that global argument,
+the covering interpretation, or the Cassels–Tate theorems. It checks the supplied
+symbolic identities and local arithmetic. No formal-kernel or expert verification
+is claimed.
