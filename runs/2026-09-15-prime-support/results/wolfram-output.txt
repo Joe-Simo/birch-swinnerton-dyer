@@ -1,0 +1,7 @@
+Actual WolframLanguageEvaluator response for wolfram-check.wl, timeConstraint25 seconds:
+Symbol::undefined2: Warning: Global symbols "A, B, G, F, J, KK, BB, DD, NN, A, B, G, A, A, B ... , KK, KK, NN, DD, G, F, F, J, G, G, F, J, A, B" are undefined.
+General::messages: Messages were generated which may indicate errors.
+
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "local_counts" -> <|"retains" -> 136, "removes" -> 128, "exception" -> 10|>, "exceptions" -> {21, 59, 89, 111, 115, 158, 201, 205, 227, 257}, "transfer_identity" -> 0, "branch_degrees" -> {4, 24}, "squarefree_mod11" -> 1, "coprime_mod11" -> 1, "node_leading_multiplier_residual" -> 0, "short_map_residual" -> 0, "valuations" -> {{137, 0}, {17, 5}, {257, 1}, {281, 1}, {7369, 1}}, "prime_checks" -> {True, True, True, True}, "scope" -> "274 finite local rows, polynomial branch identities and one rational x-image; not proof of Faltings, full semigroup reachability or BSD."|>
+
+This is a qualified exact cross-check with warnings, not independent expert or formal verification. The TypeScript local-ring cycle and the Python rational computation are the separately executed primary certificates.

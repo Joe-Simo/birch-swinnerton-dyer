@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "typescript_assertions": 23,
+  "python_assertions": 41,
+  "local_exponent_classes": 274,
+  "retained_classes": 136,
+  "removed_classes": 128,
+  "unresolved_classes": 10,
+  "removal_unit_characters": {"square": 86, "nonsquare": 42},
+  "preexisting_files_unchanged": 29,
+  "commands": [
+    {"command": "npm run lint", "exit_code": 0, "seconds": 0.997},
+    {"command": "npm run typecheck", "exit_code": 0, "seconds": 1.021},
+    {"command": "npm test", "exit_code": 0, "seconds": 1.072},
+    {"command": "node dist/verify.js", "exit_code": 0, "seconds": 0.036},
+    {"command": "npm run test:symbolic", "exit_code": 0, "seconds": 1.221}
+  ],
+  "byte_identical_replays": {"results/local-cycle.json": true, "results/global-certificate.json": true, "results/symbolic-summary.json": true},
+  "replay_sha256": {
+    "results/local-cycle.json": "457543d66ab92619f480934e28b8c2db226277aa25e3c22c8c6c30568c2f3b2e",
+    "results/global-certificate.json": "b3961d0edb5da2ccb10be9140241b0cff2020c19a3775da5c059a44e9a5bbce0",
+    "results/symbolic-summary.json": "abf4e413b26e5af8ba22eb91cc3f627b789901f76b03f01a00579a39f794c93a"
+  },
+  "versions": {"node": "v22.16.0", "typescript": "Version 5.8.3", "python": "3.13.5", "sympy": "1.14.0", "wolfram": "15.0.1"},
+  "lint_scope": "TypeScript strict unused/unreachable checks; not ESLint",
+  "wolfram_scope": "274 local classifications, generic transfer/cancellation identities, mod11 polynomial certificates, one exact x-image and specified valuations; undefined-symbol warnings preserved. New local unit-character split not checked by Wolfram.",
+  "mathematical_scope": "One specified shear/Phi slice. Exact prime-support transfer and local periodic certificate; infinitude uses the established genus-at-least-two finiteness theorem. No prescribed-prime, exact-rank, analytic-order, novelty or full BSD claim.",
+  "remote_format_note": "The compact remote global-certificate.json is whitespace-reformatted; replay hashes refer to generated full-format local outputs. The checkers regenerate all274 rows."
+}
