@@ -1,0 +1,16 @@
+# H13 self-review
+
+Claim reviewed: the H12 137-seeded Phi orbit is infinite, has infinitely many common squareclasses, gives rank-at-least-two curves, and never reaches257 or313 while remaining on its original fiber. Verdict: proved as written using the named established geometric and finiteness inputs; self-review, not independent expert or formal verification.
+
+- Objects: F is the smooth projective model of a nonsingular quartic, with its actual rational seed as origin. No nonexistent rational infinite point is chosen as origin.
+- Orbit: the osculating divisor gives a translated [−3], not unshifted multiplication. The exact quotient difference Q is nontorsion by good-prime torsion bounds and its order-five reduction. Distinct integer coefficients in formula(3) therefore give distinct orbit points. Finite-field groups alone are not interpreted as rational ranks.
+- Good reduction: discriminants are nonzero at13,19,31 and all curve coefficients are integral there. Rational13-primary and19-primary torsion are separately excluded before using gcd(16,24).
+- Branch data: f and g have disjoint simple roots. There are eight simple geometric zeros on F, and two even fourth-order poles. Odd zeros establish connectedness over the algebraic closure; normalization supplies a smooth curve. Genus5 and the iterative genus1+4·9^j follow by Riemann–Hurwitz and étaleness of [3], not by a finite symbolic fixture alone.
+- Finiteness: the target squareclass is fixed before applying Faltings. No varying-n uniformity or effective bound is inferred. Infinite output follows because each individual class occurs at only finitely many distinct orbit points.
+- Affine boundaries: C<0 prevents r4=0 over Q. The13-adic argument excludes infinity, x²+C=0 and the trivial squareclass. The remaining degenerate coordinate cases are ruled out using positivity and parity. Thus the rational formula does not silently stop after a finite number of iterations.
+- Local obstruction: the x-residue enumeration covers all13 residues, and a valuation argument first excludes nonintegral x. Infinity is addressed separately. A nonsquare residue is used only to reject a square; no singular mod-prime point is promoted to a local lift.
+- Changed fiber: the two simultaneous congruences have an invertible x,r Jacobian minor, so a genuine local Hensel certificate exists. The witness at z=0 can be moved locally to z≠0. No global point or semigroup reachability is concluded from it.
+- Rank lower bound: n is odd positive squarefree and greater than1; (-1,2,n) is an independent rational squareclass basis. Both Kummer classes and their raw determinant-one minor are checked. Rank at least2 and point independence are asserted; exact rank, saturation, Sha or analytic order are not.
+- Scope: the obstruction is not extended to all fiber-changing compositions. No arbitrary-prime coverage or BSD solution follows from infinitude. The preimage-genus calculation is an exact reduction, not a decision algorithm.
+
+The first Wolfram call's final iterator was invalid. It was repaired using Map and rerun; a global-symbol warning remains in the corrected transcript. TypeScript and Python completed without corresponding errors. Agreement between these implementations does not turn the argument into expert verification.

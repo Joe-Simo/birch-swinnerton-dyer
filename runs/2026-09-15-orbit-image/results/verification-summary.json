@@ -1,0 +1,44 @@
+{
+  "status": "completed; source-dependent self-reviewed partial results; no BSD solution",
+  "parent": "ac5bb862d273db89512db7173bdd9384536324df",
+  "versions": {
+    "Node": "v22.16.0",
+    "TypeScript": "Version 5.8.3",
+    "Python": "3.13.5",
+    "SymPy": "1.14.0",
+    "Wolfram": "15.0.1 (observed connector response)"
+  },
+  "commands": [
+    {
+      "command": "npm run lint",
+      "exit_code": 0,
+      "seconds": 1.0076
+    },
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0,
+      "seconds": 1.1132
+    },
+    {
+      "command": "npm test",
+      "exit_code": 0,
+      "seconds": 1.071
+    },
+    {
+      "command": "npm run test:symbolic",
+      "exit_code": 0,
+      "seconds": 1.1154
+    }
+  ],
+  "TypeScript_assertions": 44,
+  "Python_assertions": 56,
+  "finite_scope": "complete finite point sets at13,19,31, all13 x residues locally, the fixed137 seed and its image, one minus-tripling changed-fiber certificate",
+  "Wolfram": "two calls: first final iterator failed; corrected output complete with retained global-symbol warning",
+  "integer_output_byte_identical_replay": true,
+  "preexisting_files_checked": 25,
+  "preexisting_files_changed": [],
+  "formal_verification": false,
+  "independent_expert_review": false,
+  "new_spending": 0,
+  "background_jobs": false
+}

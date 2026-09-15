@@ -1,0 +1,6 @@
+Actual WolframLanguageEvaluator response, timeConstraint30, input wolfram-check.wl (whitespace reformatted), second/corrected call.
+
+Symbol::undefined2: Warning: Global symbols "P, R, P, R, P, R, R, P, P, R" are undefined.
+General::messages: Messages were generated which may indicate errors.
+
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "branch_resultant" -> (1 - 6*c$83522 + c$83522^2)^4, "quotient_residual" -> 0, "finite_rows" -> {<|"p" -> 13, "C" -> 6, "K" -> 9, "order" -> 16, "difference" -> "O"|>, <|"p" -> 19, "C" -> 8, "K" -> 9, "order" -> 24, "difference" -> "O"|>, <|"p" -> 31, "C" -> 6, "K" -> 4, "order" -> 40, "difference" -> {28, 5}|>}, "Delta_multiples_mod31" -> {{28, 5}, {4, 3}, {4, 28}, {28, 26}, "O", {28, 5}, {4, 3}, {4, 28}}, "local13_allowed" -> {{1, 1, 8}, {3, 9, 6}, {4, 9, 2}, {6, 12, 5}, {7, 12, 5}, {9, 9, 2}, {10, 9, 6}, {12, 1, 8}}, "all_local_values_nonsquare" -> True, "changed_fiber_C" -> -61708285879386802434260270825/2683974129278159984546892312288, "changed_fiber_C_mod13" -> 1, "changed_fiber_target_residuals" -> {0, 0}, "scope" -> "Finite-field counts, exact rational coefficient and generic identities only; not a proof of infinite orbit, genus or BSD."|>

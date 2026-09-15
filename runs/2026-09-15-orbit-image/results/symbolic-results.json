@@ -1,0 +1,34 @@
+{
+  "assertions": 56,
+  "C": "-39785/37632",
+  "K": "-46057/6272",
+  "x1": "-16890371/79256324",
+  "y1": "210069683/77723044",
+  "Delta": [
+    "64198947010139677695723481/661218006713885376537600",
+    "-3979144651441292118283877187565950631693/4301371914284617625188551895252992000"
+  ],
+  "finite_rows": [
+    {
+      "p": 13,
+      "count": 16,
+      "Delta": null
+    },
+    {
+      "p": 19,
+      "count": 24,
+      "Delta": null
+    },
+    {
+      "p": 31,
+      "count": 40,
+      "Delta": [
+        28,
+        5
+      ]
+    }
+  ],
+  "resultant": "(c**2 - 6*c + 1)**4",
+  "changed_C": "-61708285879386802434260270825/2683974129278159984546892312288",
+  "scope": "Generic polynomial identities; exact rational difference; independent finite-field counts and complete local13 screen. No formal/expert verification of infinite statements."
+}
