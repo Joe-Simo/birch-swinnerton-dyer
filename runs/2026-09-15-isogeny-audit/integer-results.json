@@ -1,0 +1,30 @@
+{
+  "status": "fixed exact certificates passed; consult written proof",
+  "checks": 17,
+  "point2": [
+    "15035",
+    "18942",
+    "-121505",
+    "9471"
+  ],
+  "point113": [
+    "21",
+    "-8",
+    "0",
+    "1"
+  ],
+  "hensel": {
+    "errors": [
+      "-4365484032",
+      "-2945449984"
+    ],
+    "n": 18,
+    "delta": 2,
+    "valid": true
+  },
+  "norm": "-47126055328128",
+  "normValuation": 7,
+  "normUnitMod8": "5",
+  "hilbertSign": -1,
+  "theoremNotCheckedByCode": "Fisher's descent/pushout interpretation and the written all-place proof"
+}
