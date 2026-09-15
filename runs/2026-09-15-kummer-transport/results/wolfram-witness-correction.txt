@@ -1,0 +1,3 @@
+Actual WolframLanguageEvaluator response, second call. Input: wolfram-witness-correction.wl. Requested timeConstraint: 10 seconds. Returned without a warning. The isolated matrix is row-equivalent to the raw minor; the third call derives that raw minor explicitly.
+
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "witness_checks" -> {{1, 0, 1, 1}, {-1, 0, 1, 1}}, "Kummer_minor" -> 1, "scope" -> "Focused correction of the invalid multi-variable Table iterator in the previous call; exact two-witness arithmetic only."|>

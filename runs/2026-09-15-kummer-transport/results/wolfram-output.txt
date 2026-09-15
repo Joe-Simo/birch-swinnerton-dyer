@@ -1,0 +1,6 @@
+Actual WolframLanguageEvaluator response, first call. Input: wolfram-check.wl (only line breaks reformatted). Requested timeConstraint: 30 seconds. Returned with an invalid final iterator; no complete-pass claim.
+
+Table::write: Tag List in {ee, aa, bb, c} is Protected.
+General::messages: Messages were generated which may indicate errors.
+
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "quartic_and_involution_residuals" -> {{0, 0, 0}, {0, 0, 0}}, "tripling_checks" -> {{0, 0, 1}, {0, 0, 1}}, "contact_identity" -> 0, "norm_identity" -> 0, "fiber_discriminant" -> 16*cc$84213^2*(cc$84213^2 - kk$84213)^4*kk$84213, "new_coordinates" -> {-16890371/79256324, 210069683/77723044}, "new_surface_residual" -> 0, "squareclass_ratio" -> 1270215655128601457157598921/1027125612178388895573957136, "ratio_17_valuation" -> 1, "new_kernel" -> 174019544752618399630591052177, "prime_checks" -> {True, True, True, True, True}, "witness_residuals" -> Table[{ee, aa^4 + 6*ee*aa^2*bb^2 + bb^4 - newn$84213*c^2}, {{ee, aa, bb, c}, {{1, 79256324, 16890371, 17}, {-1, 210069683, 77723044, 47}}}], "scope" -> "Symbolic identities and one exact squareclass-changing137 calculation; not arbitrary-prime coverage, analytic rank or formal proof."|>

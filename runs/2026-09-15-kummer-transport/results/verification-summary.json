@@ -1,0 +1,85 @@
+{
+  "status": "completed; no complete BSD candidate",
+  "versions": {
+    "node": "v22.16.0",
+    "typescript": "Version 5.8.3",
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "wolfram": "15.0.1 for Linux x86 (64-bit) (July 2, 2026)"
+  },
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exit_code": 0,
+      "seconds": 1.006187
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "seconds": 0.906086
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit_code": 0,
+      "seconds": 0.953687
+    },
+    {
+      "command": [
+        "node",
+        "dist/verify.js"
+      ],
+      "exit_code": 0,
+      "seconds": 0.033725
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "test:symbolic"
+      ],
+      "exit_code": 0,
+      "seconds": 1.369101
+    }
+  ],
+  "typescript_assertions": 53,
+  "python_assertions": 56,
+  "integer_replay_byte_identical": true,
+  "preexisting_files_checked": 23,
+  "preexisting_files_changed": [],
+  "wolfram_calls": [
+    {
+      "file": "wolfram-check.wl",
+      "result": "valid identity outputs; final iterator subcalculation failed"
+    },
+    {
+      "file": "wolfram-witness-correction.wl",
+      "result": "two corrected witness rows and row-equivalent minor"
+    },
+    {
+      "file": "wolfram-raw-minor.wl",
+      "result": "raw minor derived from squareclasses, determinant1, rank4"
+    }
+  ],
+  "hashes": {
+    "verify.ts": "b3aed9fe63e84cabea1658d4ce1c222a361711e6e8c64d7d1069f624f31561e1",
+    "verify_symbolic.py": "d13e99816c1fa53f5b552e896c0d9c73cbeea09caa5bd53081fac9ee3a01704c",
+    "wolfram-check.wl": "20e58d0d63cd666c2f021dd546f78a2555c0fb3e626a91fd28d498742598a237",
+    "wolfram-witness-correction.wl": "d188979acaf5972bf1199c0c842b7acfdbc9cffa24f5662bd76011de5a02b6e3",
+    "wolfram-raw-minor.wl": "c0e4067601ea9406d874dc1ac21b4e58abf79ec5bcafceb572facca03edd176f",
+    "package.json": "a3bc15ec0632e440d97e985cd828ca5b2b14593b866b6a58d60ccc822e336476",
+    "tsconfig.json": "9a6d607579467a9edd57e26fb163e46109189489acb6d074022482646cb111a4",
+    "requirements.txt": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+  },
+  "scope": "Exact generic identities and one squareclass-changing transport from137; no prescribed-prime coverage, exact new rank, analytic order, novelty, formal proof or independent expert verification."
+}

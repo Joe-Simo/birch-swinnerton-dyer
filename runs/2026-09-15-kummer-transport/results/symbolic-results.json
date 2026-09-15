@@ -1,0 +1,15 @@
+{
+  "assertions": 56,
+  "squareclass_change_ratio": "1270215655128601457157598921/1027125612178388895573957136",
+  "new_kernel": "174019544752618399630591052177",
+  "new_xy": [
+    "-16890371/79256324",
+    "210069683/77723044"
+  ],
+  "fiber": [
+    "-152681/37632",
+    "-109463/37632"
+  ],
+  "generic_discriminant": "16*C**2*K*(C**2 - K)**4",
+  "scope": "Generic polynomial certificates plus one137 transport, five trial-division prime proofs, and two independent point certificates. No arbitrary-prime existence or analytic-order theorem."
+}
