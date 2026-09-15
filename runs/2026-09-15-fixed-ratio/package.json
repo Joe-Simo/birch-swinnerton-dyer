@@ -1,0 +1,13 @@
+{
+  "name": "bsd-h11-fixed-ratio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc && node dist/verify.js",
+    "test:symbolic": "python verify_symbolic.py"
+  },
+  "devDependencies": {"typescript": "5.8.3"}
+}

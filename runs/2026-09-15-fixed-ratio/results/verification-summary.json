@@ -1,0 +1,60 @@
+{
+  "status": "all checks passed",
+  "typescript_assertions": 136,
+  "python_assertions": 88,
+  "commands": [
+    {
+      "command": [
+        "npm",
+        "run",
+        "lint"
+      ],
+      "exit": 0,
+      "seconds": 1.034553
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "typecheck"
+      ],
+      "exit": 0,
+      "seconds": 0.994978
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 1.033741
+    },
+    {
+      "command": [
+        "node",
+        "dist/verify.js"
+      ],
+      "exit": 0,
+      "seconds": 0.036811
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "test:symbolic"
+      ],
+      "exit": 0,
+      "seconds": 1.213906
+    }
+  ],
+  "old_local_files_unchanged": 21,
+  "typescript_replay": "byte-identical",
+  "scope": "finite arithmetic certificates and generic polynomial identities; genus/isogeny arguments separately written, finiteness is externally proved",
+  "Wolfram": "one call returned successfully, 3584 primitive triples, zero admissible solutions, generic residuals zero",
+  "versions": {
+    "Node": "v22.16.0",
+    "TypeScript": "Version 5.8.3",
+    "Python": "3.13.5",
+    "SymPy": "1.14.0"
+  }
+}
