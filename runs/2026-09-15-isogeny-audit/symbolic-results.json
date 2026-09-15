@@ -1,0 +1,49 @@
+{
+  "status": "passed fixed exact checks",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "checks": [
+    "base conic identity",
+    "first rational conic parametrization",
+    "second rational conic parametrization",
+    "pushout f3 normalization",
+    "C3 pencil determinant",
+    "C3 discriminant = 4*113^6",
+    "C2 smooth pencil",
+    "no projection basepoint away from 2,113",
+    "quadratic-field square factor",
+    "point on field conic",
+    "tangent form and rational norm",
+    "field conic good primes",
+    "strict two-variable Hensel certificate",
+    "2-adic Hilbert unit certificate",
+    "113-adic local residuals",
+    "113-adic nonsingular minor",
+    "real point residual",
+    "real point residual",
+    "isogeny identity modulo source equation",
+    "first Kummer coordinate pullback",
+    "second Kummer coordinate pullback",
+    "third Kummer coordinate pullback",
+    "Tunnell exact signed counts",
+    "negative control: wrong factor sign",
+    "negative control: changed norm form"
+  ],
+  "number_of_checks": 25,
+  "runtime_seconds": 0.3388328519999959,
+  "C3_pencil": "(4*a**2 + 7*a*b - 4*b**2)*(7*a**2 - 16*a*b - 7*b**2)",
+  "C2_pencil": "-113*a*b*(4*a**2 + b**2)/4",
+  "field_conic_det_norm": "-204304/343",
+  "Q2_errors": [
+    "-207880192/4271421",
+    "-2945449984/89699841"
+  ],
+  "Q2_norm": "-748032624256/1423807",
+  "Q2_norm_residue_mod1024": 640,
+  "counts_8_32": [
+    32,
+    24
+  ],
+  "Tunnell_coefficient": 8,
+  "limitations": "Not a proof-assistant verification or a universal BSD computation; see written source-dependent proof."
+}
