@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "word": "H,H,v,Phi",
+  "pre_phi_mod_13": [7, 10],
+  "post_phi_mod_13": [5, 9],
+  "pre_phi_mod_47": [37, 7],
+  "post_phi_mod_47": [10, 26],
+  "x_num_digits": 461,
+  "x_den_digits": 461,
+  "G_digits": 1843,
+  "G_sha256": "58038f034eec7bb737d72472cbd522b62d01ba1a39d25343e8f32e5d5f375408",
+  "v257": 0,
+  "v313": 0
+}
