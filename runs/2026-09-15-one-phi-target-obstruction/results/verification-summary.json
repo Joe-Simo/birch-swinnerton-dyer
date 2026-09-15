@@ -1,0 +1,13 @@
+{
+  "status":"passed",
+  "hmv":{
+    "257":{"roots":[44,213],"ordP":16,"ordQ":8,"period":4,"rows":[[0,202,47,137,113,51,247],[1,187,175,98,87,238,103],[2,55,47,120,113,51,247],[3,70,175,159,87,238,103]]},
+    "313":{"roots":[78,235],"ordP":24,"ordQ":4,"period":2,"rows":[[0,246,300,112,95,257,184],[1,67,300,201,95,257,184]]}
+  },
+  "all_odd_linear_closure":{
+    "313":{"states":576,"fplus_zero_states":0,"ambiguous_phi_states":0},
+    "257":{"states":1024,"fplus_zero_states":96,"ambiguous_phi_states":16}
+  },
+  "implementations":["TypeScript","Python","Wolfram Language"],
+  "versions":{"node":"22.16.0","typescript":"5.8.3","python":"3.13.5"}
+}
