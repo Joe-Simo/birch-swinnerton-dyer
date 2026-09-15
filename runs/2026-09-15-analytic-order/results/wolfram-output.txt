@@ -1,0 +1,8 @@
+Actual WolframLanguageEvaluator output for wolfram-check.wl; whitespace reformatted in saved input. Requested timeConstraint 30 seconds. Returned, with the following warning retained verbatim.
+
+Symbol::undefined2: Warning: Global symbols "X, Y, X, Y, Y, X, X" are undefined.
+General::messages: Messages were generated which may indicate errors.
+
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "eta_nonzero_prefix" -> {{1, 1}, {5, -2}, {9, -3}, {13, 6}, {17, 2}, {25, -1}}, "twisted_41_prefix" -> {{1, 1}, {5, -2}, {9, -3}, {13, -6}, {17, -2}, {25, -1}}, "isogeny_polynomial_residual" -> 0, "E41_point_residuals" -> {0, 0}, "E41_Kummer_rank" -> 4, "tail_antiderivative_check" -> 0, "Mellin_derivative_check" -> 0, "scope" -> "Symbolic formulas, six eta coefficients, two points and Kummer matrix; not an interval-integral or BSD proof."|>
+
+Audit note: the declared Module variables X,Y were used as algebraic rational functions. The returned residuals and ranks agree with the separate computations, but the warning is not suppressed. Wolfram did not perform the interval quadrature and is not an independent expert or proof-assistant verification.

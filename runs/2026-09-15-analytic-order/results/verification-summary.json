@@ -1,0 +1,19 @@
+{
+  "status": "seven strict-positive enclosures and exact central zeros; no general BSD result",
+  "curves": [
+    {"p":41,"A":"32","B":"16","L2_outer":["15.824797","17.046590"],"coefficient_bound":656,"T":8192,"independent_audit_groups":7,"independent_seconds":0.41449878200000967},
+    {"p":137,"A":"32","B":"16","L2_outer":["36.650104","38.780383"],"coefficient_bound":2192,"T":32768,"independent_audit_groups":7,"independent_seconds":1.8257419739998113},
+    {"p":257,"A":"64","B":"32","L2_outer":["53.557096","56.414885"],"coefficient_bound":4112,"T":65536,"independent_audit_groups":7,"independent_seconds":4.271694319999824},
+    {"p":313,"A":"32","B":"16","L2_outer":["56.000591","58.992879"],"coefficient_bound":5008,"T":65536,"independent_audit_groups":7,"independent_seconds":5.248917616999961},
+    {"p":353,"A":"64","B":"32","L2_outer":["48.009683","51.132721"],"coefficient_bound":5648,"T":65536,"independent_audit_groups":7,"independent_seconds":6.532701287000009},
+    {"p":457,"A":"32","B":"16","L2_outer":["48.868009","52.440431"],"coefficient_bound":7312,"T":65536,"independent_audit_groups":7,"independent_seconds":9.818949267000107},
+    {"p":761,"A":"160","B":"80","L2_outer":["33.434042","37.500299"],"coefficient_bound":12176,"T":131072,"independent_audit_groups":7,"independent_seconds":23.537388872999827}
+  ],
+  "exact_rational_assertions":37134,
+  "coefficient_bound_assertions":37104,
+  "independent_coefficient_entries":37104,
+  "npm_test_replay_equal":true,
+  "commands_passed":["npm run lint","npm run typecheck","npm test","node dist/verify.js","python verify_independent.py <each registered prime>","python verify_algebra.py"],
+  "versions":{"python":"3.13.5","node":"v22.16.0","typescript":"Version 5.8.3","mpmath":"1.3.0"},
+  "not_claimed":["independent expert review","formal proof-assistant verification","general rank-two BSD","rational points on the other six curves","a persistence-sensitive global height bound"]
+}
