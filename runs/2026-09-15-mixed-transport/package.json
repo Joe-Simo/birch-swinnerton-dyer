@@ -1,0 +1,1 @@
+{"name":"bsd-h14-mixed-transport","private":true,"type":"module","scripts":{"lint":"tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false","typecheck":"tsc --noEmit","test":"tsc && node dist/verify.js","test:symbolic":"python verify_symbolic.py"},"devDependencies":{"typescript":"5.8.3"}}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "typescript_assertions": 21,
+  "python_assertions": 36,
+  "finite_states": 64,
+  "finite_transitions": 512,
+  "restricted_orbit": 32,
+  "old_files_verified_unchanged": 27,
+  "byte_identical_replays": {
+    "results/finite-certificate.json": true,
+    "results/rational-certificate.json": true,
+    "results/python-summary.json": true
+  },
+  "commands": [
+    {"command": "npm run lint", "exit_code": 0, "seconds": 1.631},
+    {"command": "npm run typecheck", "exit_code": 0, "seconds": 1.204},
+    {"command": "npm test", "exit_code": 0, "seconds": 1.316},
+    {"command": "node dist/verify.js", "exit_code": 0, "seconds": 0.049},
+    {"command": "npm run test:symbolic", "exit_code": 0, "seconds": 1.666}
+  ],
+  "versions": {"node": "v22.16.0", "typescript": "Version 5.8.3", "python": "3.13.5", "sympy": "1.14.0", "wolfram": "15.0.1"},
+  "wolfram_scope": "64-state closure, all512 transitions and32-state restricted orbit only; rational escape was not verified by Wolfram. One502 and three20-second timeouts supplied no evidence.",
+  "mathematical_scope": "All-word local obstruction for specified generators; actual rational shear escape, with composite output and rank at least two. No prescribed-prime reachability or general BSD.",
+  "inputs": "Post-discovery accepted contract; no randomized search or novel-theorem claim."
+}

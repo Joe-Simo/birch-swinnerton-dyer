@@ -1,0 +1,9 @@
+Actual WolframLanguageEvaluator response to wolfram-check.wl, timeConstraint 20 seconds:
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "omega" -> 64, "transitions" -> 512, "closed" -> True, "orbit" -> 32, "nonsquare_values" -> True, "scope" -> "Exact F13 closure and unit-denominator checks only."|>
+
+Other calls, not accepted as evidence:
+- Initial combined closure/shear/symbolic invocation, timeConstraint 30: ConnectorClientServerError: 502: Server returned 502: Upstream or external service errors.
+- Combined finite-field shear and generic cancellation, timeConstraint 20: Failure["EvaluationTimeExceeded", <|"MessageTemplate" -> "Evaluation exceeded the `1` second time limit.", "MessageParameters" -> {20}|>].
+- Focused finite-field shear, timeConstraint 20: the same EvaluationTimeExceeded failure.
+- Further shortened finite-field shear call, timeConstraint 20: the same EvaluationTimeExceeded failure.
+No Wolfram verification of the rational escape or generic cancellation is claimed. Those successful checks are from Python/SymPy and the TypeScript finite-field computation.
