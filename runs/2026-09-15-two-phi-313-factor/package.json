@@ -1,0 +1,6 @@
+{
+  "name":"bsd-h18-two-phi-313-factor",
+  "private":true,
+  "type":"module",
+  "scripts":{"test":"python3 verify.py"}
+}
