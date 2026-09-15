@@ -1,0 +1,12 @@
+{
+  "name": "bsd-h16-two-shear-local",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc && node dist/verify.js",
+    "test:independent": "python3 verify_independent.py"
+  },
+  "devDependencies": {"typescript": "5.8.3"}
+}
