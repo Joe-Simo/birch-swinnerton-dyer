@@ -1,0 +1,12 @@
+{
+  "name": "bsd-h17-one-phi-target-obstruction",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc && node dist/verify.js > results/ts-summary.json",
+    "test:independent": "python3 verify.py > results/python-summary.json"
+  },
+  "devDependencies": {"typescript": "5.8.3"}
+}
