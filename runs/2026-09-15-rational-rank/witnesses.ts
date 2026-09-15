@@ -1,0 +1,16 @@
+export const witnesses = [
+  { p: 41n, sign: -1, A: 5n, B: 2n, c: 1n },
+  { p: 41n, sign: 1, A: 2n, B: 1n, c: 1n },
+  { p: 137n, sign: -1, A: 37n, B: 14n, c: 47n },
+  { p: 137n, sign: 1, A: 14n, B: 1n, c: 17n },
+  { p: 257n, sign: -1, A: 13n, B: 4n, c: 7n },
+  { p: 257n, sign: 1, A: 104n, B: 11n, c: 697n },
+  { p: 313n, sign: -1, A: 19409n, B: 582n, c: 21235361n },
+  { p: 313n, sign: 1, A: 3n, B: 2n, c: 1n },
+  { p: 353n, sign: -1, A: 15641n, B: 968n, c: 12870529n },
+  { p: 353n, sign: 1, A: 4n, B: 1n, c: 1n },
+  { p: 457n, sign: -1, A: 17n, B: 6n, c: 7n },
+  { p: 457n, sign: 1, A: 653n, B: 282n, c: 29273n },
+  { p: 761n, sign: -1, A: 41n, B: 10n, c: 49n },
+  { p: 761n, sign: 1, A: 190n, B: 59n, c: 1649n },
+] as const;

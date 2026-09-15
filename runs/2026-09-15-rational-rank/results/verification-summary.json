@@ -1,0 +1,44 @@
+{
+  "status": "completed",
+  "mathematical_scope": "seven fixed curves; 14 exact point witnesses; rank two and zero 2-primary Sha using established descent; combined with H7 for core rank equality only",
+  "parent_commit": "0e9192da502c8db4408ceaabdc0aa18424d66532",
+  "checks": {
+    "typescript_assertions": 183,
+    "python_assertions": 408,
+    "wolfram_point_rows": 14,
+    "wolfram_Kummer_rank": 4,
+    "wolfram_minor_determinant": 1,
+    "H7_unchanged_replay_assertions": 37134,
+    "H7_byte_identical": true
+  },
+  "commands_passed": [
+    "npm run lint",
+    "npm run typecheck",
+    "npm test",
+    "node dist/verify.js",
+    "npm run test:independent",
+    "python -m py_compile discover.py discover_coverings.py verify_independent.py",
+    "H7: tsc && node dist/verify.js"
+  ],
+  "versions": {
+    "node": "22.16.0",
+    "typescript": "5.8.3",
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "wolfram": "15.0.1"
+  },
+  "failed_attempts": [
+    "Python result serialization initially rejected SymPy integer entries; exact native-int conversion fixed it and all checks reran. Integer and early covering search cap misses are inconclusive."
+  ],
+  "preservation": {
+    "old_files": 14,
+    "changed_old_files": [],
+    "scope": "All preexisting files in the assigned project at H8 start"
+  },
+  "limits": [
+    "Not a saturated integral Mordell-Weil basis",
+    "No full Sha finiteness or regulator/refined BSD assertion",
+    "No uniform quartic-existence proof",
+    "No independent expert or formal verification"
+  ]
+}

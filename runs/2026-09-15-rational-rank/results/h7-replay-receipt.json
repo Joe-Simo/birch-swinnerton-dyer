@@ -1,0 +1,9 @@
+{
+  "input_sha256": "0a105a24a9127c324d1e650bf4add722111c67253e571a45cc0ef3bad449856b",
+  "replay_sha256": "0a105a24a9127c324d1e650bf4add722111c67253e571a45cc0ef3bad449856b",
+  "byte_identical": true,
+  "command": "tsc && node dist/verify.js",
+  "source": "inputs/h7-replay/verify.ts, byte-identical extraction from H7 archive",
+  "assertions": 37134,
+  "scope": "Reproduces the H7 integer-endpoint integration for all seven; no new analytic proof or expert verification"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "bsd-h8-rational-rank-certificates", "version": "0.1.0", "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false",
+    "typecheck": "tsc --noEmit", "build": "tsc", "test": "tsc && node dist/verify.js",
+    "test:independent": "python verify_independent.py"
+  },
+  "devDependencies": { "typescript": "5.8.3" }
+}
