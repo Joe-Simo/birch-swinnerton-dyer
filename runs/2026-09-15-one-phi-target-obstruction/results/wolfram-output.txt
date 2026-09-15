@@ -1,0 +1,18 @@
+Accepted Wolfram Language cross-check, 2026-09-15.
+
+Exact H^m v Phi target-prime rows under both embeddings sqrt(137):
+{{257,44,16,8,4,{{0,202,47,137,113},{1,187,175,98,87},{2,55,47,120,113},{3,70,175,159,87}}},
+ {257,213,16,8,4,{{0,202,47,137,113},{1,187,175,98,87},{2,55,47,120,113},{3,70,175,159,87}}},
+ {313,78,24,4,2,{{0,246,300,112,95},{1,67,300,201,95}}},
+ {313,235,24,4,2,{{0,246,300,112,95},{1,67,300,201,95}}}}
+
+Fields are {p,sqrt137,ord(P),ord(Q),period,{m,x,y,PhiX,Fplus(PhiX)}}.
+
+Independent all-odd-linear pre-Phi closure:
+{{313,78,24,4,576,0,0},
+ {313,235,24,4,576,0,0},
+ {257,44,16,8,1024,96,16},
+ {257,213,16,8,1024,96,16}}
+
+Fields are {p,sqrt137,ord(P),ord(Q),states,Fplus-zero-states,ambiguous-Phi-states}.
+The accepted closure call emitted no warnings. An earlier exploratory H^m v Phi call had an undefined-symbol warning; a corrected rerun had no warnings and supplied the accepted rows above.
