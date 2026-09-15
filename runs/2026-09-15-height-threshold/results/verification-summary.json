@@ -1,0 +1,46 @@
+{
+  "status": "completed finite checks; no complete BSD candidate",
+  "commands": [
+    {
+      "command": "npm run lint",
+      "exit_code": 0,
+      "elapsed_seconds": 0.953263
+    },
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0,
+      "elapsed_seconds": 0.922713
+    },
+    {
+      "command": "npm test",
+      "exit_code": 0,
+      "elapsed_seconds": 2.201642
+    },
+    {
+      "command": "npm run test:symbolic",
+      "exit_code": 0,
+      "elapsed_seconds": 2.131599
+    }
+  ],
+  "typescript_assertions": 545,
+  "python_sympy_assertions": 256,
+  "modular_minimum_instances": 33,
+  "scalar_levels": 64,
+  "wolfram_grouped_checks": 6,
+  "wolfram_minimum_instances": 4,
+  "versions": {
+    "node": "v22.16.0",
+    "typescript": "Version 5.8.3",
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "wolfram": "15.0.1, actual connector response"
+  },
+  "old_files_unchanged": 10,
+  "limitations": [
+    "Infinite propositions are self-reviewed written proofs, not established by the finite loops.",
+    "No numerical canonical heights or saturated basis were computed.",
+    "The 17 control is not a persistent torsor.",
+    "The global persistence-sensitive size bound and complex order comparison remain unproved.",
+    "No independent expert review, formal verification, public publication, new spending or background job."
+  ]
+}
