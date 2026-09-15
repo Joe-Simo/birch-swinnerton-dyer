@@ -1,0 +1,14 @@
+{
+  "name": "bsd-h10-simultaneous-family",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc && node dist/verify.js > results/integer-results.json && node dist/verify_prime_filter.js > results/prime-filter-integer.json",
+    "test:symbolic": "python verify_symbolic.py && python verify_prime_filter.py"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}
