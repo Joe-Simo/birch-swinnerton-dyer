@@ -1,0 +1,18 @@
+{
+  "BSD_H5_persistent_tower_2026-09-15.zip": "3d5abdb73016a9ec55c729ecfe15003f8e8cd6bbce7f23e8fbe083313999abb3",
+  "BSD_H7_analytic_order_2026-09-15.zip": "0f67246fc448037650773d9c4922a0596b2dec062f858b37762dafc4c5191bf4",
+  "BSD_H2_endpoint_2026-09-14.zip": "bbad1b3185e217bb5f169f1f4862de8b40466a1927ea44c8bd139eeffd381c4f",
+  "BSD_H4_stopping_depth_2026-09-15.zip": "7206cfc7c325ea0ad18cc2254beb21ec922f58f79b706961ed33ad525544b628",
+  "RESEARCH.md": "fd9a286295ad221b8d8830e8c1f6fd4b637c8829d0a581aeb9af565cd9eb13b4",
+  "BSD_H8_rational_rank_2026-09-15.zip": "8f6c4a13755d302c61c969a02189c54c17cc8156302d848cc5ad65e1ff93886e",
+  "BSD_H3_exact_descent_2026-09-15.zip": "f0f24cf26c29b8d5f3f99594da36b9284405907f4e4ba144f4ce9eb237295c97",
+  "BSD_H6_height_threshold_2026-09-15.zip": "e565108e08682e28a9699473e84cc5dc6cb9c27533f44144af16e2573e027d32",
+  "BSD_research_checkpoint_2026-09-14.zip": "3826faa846ccc4ac6ade9f28621b178e37ce9a4cb64132e0d95c4c98b91b68ff",
+  "runs/2026-09-15-stopping-depth/RESEARCH.md": "1ca075faa6fc3c77a1762eed75b40a604fa53eaf6e1db0e42a2b2ec4453e5442",
+  "runs/2026-09-15-height-threshold/RESEARCH.md": "0fdbb9488864f4c58020bcbb1f69177544554315ce1683f2c9e753e2caee5d8f",
+  "runs/2026-09-15-rational-rank/RESEARCH.md": "5facf654a36f0457530f8a78e3185f0baa4e22e92735a088162d8d6b6908eaf5",
+  "runs/2026-09-14-higher-descent/RESEARCH.md": "05d079faaa27d75dd6e073d7b68aa772ea9c79ab8f329661249adf80af3a053e",
+  "runs/2026-09-15-persistent-tower/RESEARCH.md": "04bc676fb0827a1d93a2ca564264ec2ceb8c7febe445acd82c600bed3422a135",
+  "runs/2026-09-15-isogeny-audit/RESEARCH.md": "54d19d9cbbc66680cdfa43a4a749662b1ee377fb895d2de923a6872e9ae85a74",
+  "runs/2026-09-15-analytic-order/RESEARCH.md": "866fddf4284d674d5065a75edd8ce2dd9c44a6653a3c75841899f0271a63dd2e"
+}

@@ -1,0 +1,95 @@
+$ npm run lint
+
+> lint
+> tsc --noEmit --noUnusedLocals --noUnusedParameters --allowUnreachableCode false --allowUnusedLabels false
+
+
+
+exit=0; seconds=1.128694
+
+$ npm run typecheck
+
+> typecheck
+> tsc --noEmit
+
+
+
+exit=0; seconds=1.137511
+
+$ npm test
+
+> test
+> tsc && node dist/verify.js
+
+{
+  "assertions": 36,
+  "masks": {
+    "Tplus": "306",
+    "Tzero": "101",
+    "minus": "288",
+    "plus": "260"
+  },
+  "minorDeterminant": "1",
+  "fullSpanSize": 16,
+  "oneWitnessSpanSize": 8,
+  "fixtureResults": [
+    {
+      "p": "41",
+      "sign": -1,
+      "coordinates": [
+        "41",
+        "29",
+        "21",
+        "20"
+      ],
+      "x": [
+        "18081",
+        "400"
+      ],
+      "y": [
+        "1023729",
+        "8000"
+      ]
+    },
+    {
+      "p": "41",
+      "sign": 1,
+      "coordinates": [
+        "41",
+        "3",
+        "5",
+        "4"
+      ],
+      "x": [
+        "1025",
+        "16"
+      ],
+      "y": [
+        "25215",
+        "64"
+      ]
+    }
+  ],
+  "scope": "Exact Kummer-vector algebra and two existing E41 point fixtures only; no finite check proves the generic group, morphism, or odd-degree assertions."
+}
+
+
+exit=0; seconds=1.135701
+
+$ npm run test:symbolic
+
+> test:symbolic
+> python verify_symbolic.py
+
+{
+  "assertions": 71,
+  "result": "results/symbolic-results.json",
+  "status": "passed"
+}
+
+
+exit=0; seconds=1.184554
+
+PASS TypeScript JSON replay is byte-identical
+
+PASS all 16 preexisting files unchanged

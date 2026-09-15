@@ -1,0 +1,6 @@
+Actual first WolframLanguageEvaluator response. Uppercase local names were used; the output returned but the tool emitted undefined-symbol warnings. The second invocation renames those indeterminates to lowercase and removes an unused, tautological intermediate Kummer expression; neither changes an output formula. The first output is preserved rather than represented as warning-free.
+
+Symbol::undefined2: Warning: Global symbols "A, B, X, Y, Jchecks, A, B, A, B, A, B, A, B, A, ... B, A, A, A, A, Jchecks, Jchecks, X, Y, Y, X, X" are undefined.
+General::messages: Messages were generated which may indicate errors.
+
+Out[1]= <|"version" -> "15.0.1 for Linux x86 (64-bit) (July 2, 2026)", "pencil_residuals" -> {0, 0}, "quartic_parametrization_residuals" -> {{0, 0}, {0, 0}}, "covering_map_residuals" -> {0, 0}, "quartic_gcds" -> {1, 1}, "Kummer_rank" -> 4, "Kummer_minor" -> 1, "quadratic_companion_residuals" -> {0, 0, 0, 0}, "twist_residual" -> 0, "trace_ring_identity" -> 0, "E41_point_residual" -> 0, "scope" -> "Exact generic polynomial and four-row matrix certificates only; not a formal proof of the all-degree morphism classification, generic Mordell-Weil group, or odd-degree nonexistence."|>
