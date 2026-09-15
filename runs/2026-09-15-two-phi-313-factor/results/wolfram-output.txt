@@ -1,0 +1,13 @@
+Accepted exact Wolfram Language cross-check, 2026-09-15:
+
+{True, 246, 25, 88, 97, 105, 119, 67, 67, 269,
+ {{2,0},{13,0},{17,2},{137,1},{257,0},{313,1},{1409,1},{2017,1}},
+ True, True, True}
+
+Interpretation:
+- the two Phi applications keep the same H13 fiber parameter C;
+- (x,y) mod313: seed=(246,25), after Phi=(88,97), after Phi^2=(105,119);
+- the final x numerator and denominator have 67 digits each; G has 269 digits;
+- exact valuations of G at the listed primes are shown;
+- the final surface residual and both explicit E_G point equations vanish exactly.
+The accepted call emitted no warnings.
