@@ -2,30 +2,59 @@
 
 Primary-source continuation using T. Fisher, arXiv:1509.03234v1, Sections 2-5.
 
-## Correction to the previous target description
+## Correct stage and remaining bit
 
-The previous checkpoint correctly reduced the next arithmetic datum to the even pairing Theta_2 on the one-dimensional spaces S_2=<113> and S'_2=<2>. However its wording suggested immediately constructing a 4-covering. Fisher's definitions show that for m=2, an element of S_2 is represented by a lift in Sel(2), i.e. a 2-covering at this stage. The 4-coverings in Section 5 occur later in the alternating chain C1,...,C4. This stage distinction is now fixed.
+Theorem 2.1(ii) gives Theta_2:S_2 x S'_2 -> F_2 with left kernel S_3 and right kernel S'_3. We already proved S_2=<113> and S'_2=<2>. Hence Theta_2(113,2) is the single remaining bit at this stage. A nonzero value kills both next stages; zero leaves both one-dimensional.
 
-Theorem 2.1(ii) states that Theta_2:S_2 x S'_2 -> F_2 has left kernel S_3 and right kernel S'_3. Since both spaces are one-dimensional, one nonzero value Theta_2(113,2)=1 kills both next stages; value zero leaves both unchanged.
+## Explicit C1 and conic parametrisation
 
-## Exact construction to execute
+For E_113:y^2=x(x^2-113^2), Fisher equation (8) with a=0, b=-113^2 and xi1=113 is
 
-Fisher Section 3 gives the computational formula. If x is represented by an everywhere locally soluble covering C and f is a pushout function with div(f)=2b for the rational 2-torsion divisor class, then for y represented by a squareclass one evaluates local Hilbert norm residue symbols (f(P_v),y)_v and sums over v. Section 5 gives the concrete covering chain for E:y^2=x(x^2+a x+b). For the connecting squareclass xi_1 the first curve is
+    C1: r^2 = 113 s^4 - 113 t^4.
 
-    C1: r^2=xi_1 s^4+a s^2 t^2+(b/xi_1)t^4.
+Put S=s^2 and T=t^2. The conic is
 
-A conic parametrisation gives (s^2:t^2:r)=(f(l,m):g(l,m):h(l,m)), and the next pushout function is f_2=f(l,m)/m^2. Thus to compute Theta_2 for the present generators we must:
+    R^2 = 113(S^2-T^2),
 
-1. fix which side of Fisher's alternating E/E' convention carries xi_1=113 and which carries the test squareclass 2;
-2. construct an everywhere locally soluble Sel(2) lift of 113 by parametrising the appropriate conic associated to C1;
-3. obtain the authenticated pushout function f_2 from that parametrisation;
-4. choose local points P_v only at the finite set of potentially nontrivial places (at minimum 2,113 and infinity, with any extra primes introduced by the chosen model/function included rather than assumed away);
-5. compute the Hilbert symbols (f_2(P_v),2)_v exactly and sum them in F_2.
+with rational point (S:T:R)=(1:1:0). Parametrising lines through this point gives the exact binary quadratic forms
 
-The source explicitly warns that the covering/lift must be built before the pairing is evaluated; finite residue searches are not substitutes for local points on the actual covering.
+    f(l,m)=l^2+113m^2,
+    g(l,m)=l^2-113m^2,
+    h(l,m)=226lm.
 
-## Source audit
+Wolfram independently simplified
 
-Fisher Theorem 2.1: odd m gives alternating self-pairings with next-stage kernels; even m gives S_m x S'_m with left/right kernels S_{m+1},S'_{m+1}. Section 4 Algorithm 4.1 describes lifting through Sel(m). Section 5 equations (8)-(14) give C1 through C4 and pushout functions f1 through f4. In particular C1 is the binary quartic above and f2 is obtained only after a conic parametrisation.
+    h^2 - 113(f^2-g^2)
 
-No value of Theta_2(113,2) is claimed yet. No BSD solution or new theorem is claimed.
+to zero identically. Thus
+
+    (s^2:t^2:r)=(f:g:h)
+
+is an authenticated instance of Fisher equation (9), up to the common projective scale represented by xi2 in equation (10).
+
+## Pushout function now explicit
+
+Fisher's pushout-function paragraph following diagram (14) gives on C1
+
+    f2 = f(l,m)/m^2.
+
+For this E113 parametrisation,
+
+    f2 = (l^2+113m^2)/m^2.
+
+The next lift C2 therefore has simultaneous conics
+
+    l^2+113m^2 = xi2 s^2,
+    l^2-113m^2 = xi2 t^2,
+
+for a squareclass xi2 chosen so that C2 is everywhere locally soluble. The abstract equality S2=S1 proves that at least one such lift exists, but it does not identify xi2; no value is guessed here.
+
+## Next exact calculation
+
+Determine xi2 by exact local analysis of these simultaneous conics at all relevant places. Once an everywhere locally soluble C2 lift is fixed, choose certified local points on C1/C2 in Fisher's convention and evaluate
+
+    sum_v (f2(P_v),2)_v.
+
+Only finitely many places contribute, but the bad set must be derived from the chosen integral model and f2 rather than assumed to be only {2,113,infinity}. This sum is Theta_2(113,2).
+
+No analytic rank input, numerical L-value, BSD assumption, or guessed covering is used here. No complete BSD solution is claimed.
