@@ -1,0 +1,26 @@
+{
+  "BSD_H2_endpoint_2026-09-14.zip": {
+    "bytes": 37645,
+    "sha256": "bbad1b3185e217bb5f169f1f4862de8b40466a1927ea44c8bd139eeffd381c4f"
+  },
+  "RESEARCH.md": {
+    "bytes": 22979,
+    "sha256": "fd9a286295ad221b8d8830e8c1f6fd4b637c8829d0a581aeb9af565cd9eb13b4"
+  },
+  "BSD_H3_exact_descent_2026-09-15.zip": {
+    "bytes": 20658,
+    "sha256": "f0f24cf26c29b8d5f3f99594da36b9284405907f4e4ba144f4ce9eb237295c97"
+  },
+  "BSD_research_checkpoint_2026-09-14.zip": {
+    "bytes": 167941,
+    "sha256": "3826faa846ccc4ac6ade9f28621b178e37ce9a4cb64132e0d95c4c98b91b68ff"
+  },
+  "runs/2026-09-14-higher-descent/RESEARCH.md": {
+    "bytes": 20355,
+    "sha256": "05d079faaa27d75dd6e073d7b68aa772ea9c79ab8f329661249adf80af3a053e"
+  },
+  "runs/2026-09-15-isogeny-audit/RESEARCH.md": {
+    "bytes": 25857,
+    "sha256": "54d19d9cbbc66680cdfa43a4a749662b1ee377fb895d2de923a6872e9ae85a74"
+  }
+}

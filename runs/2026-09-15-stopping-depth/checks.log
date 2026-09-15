@@ -1,0 +1,17 @@
+$ npm run lint
+exit=0 elapsed_seconds=0.9816
+> bsd-h4-stopping-depth@1.0.0 lint
+> tsc --noEmit -p tsconfig.json
+$ npm run typecheck
+exit=0 elapsed_seconds=0.9509
+> bsd-h4-stopping-depth@1.0.0 typecheck
+> tsc --noEmit -p tsconfig.json
+$ npm test
+exit=0 elapsed_seconds=1.0697
+status=PASS assertions=669
+$ npm run test:symbolic
+exit=0 elapsed_seconds=1.6899
+status=PASS assertions=38
+PASS deterministic result objects match previously saved exact output
+PASS all six preexisting BSD files match preservation hashes
+PASS H3 replay sources byte-identical to preserved archive
