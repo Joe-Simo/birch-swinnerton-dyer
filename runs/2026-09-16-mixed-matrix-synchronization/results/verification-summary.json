@@ -1,0 +1,7 @@
+{
+  "status":"passed",
+  "composite_image_sizes":{"15":2880,"21":8064,"35":40320,"65":262080},
+  "elementary_power_moduli":[3,5,7,9,13,15],
+  "theorem":"For odd N, H and V generate SL2(Z/NZ); for coprime odd M,N the synchronized image is the direct product by CRT.",
+  "consequence":"Independent finite odd-prime character sieves cannot obstruct arbitrary mixed words if every local acceptance set is nonempty."
+}
