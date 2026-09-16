@@ -1,0 +1,14 @@
+Accepted exact Wolfram Language cross-check, 2026-09-16:
+
+{True, 226, 225, 901,
+ {{17,4},{73,1},{113,1},{137,0},{257,0},{313,1},{13873,2},{28657,1},{69457,1},{176809,1},{1389623369,1}},
+ {True,True,True,True,True,True,True},
+ True}
+
+Interpretation:
+- the two Phi applications preserve the same intermediate fiber parameter;
+- final x numerator/denominator have 226/225 digits and G has 901 digits;
+- exact valuations are shown;
+- PrimeQ is True for 73,113,313,28657,69457,176809,1389623369;
+- the final quartic-surface residual vanishes exactly.
+The accepted call emitted no warnings. One earlier external 502 and one syntax-error attempt supplied no evidence and are excluded.
