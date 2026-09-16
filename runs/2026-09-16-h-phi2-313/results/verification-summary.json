@@ -1,0 +1,10 @@
+{
+  "status":"passed",
+  "word":"H,Phi,Phi",
+  "digits":{"A":226,"B":225,"G":901},
+  "G_sha256":"cf1d1f9d59882115393945b02b6492049757b201cb58106b9ced71313c95194e",
+  "valuations":{"2":0,"13":0,"17":4,"73":1,"113":1,"137":0,"257":0,"313":1,"13873":2,"28657":1,"69457":1,"176809":1,"1389623369":1},
+  "certified_primes":[73,113,313,28657,69457,176809,1389623369],
+  "G_over_313_is_square":false,
+  "scope":"Exact restricted transport certificate; not exact rank, analytic order, prescribed-prime theorem, or complete BSD."
+}
