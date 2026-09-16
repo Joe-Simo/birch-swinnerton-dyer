@@ -1,0 +1,6 @@
+{
+  "name":"bsd-h19-h-phi2-313",
+  "private":true,
+  "type":"module",
+  "scripts":{"test":"python3 verify.py"}
+}
