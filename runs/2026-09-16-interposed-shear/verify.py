@@ -129,7 +129,7 @@ G=A**4+6*A*A*B*B+B**4
 assert Fraction(G,B**4)==fplus(x2)
 assert w2*w2==fplus(x2)*fminus(y2)
 
-vals={p:vp(G,p) for p in [113,137,241,257,281,313,353,2113,2473,2657,50417,180097]}
+vals={p:vp(G,p) for p in [113,137,241,257,281,313,353,2113,2473,2657,190537]}
 assert vals[137]==0 and vals[313]==1
 assert vals[113]==vals[241]==vals[2113]==vals[2657]==0
 assert vals[281]==vals[353]==vals[2473]==vals[190537]==1
