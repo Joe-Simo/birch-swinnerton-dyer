@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "family": "H^m Phi V^n Phi",
+  "target_squareclass": 313,
+  "target_classes_mod_170": [0,12,37,62,74,76,80,86,92,122,152,158,164,168],
+  "complete_constraints": [
+    {"p":13,"local":[10,10],"global":[10,170],"survivors":64,"ambiguous":[2,20]},
+    {"p":31,"local":[8,16],"global":[40,1360],"survivors":1652,"ambiguous":[0,16]},
+    {"p":29,"local":[10,10],"global":[40,1360],"survivors":1444,"ambiguous":[2,12]},
+    {"p":23,"local":[2,12],"global":[40,4080],"survivors":3788,"ambiguous":[0,8]},
+    {"p":71,"local":[18,36],"global":[360,12240],"survivors":49630,"ambiguous":[0,64]},
+    {"p":79,"local":[20,40],"global":[360,12240],"survivors":22782,"ambiguous":[6,20]},
+    {"p":127,"local":[8,64],"global":[360,48960],"survivors":53948,"ambiguous":[0,36]},
+    {"p":157,"local":[30,510],"global":[360,48960],"survivors":35870,"ambiguous":[6,38]},
+    {"p":179,"local":[90,90],"global":[360,48960],"survivors":17504,"ambiguous":[2,80]},
+    {"p":191,"local":[12,96],"global":[360,48960],"survivors":8916,"ambiguous":[0,12]},
+    {"p":239,"local":[20,120],"global":[360,48960],"survivors":3870,"ambiguous":[0,40]},
+    {"p":359,"local":[10,180],"global":[360,48960],"survivors":1632,"ambiguous":[0,6]},
+    {"p":53,"local":[34,170],"global":[6120,48960],"survivors":4618,"ambiguous":[4,86]},
+    {"p":199,"local":[10,100],"global":[6120,244800],"survivors":276,"ambiguous":[2,19]},
+    {"p":113,"local":[50,200],"global":[30600,244800],"survivors":584,"ambiguous":[12,120]},
+    {"p":83,"local":[42,42],"global":[214200,1713600],"survivors":1396,"ambiguous":[2,52]}
+  ],
+  "period_filters": [
+    [1151,986],[2719,436],
+    [67,2774],[271,1158],[349,598],[1223,288],[4079,108],[12239,60],
+    [599,216],
+    [1699,248],[2399,120],[15299,86],[89,60],[122399,52],
+    [1427,370],[11423,166],[21419,86],[5711,40],[1399,14],[1259,8],[42101,0]
+  ],
+  "final_moduli": [214200,1713600],
+  "final_eight": [
+    [85172,203272],[85172,631672],[85172,1060072],[85172,1488472],
+    [192272,203272],[192272,631672],[192272,1060072],[192272,1488472]
+  ],
+  "final_prime": 42101,
+  "final_regular_value": {"x":15355,"Fplus":38394,"character":1,"target_character":-1},
+  "survivors": 0,
+  "conclusion": "No integer pair (m,n) in H^m Phi V^n Phi can have final squareclass 313."
+}
