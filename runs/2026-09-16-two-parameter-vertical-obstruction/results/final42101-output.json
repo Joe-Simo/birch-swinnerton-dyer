@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "prime": "42101",
+  "periods": {"m": 214200, "n": 1713600},
+  "final_value": {"x": "15355", "Fplus": "38394", "character": 1, "target_character": -1},
+  "states": [
+    [85172,203272],[85172,631672],[85172,1060072],[85172,1488472],
+    [192272,203272],[192272,631672],[192272,1060072],[192272,1488472]
+  ],
+  "execution": {
+    "node": "22.16.0",
+    "typescript": "5.8.3",
+    "typecheck": "passed",
+    "compile": "passed",
+    "runtime": "passed"
+  }
+}
