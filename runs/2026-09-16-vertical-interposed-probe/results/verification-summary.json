@@ -1,0 +1,13 @@
+{
+  "status":"passed",
+  "family":"H^m Phi V^n Phi",
+  "p313_target":{"period_m":2,"period_n":170,"regular_zero_n":[0,74,76,80,92,152,164,168],"ambiguous_n":[12,37,62,86,122,158]},
+  "exact_word":"H^-1 Phi V^-6 Phi",
+  "digits":{"A":65009,"B":65008,"G":260033},
+  "G_sha256":"7aa299919d89963657a1896d0785e0357941452f493295b90fafcd2b2160ea15",
+  "valuations":{"17":2,"41":1,"137":0,"313":1},
+  "tested_zero_valuations":[73,113,193,241,257,281,353,1409,1657,2017,2473,2833,4481,7057,7577,190537],
+  "G_over_313_is_square":false,
+  "p41_slice":"For m=-1, every regular local class satisfying the squareclass-313 character condition has odd n mod52; all regular p313 target-zero classes are even, so this slice has no regular simultaneous solution.",
+  "conclusion":"The vertical architecture remains open globally; this exact regular word removes137 and keeps313 but has an odd41 cofactor."
+}
