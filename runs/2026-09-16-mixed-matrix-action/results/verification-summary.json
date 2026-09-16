@@ -1,0 +1,6 @@
+{
+  "status":"passed",
+  "image_sizes":{"2":1,"3":24,"4":4,"5":120,"7":336,"8":32,"13":2184,"17":4896},
+  "odd_prime_formula":"p(p^2-1) for p=3,5,7,13,17",
+  "interpretation":"mixed H/V word search can be represented by finite determinant-one matrix images; no all-word squareclass-313 conclusion yet"
+}
