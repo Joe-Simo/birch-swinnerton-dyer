@@ -1,0 +1,16 @@
+Accepted Wolfram Language cross-check, 2026-09-16.
+
+Output:
+{{{251,-1,14,0,{0,1,3,7,11,13}},
+  {127,-1,8,0,{0,1,4,5}},
+  {239,-1,20,0,{1,3,5,6,7,11,13,15,16,17}},
+  {31,-1,8,0,{0,2,3,4,6,7}},
+  {457,-1,10,0,{3}}},
+ 280,
+ {}}
+
+Fields in each local row are
+  {ell, LegendreSymbol[137,ell], exact m-period, ambiguous states, allowed residues}.
+The last two entries are the LCM of all periods and the surviving residue classes modulo that LCM.
+
+The Wolfram evaluator emitted a Symbol::undefined2 diagnostic naming local Module symbols. The returned mathematical data exactly matches the independently implemented Python certificate. The warning is preserved and this output is treated as a qualified implementation cross-check, not a proof authority.
