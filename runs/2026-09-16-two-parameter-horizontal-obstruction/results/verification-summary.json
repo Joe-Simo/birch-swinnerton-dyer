@@ -1,0 +1,11 @@
+{
+  "status":"passed",
+  "target_prime":313,
+  "target_period":{"m":2,"n":170,"regular_zero_n":[0,54,56,168],"ambiguous_n":[27,76,96,101,112,123,128,148],"conservative_allowed_n":[0,27,54,56,76,96,101,112,123,128,148,168]},
+  "global_moduli":[360,24480],
+  "base_survivor_counts":[[13,54],[31,404],[29,196],[23,480],[71,5840],[79,4088],[127,5236],[157,2956],[179,1168],[191,752],[239,408],[359,152]],
+  "final_elimination":[[1151,152,132],[1549,132,72],[2719,72,24],[4561,24,0]],
+  "implementations":["Python standard-library exact finite-field checker","TypeScript bigint independent checker"],
+  "wolfram":"attempted; HTTP 502; no evidence counted",
+  "conclusion":"No integer pair (m,n) in the H^m Phi H^n Phi family from the 137 seed can have final common squareclass exactly 313."
+}
