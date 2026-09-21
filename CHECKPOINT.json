@@ -37,7 +37,8 @@
     "All-curves/all-ranks arithmetic-to-complex-order mechanism remains unproved.",
     "Iwasawa control/main-conjecture hypotheses, higher-block nondegeneracy, Sha corank and complex/p-adic comparison are not silently assumed.",
     "Original Monsky appendix proof-level audit remains incomplete; the exact restated theorem is recorded.",
-    "E_41 analytic order certified: L''(E_41, 1) = 16.4258 != 0 proves ord_(s=1) = 2 matching algebraic rank 2; all 646 candidate curves with n <= 25,000 certified ord=2."
+    "E_41 analytic order certified: L''(E_41, 1) = 16.4258 != 0 proves ord_(s=1) = 2 matching algebraic rank 2; all 646 candidate curves with n <= 25,000 certified ord=2.",
+    "Standing exclusion enforced: Never re-search rank 0/1 (proven by Coates-Wiles, Gross-Zagier, Kolyvagin, Modularity, Bhargava-Skinner-Zhang); focus remains strictly on the unsolved rank >= 2 frontier."
   ],
   "next_executable_step": "Scale higher descent and Iwasawa height pairing nondegeneracy criteria beyond congruent curves.",
   "reproduce": [

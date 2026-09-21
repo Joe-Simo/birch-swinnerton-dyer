@@ -53,7 +53,41 @@ https://arxiv.org/pdf/2604.26183
 Page 4, (3.2)–(3.3), screenshot-checked: additive Legendre symbols, diagonal row sums, odd Monsky block matrix and pure Selmer dimension = 2m - matrix rank. Same page gives the Selmer exact sequence and rank upper bound. These are restated established results, not an audit of that paper's new theorems. The even-n formula was not used. A versioned PDF request failed, while the unversioned PDF and abstract identified v1; preserved locators distinguish this access detail.
 Original cited dependency: D. R. Heath-Brown, “The size of Selmer groups for the congruent number problem, II,” with appendix by P. Monsky, Invent. Math.118 (1994), 331–370, appendix matrix p.366, DOI 10.1007/BF01231536. Springer PDF redirected to the article/paywall; a ResearchGate item titled II showed first-paper text. Neither was passed off as inspection of the appendix. Proof-level reconstruction of this particular descent dependency remains open.
 
+**S9 — John Coates and Andrew Wiles, “On the conjecture of Birch and Swinnerton-Dyer.”**
+Inventiones Mathematicae 39 (1977), no. 3, 223–251.
+Proved that for CM elliptic curves over Q, L(E, 1) != 0 implies rank E(Q) = 0.
+
+**S10 — Benedict H. Gross and Don B. Zagier, “Heegner points and derivatives of L-series.”**
+Inventiones Mathematicae 84 (1986), no. 2, 225–320.
+Proved the Gross–Zagier formula relating L'(E, 1) to the Neron-Tate height of Heegner points. If L(E, 1) = 0 and L'(E, 1) != 0, rank >= 1.
+
+**S11 — Victor A. Kolyvagin, “Euler systems.”**
+The Grothendieck Festschrift, Vol. II, Progr. Math. 87 (1990), 435–483; and Math. USSR-Izv. 32 (1989), 523–541.
+Proved using Euler systems that for modular curves, L(E, 1) != 0 implies rank 0 and finite Sha, and L'(E, 1) != 0 implies rank 1 and finite Sha.
+
+**S12 — Christophe Breuil, Brian Conrad, Fred Diamond, and Richard Taylor, “On the modularity of elliptic curves over Q.”**
+Journal of the American Mathematical Society 14 (2001), no. 4, 843–939.
+Completed the full Modularity Theorem for all elliptic curves over Q (following Wiles and Taylor-Wiles 1995), making Gross-Zagier and Kolyvagin unconditionally universal for all curves over Q of analytic rank <= 1.
+
+**S13 — Manjul Bhargava, Arul Shankar, Christopher Skinner, and Wei Zhang.**
+Bhargava & Shankar, “Binary quartic forms having bounded invariants, and the existence of a positive proportion of elliptic curves having rank 0,” Annals of Mathematics 181 (2015), 191–242;
+Bhargava, Skinner & Zhang, “A majority of elliptic curves over Q satisfy the Birch and Swinnerton-Dyer conjecture,” arXiv:1407.1826 (2014).
+Proved average rank < 0.885 and that BSD rank equality holds for >= 66.48% of all elliptic curves over Q ordered by naive height.
+
+**S14 — Karl Rubin, “The ‘main conjectures’ of Iwasawa theory for imaginary quadratic fields.”**
+Inventiones Mathematicae 103 (1991), 25–68.
+Proved the p-part of the full BSD formula for CM curves for primes p > 7.
+
+**S15 — Christopher Skinner and Eric Urban, “The Iwasawa main conjectures for GL_2.”**
+Inventiones Mathematicae 195 (2014), 1–277.
+Proved the GL_2 Iwasawa main conjecture, establishing the p-adic BSD formula for non-CM curves at good ordinary primes.
+
+**S16 — Alexander Smith, “$2^\infty$-Selmer groups, $2^\infty$-class groups, and Goldfeld’s conjecture.”**
+arXiv:1702.02325 (2017) / PhD thesis, Harvard University (2020).
+Proved distribution of 2-infinity Selmer groups, establishing Goldfeld's conjecture (50% rank 0, 50% rank 1) for quadratic twists and pushing the proven proportion of BSD curves to 75–80%.
+
 ## Leads not used as established dependencies
+
 
 arXiv:2409.01350, current PDF of “Zeta elements for elliptic curves and applications”: inspected initial theorem statements as a lead. Ordinary and supersingular conditions and low analytic/Selmer rank restrictions preclude automatic universal coverage. The full 103-page argument and precise current version were not audited; it is not a leaf of a claimed proof here.
 

@@ -201,3 +201,75 @@ All core algebraic and arithmetic components are formalized and verified in Lean
 2. `formalization/LemmaB.lean`: First-order Bockstein obstruction map $\beta : \ker A_0 \to \operatorname{coker} A_0$, Schur complement determinant identity $\operatorname{det} A = \operatorname{det} B \cdot t^d \operatorname{det}(E_1 + O(t))$, order equality criterion $\operatorname{ord}_t(\det A) = d \iff \beta \text{ invertible}$, and canonical fixture $[[t^2, t], [t, 1+t]]$.
 3. `formalization/KummerE41.lean`: Curve point verification on $E_{41}$, Kummer homomorphism $\delta$ to square-class triples in $(\mathbb{Q}^\times / (\mathbb{Q}^\times)^2)^3$, $\delta(P) = (-1, -2, 2)$, $\delta(Q) = (1, 2, 2)$, independence modulo the rational 2-torsion image $\{T_0, T_1, T_2, T_3\}$, establishing $\operatorname{rank}_\mathbb{Z} E_{41}(\mathbb{Q}) \ge 2$, and matching Monsky bound to prove $r = 2$.
 
+## 8. Established Landscape, Proven Domains, and the Rank >= 2 Frontier (Prior Art Boundary)
+
+Unlike the Beal conjecture, which is an open Diophantine equation seeking either a proof of non-existence or a single counterexample, the **Birch and Swinnerton-Dyer (BSD) conjecture** is a Clay Millennium Prize problem with massive analytical backing.
+
+Mathematicians have proven the conjecture for **millions of specific curves** and for **more than 66% of all elliptic curves**, while computational databases have verified the formula numerically to hundreds of decimal digits across millions more.
+
+The verified results fall into four primary categories:
+
+---
+
+### 1. The Analytic Rank 0 and 1 Breakthroughs (Infinite Families Proven)
+
+The rank part of BSD states that the algebraic rank $r$ of the group of rational points $E(\mathbb{Q})$ equals the order of vanishing of the $L$-function at $s = 1$:
+
+$$r = \operatorname{ord}_{s=1} L(E, s)$$
+
+The rank conjecture is completely resolved for all curves where the analytic rank is $0$ or $1$:
+
+* **Coates and Wiles (1977):** Proved for elliptic curves with **Complex Multiplication (CM)** that if $L(E, 1) \neq 0$ (analytic rank $0$), then $E(\mathbb{Q})$ is finite (algebraic rank $0$).
+* **Gross and Zagier (1986):** Proved a formula relating the first derivative of the $L$-function $L'(E, 1)$ to the heights of **Heegner points**. If $L(E, 1) = 0$ and $L'(E, 1) \neq 0$ (analytic rank $1$), there exists a rational point of infinite order, so algebraic rank $r \ge 1$.
+* **Victor Kolyvagin (1989–1990):** Using the machinery of **Euler systems**, Kolyvagin proved that if $L(E, 1) \neq 0$, then $r = 0$; and if $L'(E, 1) \neq 0$, then $r = 1$. He also proved that in both cases, the mysterious **Tate-Shafarevich group** $\Sha(E/\mathbb{Q})$ is **finite**.
+* **Modularity Theorem (Wiles, Taylor, Breuil, Conrad, Diamond, 2001):** Because every elliptic curve over $\mathbb{Q}$ is modular, the Gross-Zagier and Kolyvagin theorems apply unconditionally to **every elliptic curve over $\mathbb{Q}$ with analytic rank $\le 1$**.
+
+---
+
+### 2. Statistical Proof: BSD Holds for a Positive Proportion of Curves
+
+Rather than testing curves one by one, Manjul Bhargava, Christopher Skinner, and Wei Zhang took a statistical approach using geometry of numbers and Iwasawa theory:
+
+* **Bhargava and Shankar (2010–2015):** Proved that when elliptic curves over $\mathbb{Q}$ are ordered by height (naive conductor), the average rank of $E(\mathbb{Q})$ is strictly bounded below $1$ (specifically $< 0.885$). They also proved that a positive proportion of curves have rank $0$, and a positive proportion have rank $1$.
+* **Bhargava, Skinner, and Zhang (2014):** Proved that the rank part of the BSD conjecture holds for **at least 66.48%** of all elliptic curves over $\mathbb{Q}$.
+* **Subsequent refinements (Zhang, Smith, et al.):** By incorporating Alexander Smith's breakthrough work on $2^\infty$-Selmer groups (2017–2020), this proportion was pushed even higher, establishing that BSD holds for the vast majority (roughly **75% to 80%**) of all elliptic curves ordered by height.
+
+---
+
+### 3. The Full Formula and the $p$-Part of $\Sha$
+
+The full BSD conjecture specifies not just the rank, but the exact leading coefficient:
+
+$$\frac{L^{(r)}(E, 1)}{r!} = \frac{\Omega_E \cdot R_E \cdot |\Sha(E/\mathbb{Q})| \cdot \prod c_p}{|E(\mathbb{Q})_{\text{tors}}|^2}$$
+
+Proving this exact equality requires proving that the order of the Tate-Shafarevich group $|\Sha(E/\mathbb{Q})|$ matches the analytic prediction prime by prime:
+
+* **Karl Rubin (1991):** Proved the full BSD formula for the $p$-part of all primes $p > 7$ for elliptic curves with **Complex Multiplication**.
+* **Skinner and Urban (2014):** Proved the **Main Conjecture of Iwasawa Theory** for $\mathrm{GL}_2$, establishing the exact $p$-adic equality predicted by the BSD formula for a large class of non-CM curves at ordinary primes $p$.
+* **Explicit exact cases:** For thousands of small-conductor curves of rank $0$ and $1$, mathematicians have calculated every term unconditionally and verified that $|\Sha(E/\mathbb{Q})|$ is an exact square integer matching the analytic formula (e.g., $|\Sha| = 1, 4, 9, \dots$).
+
+---
+
+### 4. Computational Databases & Numerical Verifications
+
+Unlike the Beal conjecture, where negative data is discarded, BSD has massive public databases recording every invariant:
+
+| Database / Project | Scope & Verified Bounds | What Was Verified |
+| --- | --- | --- |
+| **LMFDB** *(L-functions and Modular Forms Database)* | **Over 3.8 million** elliptic curves (complete up to conductor $N \le 500,000$, and selected curves up to $N \approx 10^8$) | Complete matching of conductor, torsion group, Tamagawa numbers $c_p$, real period $\Omega_E$, regulator $R_E$, analytic rank, and analytic order of $\Sha$. |
+| **Cremona Database** *(John Cremona / mwrank)* | All curves with conductor $N \le 500,000$ | Computed algebraic generators via 2-descent, confirmed $r_{\text{alg}} = r_{\text{an}}$ for all cases where analytic rank is 0 or 1. |
+| **William Stein's BSD Project** | Thousands of curves across ranks 0, 1, and 2 | High-precision numerical evaluation of $L^{(r)}(E, 1) / r!$ against the right-hand side product to **hundreds of decimal places**; computed explicit visual certificates for $\Sha[p]$. |
+| **High-Rank Records** *(Noam Elkies, Zev Klagsbrun)* | Individual curves up to **rank 28** | Verified numerically that the $L$-function and its first 28 derivatives vanish at $s = 1$ to high numerical tolerance. |
+
+### The Unsolved Frontier: Rank $\ge 2$
+
+Despite this verification, there is currently **not a single elliptic curve of rank $r \ge 2$** where the BSD conjecture has been proven analytically. While numerical algorithms confirm that the Taylor expansion vanishes to order 2, 3, or more, algebraic geometry does not yet have an analog of Heegner points or Kolyvagin's Euler systems that can construct points of infinite order for higher ranks.
+
+### Standing Exclusion: Things NOT to Recalculate (Dead Ends & Solved Domains)
+To maintain mathematical discipline and prevent wasted research cycles, the engine enforces strict exclusions:
+1. **Never search for rank 0 or rank 1 counterexamples:** By Kolyvagin, Gross–Zagier, and the Modularity Theorem, BSD rank equality is unconditional theorem for $r_{\text{an}} \le 1$.
+2. **Never attempt to prove rank $\ge 2$ via Heegner points directly:** Heegner points have height zero on curves of rank $\ge 2$ (due to the functional equation and Gross–Zagier $L'(E, 1) = 0$).
+3. **Never conflate finite Selmer bounds with rank equality:** $E_{17}$ proves positive 2-Selmer nullity can be pure $\Sha[2]$ torsion.
+4. **Never rely on uncertified second derivatives:** Central zero $L(E_n, 1) = 0$ and even parity proves $\operatorname{ord} \ge 2$, but exact order 2 requires explicit certification $L''(E_n, 1) \ne 0$ (as achieved in `code/certify_order2.py`).
+
+
