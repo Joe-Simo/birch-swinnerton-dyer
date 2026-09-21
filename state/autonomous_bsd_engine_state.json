@@ -1,0 +1,35 @@
+{
+  "engine_version": "1.0-bsd-autonomous",
+  "cycle": 3,
+  "sieve_bound": 5000,
+  "total_curves_tested": 811,
+  "certified_rank_zero_curves": 330,
+  "central_vanishing_curves": 481,
+  "even_order_ge_2_curves": 72,
+  "odd_order_ge_1_curves": 409,
+  "burungale_tian_conflicts": 0,
+  "counterexample_found": false,
+  "last_cycle_timestamp": 1790031040,
+  "history": [
+    {
+      "cycle": 1,
+      "bound": 511,
+      "total_curves": 209,
+      "rank_zero": 83,
+      "vanishing": 126,
+      "even_ge_2": 18,
+      "odd_ge_1": 108,
+      "timestamp": 1790031037
+    },
+    {
+      "cycle": 2,
+      "bound": 2000,
+      "total_curves": 811,
+      "rank_zero": 330,
+      "vanishing": 481,
+      "even_ge_2": 72,
+      "odd_ge_1": 409,
+      "timestamp": 1790031040
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Environment & secrets
+.env
+.env.local
+*.env
+
+# Cache & artifacts
+.cache/
+node_modules/
+results/build/
+
+# Compiled C binaries & objects
+*.o
+*.a
+*.so
+*.dylib
+congruent_sieve_fast
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Lean 4 build artifacts
+.lake/
