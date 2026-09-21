@@ -160,7 +160,11 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
 
     sieve_proc = subprocess.run([str(binary), str(bound), "--json"], capture_output=True, text=True)
     if sieve_proc.returncode != 0:
-        raise RuntimeError(f"C Sieve failed: {sieve_proc.stderr}")
+        print(f"[Warning] Sieve attempt 1 exited with code {sieve_proc.returncode}. Retrying in 2 seconds...")
+        time.sleep(2)
+        sieve_proc = subprocess.run([str(binary), str(bound), "--json"], capture_output=True, text=True)
+    if sieve_proc.returncode != 0:
+        raise RuntimeError(f"C Sieve failed with code {sieve_proc.returncode}: {sieve_proc.stderr}")
 
     sieve_res = json.loads(sieve_proc.stdout.strip())
     total_tested = sieve_res["total_tested"]

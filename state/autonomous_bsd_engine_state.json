@@ -1,15 +1,15 @@
 {
   "engine_version": "1.0-bsd-autonomous",
-  "cycle": 12,
-  "sieve_bound": 4000000,
-  "total_curves_tested": 810591,
-  "certified_rank_zero_curves": 371679,
-  "central_vanishing_curves": 438912,
-  "even_order_ge_2_curves": 33611,
-  "odd_order_ge_1_curves": 405301,
+  "cycle": 14,
+  "sieve_bound": 16000000,
+  "total_curves_tested": 3242258,
+  "certified_rank_zero_curves": 1508864,
+  "central_vanishing_curves": 1733394,
+  "even_order_ge_2_curves": 112248,
+  "odd_order_ge_1_curves": 1621146,
   "burungale_tian_conflicts": 0,
   "counterexample_found": false,
-  "last_cycle_timestamp": 1790031571,
+  "last_cycle_timestamp": 1790031968,
   "history": [
     {
       "cycle": 1,
@@ -120,6 +120,26 @@
       "even_ge_2": 33611,
       "odd_ge_1": 405301,
       "timestamp": 1790031571
+    },
+    {
+      "cycle": 12,
+      "bound": 4000000,
+      "total_curves": 1621145,
+      "rank_zero": 749098,
+      "vanishing": 872047,
+      "even_ge_2": 61461,
+      "odd_ge_1": 810586,
+      "timestamp": 1790031961
+    },
+    {
+      "cycle": 13,
+      "bound": 8000000,
+      "total_curves": 3242258,
+      "rank_zero": 1508864,
+      "vanishing": 1733394,
+      "even_ge_2": 112248,
+      "odd_ge_1": 1621146,
+      "timestamp": 1790031968
     }
   ]
 }
