@@ -1,0 +1,54 @@
+{
+  "project": "Birch–Swinnerton-Dyer",
+  "conjecture": "ord_(s=1) L(E,s) = rank_Z E(Q)",
+  "candidates": [
+    {
+      "id": "C001",
+      "claim": "Iwasawa main conjecture specialization: length(M) = ord_T L_p(E,T) directly equals Mordell-Weil rank r.",
+      "method": "Iwasawa theory, p-adic L-functions, characteristic ideals.",
+      "status": "REFUTED",
+      "failure_reason": "Refuted by exact Smith-form analysis. ord(det A) - d = sum(e_i - 1) >= 0. Duality does not eliminate higher augmentation blocks.",
+      "extracted": ["Lemma A: length and specialization formula", "Lemma B: first-order Bockstein derivative criterion"]
+    },
+    {
+      "id": "C002",
+      "claim": "Pure 2-Selmer nullity dim Sel_2(E/Q) - 2 equals rational-point rank r.",
+      "method": "2-descent, Monsky matrices, Selmer exact sequences.",
+      "status": "REFUTED",
+      "failure_reason": "Refuted by E_17: pure Selmer nullity is 2, but rank is 0. Isolates non-trivial Sha[2] order.",
+      "extracted": ["Kummer 2-descent independence proof on E_41 proving rank >= 2 matching Monsky upper bound 2"]
+    },
+    {
+      "id": "C003",
+      "claim": "Tunnell weight-3/2 modular form coefficients a(n) certify rank 0 when nonzero, and central vanishing when zero.",
+      "method": "Waldspurger theorem, weight 3/2 modular forms, Coates-Wiles.",
+      "status": "ACTIVE",
+      "failure_reason": null,
+      "extracted": ["Exact ternary counts A32 and B8", "Nonzero a(n) implies rank 0 for odd squarefree n"]
+    },
+    {
+      "id": "C004",
+      "claim": "Burungale–Tian CM 2-converse: zero 2-Selmer dimension implies L(E_n, 1) != 0 and rank 0.",
+      "method": "Bloch-Kato Selmer vanishing, specialized zeta elements, explicit reciprocity.",
+      "status": "ACTIVE",
+      "failure_reason": null,
+      "extracted": ["Converse bridge: dim Sel_2 = 2 implies Sel_(2^infinity) = 0 implies L(1) != 0"]
+    },
+    {
+      "id": "C005",
+      "claim": "Howard derived p-adic heights: higher augmentation blocks are controlled by nondegeneracy of derived heights.",
+      "method": "Derived p-adic heights, p-adic regulators, Iwasawa cohomology.",
+      "status": "PROMISING",
+      "failure_reason": null,
+      "extracted": ["Even-length augmentation block multiplicities are even"]
+    },
+    {
+      "id": "C006",
+      "claim": "Analytic order-2 certification: evaluate L''(E_n, 1) for the 18 even-parity zero-value curves to certify ord = 2.",
+      "method": "Numerical integration of Mellin transforms, modular symbols, high-precision gamma factors.",
+      "status": "ACTIVE",
+      "failure_reason": null,
+      "extracted": ["Parity gives order at least 2; nonvanishing second derivative certifies exact order 2"]
+    }
+  ]
+}

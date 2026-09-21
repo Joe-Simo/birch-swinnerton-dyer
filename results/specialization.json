@@ -1,0 +1,6809 @@
+{
+  "experiment": "A1",
+  "status": "completed",
+  "sympyVersion": "1.14.0",
+  "arithmetic": "exact rationals and polynomials over Q",
+  "generatedCases": 155,
+  "explicitFixtures": [
+    {
+      "label": "unit-at-zero",
+      "matrix": [
+        [
+          "T + 1"
+        ]
+      ],
+      "determinant": "T + 1",
+      "order": 0,
+      "nullity": 0,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jetIncrements": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "simple-zero",
+      "matrix": [
+        [
+          "T"
+        ]
+      ],
+      "determinant": "T",
+      "order": 1,
+      "nullity": 1,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "jetIncrements": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "double-zero",
+      "matrix": [
+        [
+          "T**2"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "triple-zero-parity-insufficient",
+      "matrix": [
+        [
+          "T**3"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "mixed-exponents",
+      "matrix": [
+        [
+          "T",
+          "0"
+        ],
+        [
+          "0",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "extension-with-unit-off-diagonal",
+      "matrix": [
+        [
+          "T",
+          "1"
+        ],
+        [
+          "0",
+          "T"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "Schur-complement-delayed-order",
+      "matrix": [
+        [
+          "T**2",
+          "T"
+        ],
+        [
+          "T",
+          "T + 1"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "paired-even-skew",
+      "matrix": [
+        [
+          "0",
+          "T**2"
+        ],
+        [
+          "-T**2",
+          "0"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "allGeneratedCases": [
+    {
+      "label": "exponents-(0,)",
+      "matrix": [
+        [
+          "1"
+        ]
+      ],
+      "determinant": "1",
+      "order": 0,
+      "nullity": 0,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jetIncrements": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0
+      ]
+    },
+    {
+      "label": "exponents-(1,)",
+      "matrix": [
+        [
+          "T"
+        ]
+      ],
+      "determinant": "T",
+      "order": 1,
+      "nullity": 1,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "jetIncrements": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1
+      ]
+    },
+    {
+      "label": "exponents-(2,)",
+      "matrix": [
+        [
+          "T**2"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2
+      ]
+    },
+    {
+      "label": "exponents-(3,)",
+      "matrix": [
+        [
+          "T**3"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3
+      ]
+    },
+    {
+      "label": "exponents-(4,)",
+      "matrix": [
+        [
+          "T**4"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4
+      ]
+    },
+    {
+      "label": "exponents-(0, 0)",
+      "matrix": [
+        [
+          "T**3 + 1",
+          "T"
+        ],
+        [
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "1",
+      "order": 0,
+      "nullity": 0,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jetIncrements": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(0, 1)",
+      "matrix": [
+        [
+          "T**4 + 1",
+          "T**2"
+        ],
+        [
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T",
+      "order": 1,
+      "nullity": 1,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "jetIncrements": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(0, 2)",
+      "matrix": [
+        [
+          "T**5 + 1",
+          "T**3"
+        ],
+        [
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(0, 3)",
+      "matrix": [
+        [
+          "T**6 + 1",
+          "T**4"
+        ],
+        [
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(0, 4)",
+      "matrix": [
+        [
+          "T**7 + 1",
+          "T**5"
+        ],
+        [
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(1, 0)",
+      "matrix": [
+        [
+          "T**3 + T",
+          "T"
+        ],
+        [
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T",
+      "order": 1,
+      "nullity": 1,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "jetIncrements": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(1, 1)",
+      "matrix": [
+        [
+          "T**4 + T",
+          "T**2"
+        ],
+        [
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 2,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(1, 2)",
+      "matrix": [
+        [
+          "T**5 + T",
+          "T**3"
+        ],
+        [
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(1, 3)",
+      "matrix": [
+        [
+          "T**6 + T",
+          "T**4"
+        ],
+        [
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(1, 4)",
+      "matrix": [
+        [
+          "T**7 + T",
+          "T**5"
+        ],
+        [
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(2, 0)",
+      "matrix": [
+        [
+          "T**3 + T**2",
+          "T"
+        ],
+        [
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(2, 1)",
+      "matrix": [
+        [
+          "T**4 + T**2",
+          "T**2"
+        ],
+        [
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(2, 2)",
+      "matrix": [
+        [
+          "T**5 + T**2",
+          "T**3"
+        ],
+        [
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(2, 3)",
+      "matrix": [
+        [
+          "T**6 + T**2",
+          "T**4"
+        ],
+        [
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(2, 4)",
+      "matrix": [
+        [
+          "T**7 + T**2",
+          "T**5"
+        ],
+        [
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(3, 0)",
+      "matrix": [
+        [
+          "2*T**3",
+          "T"
+        ],
+        [
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(3, 1)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T**2"
+        ],
+        [
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(3, 2)",
+      "matrix": [
+        [
+          "T**5 + T**3",
+          "T**3"
+        ],
+        [
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(3, 3)",
+      "matrix": [
+        [
+          "T**6 + T**3",
+          "T**4"
+        ],
+        [
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(3, 4)",
+      "matrix": [
+        [
+          "T**7 + T**3",
+          "T**5"
+        ],
+        [
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(4, 0)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T"
+        ],
+        [
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(4, 1)",
+      "matrix": [
+        [
+          "2*T**4",
+          "T**2"
+        ],
+        [
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(4, 2)",
+      "matrix": [
+        [
+          "T**5 + T**4",
+          "T**3"
+        ],
+        [
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(4, 3)",
+      "matrix": [
+        [
+          "T**6 + T**4",
+          "T**4"
+        ],
+        [
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(4, 4)",
+      "matrix": [
+        [
+          "T**7 + T**4",
+          "T**5"
+        ],
+        [
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(0, 0, 0)",
+      "matrix": [
+        [
+          "T**3 + 1",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**3 + 1",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "1",
+      "order": 0,
+      "nullity": 0,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "jetIncrements": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(0, 0, 1)",
+      "matrix": [
+        [
+          "T**3 + 1",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**4 + 1",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T",
+      "order": 1,
+      "nullity": 1,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "jetIncrements": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(0, 0, 2)",
+      "matrix": [
+        [
+          "T**3 + 1",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**5 + 1",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        0,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(0, 0, 3)",
+      "matrix": [
+        [
+          "T**3 + 1",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**6 + 1",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        0,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(0, 0, 4)",
+      "matrix": [
+        [
+          "T**3 + 1",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**7 + 1",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(0, 1, 0)",
+      "matrix": [
+        [
+          "T**4 + 1",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**3 + T",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T",
+      "order": 1,
+      "nullity": 1,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "jetIncrements": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(0, 1, 1)",
+      "matrix": [
+        [
+          "T**4 + 1",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**4 + T",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 2,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(0, 1, 2)",
+      "matrix": [
+        [
+          "T**4 + 1",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**5 + T",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(0, 1, 3)",
+      "matrix": [
+        [
+          "T**4 + 1",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**6 + T",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(0, 1, 4)",
+      "matrix": [
+        [
+          "T**4 + 1",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**7 + T",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(0, 2, 0)",
+      "matrix": [
+        [
+          "T**5 + 1",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**3 + T**2",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(0, 2, 1)",
+      "matrix": [
+        [
+          "T**5 + 1",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**4 + T**2",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(0, 2, 2)",
+      "matrix": [
+        [
+          "T**5 + 1",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**5 + T**2",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(0, 2, 3)",
+      "matrix": [
+        [
+          "T**5 + 1",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**6 + T**2",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(0, 2, 4)",
+      "matrix": [
+        [
+          "T**5 + 1",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**7 + T**2",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(0, 3, 0)",
+      "matrix": [
+        [
+          "T**6 + 1",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "2*T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(0, 3, 1)",
+      "matrix": [
+        [
+          "T**6 + 1",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**4 + T**3",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        3,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(0, 3, 2)",
+      "matrix": [
+        [
+          "T**6 + 1",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**5 + T**3",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        3,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(0, 3, 3)",
+      "matrix": [
+        [
+          "T**6 + 1",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**6 + T**3",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        3,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(0, 3, 4)",
+      "matrix": [
+        [
+          "T**6 + 1",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**7 + T**3",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(0, 4, 0)",
+      "matrix": [
+        [
+          "T**7 + 1",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**4 + T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(0, 4, 1)",
+      "matrix": [
+        [
+          "T**7 + 1",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "2*T**4",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        4,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(0, 4, 2)",
+      "matrix": [
+        [
+          "T**7 + 1",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**5 + T**4",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        4,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(0, 4, 3)",
+      "matrix": [
+        [
+          "T**7 + 1",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**6 + T**4",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        4,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(0, 4, 4)",
+      "matrix": [
+        [
+          "T**7 + 1",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**7 + T**4",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        0,
+        4,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(1, 0, 0)",
+      "matrix": [
+        [
+          "T**3 + T",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**3 + 1",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T",
+      "order": 1,
+      "nullity": 1,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "jetIncrements": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(1, 0, 1)",
+      "matrix": [
+        [
+          "T**3 + T",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**4 + 1",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 2,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(1, 0, 2)",
+      "matrix": [
+        [
+          "T**3 + T",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**5 + 1",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(1, 0, 3)",
+      "matrix": [
+        [
+          "T**3 + T",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**6 + 1",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(1, 0, 4)",
+      "matrix": [
+        [
+          "T**3 + T",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**7 + 1",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        0,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(1, 1, 0)",
+      "matrix": [
+        [
+          "T**4 + T",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**3 + T",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 2,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(1, 1, 1)",
+      "matrix": [
+        [
+          "T**4 + T",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**4 + T",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 3,
+      "bocksteinRank": 3,
+      "jetKernelDimensions": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(1, 1, 2)",
+      "matrix": [
+        [
+          "T**4 + T",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**5 + T",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(1, 1, 3)",
+      "matrix": [
+        [
+          "T**4 + T",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**6 + T",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(1, 1, 4)",
+      "matrix": [
+        [
+          "T**4 + T",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**7 + T",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        1,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(1, 2, 0)",
+      "matrix": [
+        [
+          "T**5 + T",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**3 + T**2",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(1, 2, 1)",
+      "matrix": [
+        [
+          "T**5 + T",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**4 + T**2",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        2,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(1, 2, 2)",
+      "matrix": [
+        [
+          "T**5 + T",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**5 + T**2",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(1, 2, 3)",
+      "matrix": [
+        [
+          "T**5 + T",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**6 + T**2",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(1, 2, 4)",
+      "matrix": [
+        [
+          "T**5 + T",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**7 + T**2",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(1, 3, 0)",
+      "matrix": [
+        [
+          "T**6 + T",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "2*T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        3,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(1, 3, 1)",
+      "matrix": [
+        [
+          "T**6 + T",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**4 + T**3",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        3,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(1, 3, 2)",
+      "matrix": [
+        [
+          "T**6 + T",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**5 + T**3",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        3,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(1, 3, 3)",
+      "matrix": [
+        [
+          "T**6 + T",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**6 + T**3",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        3,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(1, 3, 4)",
+      "matrix": [
+        [
+          "T**6 + T",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**7 + T**3",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(1, 4, 0)",
+      "matrix": [
+        [
+          "T**7 + T",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**4 + T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        4,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(1, 4, 1)",
+      "matrix": [
+        [
+          "T**7 + T",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "2*T**4",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        4,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(1, 4, 2)",
+      "matrix": [
+        [
+          "T**7 + T",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**5 + T**4",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        4,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(1, 4, 3)",
+      "matrix": [
+        [
+          "T**7 + T",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**6 + T**4",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(1, 4, 4)",
+      "matrix": [
+        [
+          "T**7 + T",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**7 + T**4",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        1,
+        4,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(2, 0, 0)",
+      "matrix": [
+        [
+          "T**3 + T**2",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**3 + 1",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**2",
+      "order": 2,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(2, 0, 1)",
+      "matrix": [
+        [
+          "T**3 + T**2",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**4 + 1",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(2, 0, 2)",
+      "matrix": [
+        [
+          "T**3 + T**2",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**5 + 1",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        0,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(2, 0, 3)",
+      "matrix": [
+        [
+          "T**3 + T**2",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**6 + 1",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        0,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(2, 0, 4)",
+      "matrix": [
+        [
+          "T**3 + T**2",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**7 + 1",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        0,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(2, 1, 0)",
+      "matrix": [
+        [
+          "T**4 + T**2",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**3 + T",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(2, 1, 1)",
+      "matrix": [
+        [
+          "T**4 + T**2",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**4 + T",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(2, 1, 2)",
+      "matrix": [
+        [
+          "T**4 + T**2",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**5 + T",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(2, 1, 3)",
+      "matrix": [
+        [
+          "T**4 + T**2",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**6 + T",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(2, 1, 4)",
+      "matrix": [
+        [
+          "T**4 + T**2",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**7 + T",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        1,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(2, 2, 0)",
+      "matrix": [
+        [
+          "T**5 + T**2",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**3 + T**2",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(2, 2, 1)",
+      "matrix": [
+        [
+          "T**5 + T**2",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**4 + T**2",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(2, 2, 2)",
+      "matrix": [
+        [
+          "T**5 + T**2",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**5 + T**2",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        0,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(2, 2, 3)",
+      "matrix": [
+        [
+          "T**5 + T**2",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**6 + T**2",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        7,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(2, 2, 4)",
+      "matrix": [
+        [
+          "T**5 + T**2",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**7 + T**2",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(2, 3, 0)",
+      "matrix": [
+        [
+          "T**6 + T**2",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "2*T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(2, 3, 1)",
+      "matrix": [
+        [
+          "T**6 + T**2",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**4 + T**3",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        3,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(2, 3, 2)",
+      "matrix": [
+        [
+          "T**6 + T**2",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**5 + T**3",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        7,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        3,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(2, 3, 3)",
+      "matrix": [
+        [
+          "T**6 + T**2",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**6 + T**3",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(2, 3, 4)",
+      "matrix": [
+        [
+          "T**6 + T**2",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**7 + T**3",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(2, 4, 0)",
+      "matrix": [
+        [
+          "T**7 + T**2",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**4 + T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        4,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(2, 4, 1)",
+      "matrix": [
+        [
+          "T**7 + T**2",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "2*T**4",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(2, 4, 2)",
+      "matrix": [
+        [
+          "T**7 + T**2",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**5 + T**4",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        4,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(2, 4, 3)",
+      "matrix": [
+        [
+          "T**7 + T**2",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**6 + T**4",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        4,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(2, 4, 4)",
+      "matrix": [
+        [
+          "T**7 + T**2",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**7 + T**4",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**10",
+      "order": 10,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        10,
+        10
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(3, 0, 0)",
+      "matrix": [
+        [
+          "2*T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**3 + 1",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(3, 0, 1)",
+      "matrix": [
+        [
+          "2*T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**4 + 1",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        0,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(3, 0, 2)",
+      "matrix": [
+        [
+          "2*T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**5 + 1",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        0,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(3, 0, 3)",
+      "matrix": [
+        [
+          "2*T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**6 + 1",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        0,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(3, 0, 4)",
+      "matrix": [
+        [
+          "2*T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**7 + 1",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        0,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(3, 1, 0)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**3 + T",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        1,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(3, 1, 1)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**4 + T",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        1,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(3, 1, 2)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**5 + T",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(3, 1, 3)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**6 + T",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        1,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(3, 1, 4)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**7 + T",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        1,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(3, 2, 0)",
+      "matrix": [
+        [
+          "T**5 + T**3",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**3 + T**2",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        2,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(3, 2, 1)",
+      "matrix": [
+        [
+          "T**5 + T**3",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**4 + T**2",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(3, 2, 2)",
+      "matrix": [
+        [
+          "T**5 + T**3",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**5 + T**2",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        7,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        1,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(3, 2, 3)",
+      "matrix": [
+        [
+          "T**5 + T**3",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**6 + T**2",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(3, 2, 4)",
+      "matrix": [
+        [
+          "T**5 + T**3",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**7 + T**2",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        2,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(3, 3, 0)",
+      "matrix": [
+        [
+          "T**6 + T**3",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "2*T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        3,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(3, 3, 1)",
+      "matrix": [
+        [
+          "T**6 + T**3",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**4 + T**3",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        3,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(3, 3, 2)",
+      "matrix": [
+        [
+          "T**6 + T**3",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**5 + T**3",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(3, 3, 3)",
+      "matrix": [
+        [
+          "T**6 + T**3",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**6 + T**3",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        9,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        3,
+        0,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(3, 3, 4)",
+      "matrix": [
+        [
+          "T**6 + T**3",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**7 + T**3",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**10",
+      "order": 10,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        9,
+        10,
+        10
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        3,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(3, 4, 0)",
+      "matrix": [
+        [
+          "T**7 + T**3",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**4 + T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        4,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(3, 4, 1)",
+      "matrix": [
+        [
+          "T**7 + T**3",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "2*T**4",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        4,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(3, 4, 2)",
+      "matrix": [
+        [
+          "T**7 + T**3",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**5 + T**4",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        4,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(3, 4, 3)",
+      "matrix": [
+        [
+          "T**7 + T**3",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**6 + T**4",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**10",
+      "order": 10,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        9,
+        10,
+        10
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        3,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        4,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(3, 4, 4)",
+      "matrix": [
+        [
+          "T**7 + T**3",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**7 + T**4",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**11",
+      "order": 11,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        9,
+        11,
+        11
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        3,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(4, 0, 0)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**3 + 1",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(4, 0, 1)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**4 + 1",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        0,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(4, 0, 2)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**5 + 1",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        0,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(4, 0, 3)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**6 + 1",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        0,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(4, 0, 4)",
+      "matrix": [
+        [
+          "T**4 + T**3",
+          "T",
+          "0"
+        ],
+        [
+          "T**2",
+          "T**7 + 1",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        0,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(4, 1, 0)",
+      "matrix": [
+        [
+          "2*T**4",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**3 + T",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 2,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        2,
+        3,
+        4,
+        5,
+        5
+      ],
+      "jetIncrements": [
+        2,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        1,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(4, 1, 1)",
+      "matrix": [
+        [
+          "2*T**4",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**4 + T",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 3,
+      "bocksteinRank": 2,
+      "jetKernelDimensions": [
+        3,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        3,
+        1,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        1,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(4, 1, 2)",
+      "matrix": [
+        [
+          "2*T**4",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**5 + T",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        1,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(4, 1, 3)",
+      "matrix": [
+        [
+          "2*T**4",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**6 + T",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        1,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(4, 1, 4)",
+      "matrix": [
+        [
+          "2*T**4",
+          "T**2",
+          "0"
+        ],
+        [
+          "T**3",
+          "T**7 + T",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        1,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(4, 2, 0)",
+      "matrix": [
+        [
+          "T**5 + T**4",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**3 + T**2",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**6",
+      "order": 6,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        5,
+        6,
+        6
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        2,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(4, 2, 1)",
+      "matrix": [
+        [
+          "T**5 + T**4",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**4 + T**2",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(4, 2, 2)",
+      "matrix": [
+        [
+          "T**5 + T**4",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**5 + T**2",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        1,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        2,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(4, 2, 3)",
+      "matrix": [
+        [
+          "T**5 + T**4",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**6 + T**2",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(4, 2, 4)",
+      "matrix": [
+        [
+          "T**5 + T**4",
+          "T**3",
+          "0"
+        ],
+        [
+          "T**4",
+          "T**7 + T**2",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**10",
+      "order": 10,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        10,
+        10
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(4, 3, 0)",
+      "matrix": [
+        [
+          "T**6 + T**4",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "2*T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**7",
+      "order": 7,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        7,
+        7
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        3,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(4, 3, 1)",
+      "matrix": [
+        [
+          "T**6 + T**4",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**4 + T**3",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        3,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(4, 3, 2)",
+      "matrix": [
+        [
+          "T**6 + T**4",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**5 + T**3",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        3,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(4, 3, 3)",
+      "matrix": [
+        [
+          "T**6 + T**4",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**6 + T**3",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**10",
+      "order": 10,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        9,
+        10,
+        10
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        3,
+        1,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        3,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(4, 3, 4)",
+      "matrix": [
+        [
+          "T**6 + T**4",
+          "T**4",
+          "0"
+        ],
+        [
+          "T**5",
+          "T**7 + T**3",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**11",
+      "order": 11,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        9,
+        11,
+        11
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        3,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        3,
+        4
+      ]
+    },
+    {
+      "label": "exponents-(4, 4, 0)",
+      "matrix": [
+        [
+          "T**7 + T**4",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**4 + T**3",
+          "T"
+        ],
+        [
+          "0",
+          "T**2",
+          "1"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        4,
+        0
+      ]
+    },
+    {
+      "label": "exponents-(4, 4, 1)",
+      "matrix": [
+        [
+          "T**7 + T**4",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "2*T**4",
+          "T**2"
+        ],
+        [
+          "0",
+          "T**3",
+          "T"
+        ]
+      ],
+      "determinant": "T**9",
+      "order": 9,
+      "nullity": 3,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        3,
+        5,
+        7,
+        9,
+        9
+      ],
+      "jetIncrements": [
+        3,
+        2,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        4,
+        1
+      ]
+    },
+    {
+      "label": "exponents-(4, 4, 2)",
+      "matrix": [
+        [
+          "T**7 + T**4",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**5 + T**4",
+          "T**3"
+        ],
+        [
+          "0",
+          "T**4",
+          "T**2"
+        ]
+      ],
+      "determinant": "T**10",
+      "order": 10,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        8,
+        10,
+        10
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        2,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        4,
+        2
+      ]
+    },
+    {
+      "label": "exponents-(4, 4, 3)",
+      "matrix": [
+        [
+          "T**7 + T**4",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**6 + T**4",
+          "T**4"
+        ],
+        [
+          "0",
+          "T**5",
+          "T**3"
+        ]
+      ],
+      "determinant": "T**11",
+      "order": 11,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        9,
+        11,
+        11
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        3,
+        2,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        4,
+        3
+      ]
+    },
+    {
+      "label": "exponents-(4, 4, 4)",
+      "matrix": [
+        [
+          "T**7 + T**4",
+          "T**5",
+          "0"
+        ],
+        [
+          "T**6",
+          "T**7 + T**4",
+          "T**5"
+        ],
+        [
+          "0",
+          "T**6",
+          "T**4"
+        ]
+      ],
+      "determinant": "T**12",
+      "order": 12,
+      "nullity": 3,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        3,
+        6,
+        9,
+        12,
+        12
+      ],
+      "jetIncrements": [
+        3,
+        3,
+        3,
+        3,
+        0
+      ],
+      "prescribedSmithExponents": [
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "followupSymmetryCases": [
+    {
+      "label": "anti-Hermitian-exponent-1",
+      "matrix": [
+        [
+          "T"
+        ]
+      ],
+      "determinant": "T",
+      "order": 1,
+      "nullity": 1,
+      "bocksteinRank": 1,
+      "jetKernelDimensions": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "jetIncrements": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "anti-Hermitian-exponent-2",
+      "matrix": [
+        [
+          "0",
+          "T**2"
+        ],
+        [
+          "-T**2",
+          "0"
+        ]
+      ],
+      "determinant": "T**4",
+      "order": 4,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "anti-Hermitian-exponent-3",
+      "matrix": [
+        [
+          "T**3"
+        ]
+      ],
+      "determinant": "T**3",
+      "order": 3,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "anti-Hermitian-exponent-4",
+      "matrix": [
+        [
+          "0",
+          "T**4"
+        ],
+        [
+          "-T**4",
+          "0"
+        ]
+      ],
+      "determinant": "T**8",
+      "order": 8,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        8,
+        8
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "label": "anti-Hermitian-exponent-5",
+      "matrix": [
+        [
+          "T**5"
+        ]
+      ],
+      "determinant": "T**5",
+      "order": 5,
+      "nullity": 1,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "jetIncrements": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "label": "anti-Hermitian-exponent-6",
+      "matrix": [
+        [
+          "0",
+          "T**6"
+        ],
+        [
+          "-T**6",
+          "0"
+        ]
+      ],
+      "determinant": "T**12",
+      "order": 12,
+      "nullity": 2,
+      "bocksteinRank": 0,
+      "jetKernelDimensions": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "jetIncrements": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "singularRejections": 2,
+  "scope": "Finite checker tests; universal algebraic proof is separate. No arithmetic realization of these toy modules is claimed."
+}

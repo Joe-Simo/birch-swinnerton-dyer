@@ -1,0 +1,9 @@
+{"experiment": "A1", "status": "completed", "generatedCases": 155, "singularRejections": 2}
+{"label": "unit-at-zero", "matrix": [["T + 1"]], "determinant": "T + 1", "order": 0, "nullity": 0, "bocksteinRank": 0, "jetKernelDimensions": [0, 0, 0, 0, 0], "jetIncrements": [0, 0, 0, 0, 0]}
+{"label": "simple-zero", "matrix": [["T"]], "determinant": "T", "order": 1, "nullity": 1, "bocksteinRank": 1, "jetKernelDimensions": [1, 1, 1, 1, 1], "jetIncrements": [1, 0, 0, 0, 0]}
+{"label": "double-zero", "matrix": [["T**2"]], "determinant": "T**2", "order": 2, "nullity": 1, "bocksteinRank": 0, "jetKernelDimensions": [1, 2, 2, 2, 2], "jetIncrements": [1, 1, 0, 0, 0]}
+{"label": "triple-zero-parity-insufficient", "matrix": [["T**3"]], "determinant": "T**3", "order": 3, "nullity": 1, "bocksteinRank": 0, "jetKernelDimensions": [1, 2, 3, 3, 3], "jetIncrements": [1, 1, 1, 0, 0]}
+{"label": "mixed-exponents", "matrix": [["T", "0"], ["0", "T**2"]], "determinant": "T**3", "order": 3, "nullity": 2, "bocksteinRank": 1, "jetKernelDimensions": [2, 3, 3, 3, 3], "jetIncrements": [2, 1, 0, 0, 0]}
+{"label": "extension-with-unit-off-diagonal", "matrix": [["T", "1"], ["0", "T"]], "determinant": "T**2", "order": 2, "nullity": 1, "bocksteinRank": 0, "jetKernelDimensions": [1, 2, 2, 2, 2], "jetIncrements": [1, 1, 0, 0, 0]}
+{"label": "Schur-complement-delayed-order", "matrix": [["T**2", "T"], ["T", "T + 1"]], "determinant": "T**3", "order": 3, "nullity": 1, "bocksteinRank": 0, "jetKernelDimensions": [1, 2, 3, 3, 3], "jetIncrements": [1, 1, 1, 0, 0]}
+{"label": "paired-even-skew", "matrix": [["0", "T**2"], ["-T**2", "0"]], "determinant": "T**4", "order": 4, "nullity": 2, "bocksteinRank": 0, "jetKernelDimensions": [2, 4, 4, 4, 4], "jetIncrements": [2, 2, 0, 0, 0]}

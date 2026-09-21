@@ -1,0 +1,7298 @@
+{
+  "experiment": "F1",
+  "status": "completed",
+  "bound": "511",
+  "preflight": "passed before scan",
+  "numberOfOddSquarefreeInputs": 209,
+  "coefficientZero": 126,
+  "coefficientNonzero": 83,
+  "nonzeroCoefficientPositiveSelmerNullity": [
+    {
+      "n": "17",
+      "a": "-4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "73",
+      "a": "4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "89",
+      "a": "-4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "97",
+      "a": "-4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "113",
+      "a": "8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "155",
+      "a": "8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "185",
+      "a": "8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "193",
+      "a": "-4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "203",
+      "a": "8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "217",
+      "a": "-8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "233",
+      "a": "-4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "241",
+      "a": "4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "259",
+      "a": "-8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "281",
+      "a": "4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "305",
+      "a": "-8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "329",
+      "a": "8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "337",
+      "a": "8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "355",
+      "a": "8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "377",
+      "a": "-8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "401",
+      "a": "-4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "409",
+      "a": "-8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "433",
+      "a": "-12",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "449",
+      "a": "-4",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "481",
+      "a": "-8",
+      "pureSelmerNullity": 2
+    },
+    {
+      "n": "497",
+      "a": "-8",
+      "pureSelmerNullity": 2
+    }
+  ],
+  "pointFollowup41": {
+    "points": [
+      {
+        "x": "-9",
+        "y": "120",
+        "kummer": [
+          "-1",
+          "-2",
+          "2"
+        ]
+      },
+      {
+        "x": "841",
+        "y": "24360",
+        "kummer": [
+          "1",
+          "2",
+          "2"
+        ]
+      }
+    ],
+    "productClass": [
+      "-1",
+      "-1",
+      "1"
+    ],
+    "torsionKummer": [
+      [
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "-1",
+        "-41",
+        "41"
+      ],
+      [
+        "41",
+        "2",
+        "82"
+      ],
+      [
+        "-41",
+        "-82",
+        "2"
+      ]
+    ],
+    "finiteFieldOrders": [
+      {
+        "p": "3",
+        "order": "4"
+      },
+      {
+        "p": "5",
+        "order": "8"
+      }
+    ],
+    "interpretation": "Independence requires the Kummer homomorphism and torsion argument in RESEARCH.md, not just on-curve checks."
+  },
+  "rows": [
+    {
+      "n": "1",
+      "factors": [],
+      "A32": "2",
+      "B8": "2",
+      "a": "1",
+      "matrix": [],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "3",
+      "factors": [
+        "3"
+      ],
+      "A32": "4",
+      "B8": "4",
+      "a": "2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "5",
+      "factors": [
+        "5"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "7",
+      "factors": [
+        "7"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "11",
+      "factors": [
+        "11"
+      ],
+      "A32": "4",
+      "B8": "12",
+      "a": "-2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "13",
+      "factors": [
+        "13"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "15",
+      "factors": [
+        "3",
+        "5"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "17",
+      "factors": [
+        "17"
+      ],
+      "A32": "4",
+      "B8": "16",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "19",
+      "factors": [
+        "19"
+      ],
+      "A32": "4",
+      "B8": "12",
+      "a": "-2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "21",
+      "factors": [
+        "3",
+        "7"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "23",
+      "factors": [
+        "23"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "29",
+      "factors": [
+        "29"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "31",
+      "factors": [
+        "31"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "33",
+      "factors": [
+        "3",
+        "11"
+      ],
+      "A32": "12",
+      "B8": "16",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "35",
+      "factors": [
+        "5",
+        "7"
+      ],
+      "A32": "8",
+      "B8": "24",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "37",
+      "factors": [
+        "37"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "39",
+      "factors": [
+        "3",
+        "13"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "41",
+      "factors": [
+        "41"
+      ],
+      "A32": "16",
+      "B8": "32",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "43",
+      "factors": [
+        "43"
+      ],
+      "A32": "12",
+      "B8": "12",
+      "a": "6",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "47",
+      "factors": [
+        "47"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "51",
+      "factors": [
+        "3",
+        "17"
+      ],
+      "A32": "16",
+      "B8": "24",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "53",
+      "factors": [
+        "53"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "55",
+      "factors": [
+        "5",
+        "11"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "57",
+      "factors": [
+        "3",
+        "19"
+      ],
+      "A32": "12",
+      "B8": "16",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "59",
+      "factors": [
+        "59"
+      ],
+      "A32": "20",
+      "B8": "36",
+      "a": "2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "61",
+      "factors": [
+        "61"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "65",
+      "factors": [
+        "5",
+        "13"
+      ],
+      "A32": "16",
+      "B8": "32",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "67",
+      "factors": [
+        "67"
+      ],
+      "A32": "4",
+      "B8": "12",
+      "a": "-2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "69",
+      "factors": [
+        "3",
+        "23"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "71",
+      "factors": [
+        "71"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "73",
+      "factors": [
+        "73"
+      ],
+      "A32": "12",
+      "B8": "16",
+      "a": "4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "77",
+      "factors": [
+        "7",
+        "11"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "79",
+      "factors": [
+        "79"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "83",
+      "factors": [
+        "83"
+      ],
+      "A32": "20",
+      "B8": "36",
+      "a": "2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "85",
+      "factors": [
+        "5",
+        "17"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "87",
+      "factors": [
+        "3",
+        "29"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "89",
+      "factors": [
+        "89"
+      ],
+      "A32": "20",
+      "B8": "48",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "91",
+      "factors": [
+        "7",
+        "13"
+      ],
+      "A32": "8",
+      "B8": "24",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "93",
+      "factors": [
+        "3",
+        "31"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "95",
+      "factors": [
+        "5",
+        "19"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "97",
+      "factors": [
+        "97"
+      ],
+      "A32": "4",
+      "B8": "16",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "101",
+      "factors": [
+        "101"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "103",
+      "factors": [
+        "103"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "105",
+      "factors": [
+        "3",
+        "5",
+        "7"
+      ],
+      "A32": "8",
+      "B8": "32",
+      "a": "-8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "107",
+      "factors": [
+        "107"
+      ],
+      "A32": "12",
+      "B8": "36",
+      "a": "-6",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "109",
+      "factors": [
+        "109"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "111",
+      "factors": [
+        "3",
+        "37"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "113",
+      "factors": [
+        "113"
+      ],
+      "A32": "24",
+      "B8": "32",
+      "a": "8",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "115",
+      "factors": [
+        "5",
+        "23"
+      ],
+      "A32": "8",
+      "B8": "24",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "119",
+      "factors": [
+        "7",
+        "17"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "123",
+      "factors": [
+        "3",
+        "41"
+      ],
+      "A32": "8",
+      "B8": "24",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "127",
+      "factors": [
+        "127"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "129",
+      "factors": [
+        "3",
+        "43"
+      ],
+      "A32": "20",
+      "B8": "48",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "131",
+      "factors": [
+        "131"
+      ],
+      "A32": "36",
+      "B8": "60",
+      "a": "6",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "133",
+      "factors": [
+        "7",
+        "19"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "137",
+      "factors": [
+        "137"
+      ],
+      "A32": "16",
+      "B8": "32",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "139",
+      "factors": [
+        "139"
+      ],
+      "A32": "20",
+      "B8": "36",
+      "a": "2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "141",
+      "factors": [
+        "3",
+        "47"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "143",
+      "factors": [
+        "11",
+        "13"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "145",
+      "factors": [
+        "5",
+        "29"
+      ],
+      "A32": "16",
+      "B8": "32",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "149",
+      "factors": [
+        "149"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "151",
+      "factors": [
+        "151"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "155",
+      "factors": [
+        "5",
+        "31"
+      ],
+      "A32": "32",
+      "B8": "48",
+      "a": "8",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "157",
+      "factors": [
+        "157"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "159",
+      "factors": [
+        "3",
+        "53"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "161",
+      "factors": [
+        "7",
+        "23"
+      ],
+      "A32": "32",
+      "B8": "64",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "163",
+      "factors": [
+        "163"
+      ],
+      "A32": "12",
+      "B8": "12",
+      "a": "6",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "165",
+      "factors": [
+        "3",
+        "5",
+        "11"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "167",
+      "factors": [
+        "167"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "173",
+      "factors": [
+        "173"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "177",
+      "factors": [
+        "3",
+        "59"
+      ],
+      "A32": "12",
+      "B8": "16",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "179",
+      "factors": [
+        "179"
+      ],
+      "A32": "28",
+      "B8": "60",
+      "a": "-2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "181",
+      "factors": [
+        "181"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "183",
+      "factors": [
+        "3",
+        "61"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "185",
+      "factors": [
+        "5",
+        "37"
+      ],
+      "A32": "40",
+      "B8": "64",
+      "a": "8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "187",
+      "factors": [
+        "11",
+        "17"
+      ],
+      "A32": "16",
+      "B8": "24",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "191",
+      "factors": [
+        "191"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "193",
+      "factors": [
+        "193"
+      ],
+      "A32": "4",
+      "B8": "16",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "195",
+      "factors": [
+        "3",
+        "5",
+        "13"
+      ],
+      "A32": "16",
+      "B8": "48",
+      "a": "-8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "197",
+      "factors": [
+        "197"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "199",
+      "factors": [
+        "199"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "201",
+      "factors": [
+        "3",
+        "67"
+      ],
+      "A32": "20",
+      "B8": "48",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "203",
+      "factors": [
+        "7",
+        "29"
+      ],
+      "A32": "32",
+      "B8": "48",
+      "a": "8",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "205",
+      "factors": [
+        "5",
+        "41"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 3,
+      "kernelSize": "8",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "209",
+      "factors": [
+        "11",
+        "19"
+      ],
+      "A32": "44",
+      "B8": "80",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "211",
+      "factors": [
+        "211"
+      ],
+      "A32": "20",
+      "B8": "36",
+      "a": "2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "213",
+      "factors": [
+        "3",
+        "71"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "215",
+      "factors": [
+        "5",
+        "43"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "217",
+      "factors": [
+        "7",
+        "31"
+      ],
+      "A32": "8",
+      "B8": "32",
+      "a": "-8",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "219",
+      "factors": [
+        "3",
+        "73"
+      ],
+      "A32": "24",
+      "B8": "48",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "221",
+      "factors": [
+        "13",
+        "17"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 3,
+      "kernelSize": "8",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "223",
+      "factors": [
+        "223"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "227",
+      "factors": [
+        "227"
+      ],
+      "A32": "28",
+      "B8": "60",
+      "a": "-2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "229",
+      "factors": [
+        "229"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "231",
+      "factors": [
+        "3",
+        "7",
+        "11"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "233",
+      "factors": [
+        "233"
+      ],
+      "A32": "20",
+      "B8": "48",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "235",
+      "factors": [
+        "5",
+        "47"
+      ],
+      "A32": "8",
+      "B8": "24",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "237",
+      "factors": [
+        "3",
+        "79"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "239",
+      "factors": [
+        "239"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "241",
+      "factors": [
+        "241"
+      ],
+      "A32": "28",
+      "B8": "48",
+      "a": "4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "247",
+      "factors": [
+        "13",
+        "19"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "249",
+      "factors": [
+        "3",
+        "83"
+      ],
+      "A32": "20",
+      "B8": "48",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "251",
+      "factors": [
+        "251"
+      ],
+      "A32": "36",
+      "B8": "84",
+      "a": "-6",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "253",
+      "factors": [
+        "11",
+        "23"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "255",
+      "factors": [
+        "3",
+        "5",
+        "17"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "257",
+      "factors": [
+        "257"
+      ],
+      "A32": "32",
+      "B8": "64",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "259",
+      "factors": [
+        "7",
+        "37"
+      ],
+      "A32": "16",
+      "B8": "48",
+      "a": "-8",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "263",
+      "factors": [
+        "263"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "265",
+      "factors": [
+        "5",
+        "53"
+      ],
+      "A32": "16",
+      "B8": "32",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "267",
+      "factors": [
+        "3",
+        "89"
+      ],
+      "A32": "16",
+      "B8": "24",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "269",
+      "factors": [
+        "269"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "271",
+      "factors": [
+        "271"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "273",
+      "factors": [
+        "3",
+        "7",
+        "13"
+      ],
+      "A32": "8",
+      "B8": "32",
+      "a": "-8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "277",
+      "factors": [
+        "277"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "281",
+      "factors": [
+        "281"
+      ],
+      "A32": "44",
+      "B8": "80",
+      "a": "4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "283",
+      "factors": [
+        "283"
+      ],
+      "A32": "12",
+      "B8": "36",
+      "a": "-6",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "285",
+      "factors": [
+        "3",
+        "5",
+        "19"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "287",
+      "factors": [
+        "7",
+        "41"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "291",
+      "factors": [
+        "3",
+        "97"
+      ],
+      "A32": "24",
+      "B8": "48",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "293",
+      "factors": [
+        "293"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "295",
+      "factors": [
+        "5",
+        "59"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "299",
+      "factors": [
+        "13",
+        "23"
+      ],
+      "A32": "48",
+      "B8": "96",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "301",
+      "factors": [
+        "7",
+        "43"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "303",
+      "factors": [
+        "3",
+        "101"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "305",
+      "factors": [
+        "5",
+        "61"
+      ],
+      "A32": "24",
+      "B8": "64",
+      "a": "-8",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "307",
+      "factors": [
+        "307"
+      ],
+      "A32": "28",
+      "B8": "36",
+      "a": "10",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "309",
+      "factors": [
+        "3",
+        "103"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "311",
+      "factors": [
+        "311"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "313",
+      "factors": [
+        "313"
+      ],
+      "A32": "16",
+      "B8": "32",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "317",
+      "factors": [
+        "317"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "319",
+      "factors": [
+        "11",
+        "29"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "321",
+      "factors": [
+        "3",
+        "107"
+      ],
+      "A32": "44",
+      "B8": "80",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "323",
+      "factors": [
+        "17",
+        "19"
+      ],
+      "A32": "24",
+      "B8": "48",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "327",
+      "factors": [
+        "3",
+        "109"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "329",
+      "factors": [
+        "7",
+        "47"
+      ],
+      "A32": "56",
+      "B8": "96",
+      "a": "8",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "331",
+      "factors": [
+        "331"
+      ],
+      "A32": "12",
+      "B8": "36",
+      "a": "-6",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "335",
+      "factors": [
+        "5",
+        "67"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "337",
+      "factors": [
+        "337"
+      ],
+      "A32": "24",
+      "B8": "32",
+      "a": "8",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "339",
+      "factors": [
+        "3",
+        "113"
+      ],
+      "A32": "40",
+      "B8": "72",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "341",
+      "factors": [
+        "11",
+        "31"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "345",
+      "factors": [
+        "3",
+        "5",
+        "23"
+      ],
+      "A32": "24",
+      "B8": "32",
+      "a": "8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "347",
+      "factors": [
+        "347"
+      ],
+      "A32": "28",
+      "B8": "60",
+      "a": "-2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "349",
+      "factors": [
+        "349"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "353",
+      "factors": [
+        "353"
+      ],
+      "A32": "32",
+      "B8": "64",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "355",
+      "factors": [
+        "5",
+        "71"
+      ],
+      "A32": "32",
+      "B8": "48",
+      "a": "8",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "357",
+      "factors": [
+        "3",
+        "7",
+        "17"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "359",
+      "factors": [
+        "359"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "365",
+      "factors": [
+        "5",
+        "73"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "367",
+      "factors": [
+        "367"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "371",
+      "factors": [
+        "7",
+        "53"
+      ],
+      "A32": "48",
+      "B8": "96",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "373",
+      "factors": [
+        "373"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "377",
+      "factors": [
+        "13",
+        "29"
+      ],
+      "A32": "24",
+      "B8": "64",
+      "a": "-8",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "379",
+      "factors": [
+        "379"
+      ],
+      "A32": "20",
+      "B8": "36",
+      "a": "2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "381",
+      "factors": [
+        "3",
+        "127"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "383",
+      "factors": [
+        "383"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "385",
+      "factors": [
+        "5",
+        "7",
+        "11"
+      ],
+      "A32": "24",
+      "B8": "32",
+      "a": "8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "389",
+      "factors": [
+        "389"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "391",
+      "factors": [
+        "17",
+        "23"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "393",
+      "factors": [
+        "3",
+        "131"
+      ],
+      "A32": "20",
+      "B8": "48",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "395",
+      "factors": [
+        "5",
+        "79"
+      ],
+      "A32": "48",
+      "B8": "96",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "397",
+      "factors": [
+        "397"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "399",
+      "factors": [
+        "3",
+        "7",
+        "19"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "401",
+      "factors": [
+        "401"
+      ],
+      "A32": "36",
+      "B8": "80",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "403",
+      "factors": [
+        "13",
+        "31"
+      ],
+      "A32": "8",
+      "B8": "24",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "407",
+      "factors": [
+        "11",
+        "37"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "409",
+      "factors": [
+        "409"
+      ],
+      "A32": "24",
+      "B8": "64",
+      "a": "-8",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "411",
+      "factors": [
+        "3",
+        "137"
+      ],
+      "A32": "40",
+      "B8": "72",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "413",
+      "factors": [
+        "7",
+        "59"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "415",
+      "factors": [
+        "5",
+        "83"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "417",
+      "factors": [
+        "3",
+        "139"
+      ],
+      "A32": "36",
+      "B8": "48",
+      "a": "12",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "419",
+      "factors": [
+        "419"
+      ],
+      "A32": "52",
+      "B8": "108",
+      "a": "-2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "421",
+      "factors": [
+        "421"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "427",
+      "factors": [
+        "7",
+        "61"
+      ],
+      "A32": "8",
+      "B8": "24",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "429",
+      "factors": [
+        "3",
+        "11",
+        "13"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "431",
+      "factors": [
+        "431"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "433",
+      "factors": [
+        "433"
+      ],
+      "A32": "12",
+      "B8": "48",
+      "a": "-12",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "435",
+      "factors": [
+        "3",
+        "5",
+        "29"
+      ],
+      "A32": "16",
+      "B8": "48",
+      "a": "-8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "437",
+      "factors": [
+        "19",
+        "23"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "439",
+      "factors": [
+        "439"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "443",
+      "factors": [
+        "443"
+      ],
+      "A32": "20",
+      "B8": "60",
+      "a": "-10",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "445",
+      "factors": [
+        "5",
+        "89"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 3,
+      "kernelSize": "8",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "447",
+      "factors": [
+        "3",
+        "149"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "449",
+      "factors": [
+        "449"
+      ],
+      "A32": "36",
+      "B8": "80",
+      "a": "-4",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "451",
+      "factors": [
+        "11",
+        "41"
+      ],
+      "A32": "40",
+      "B8": "72",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "453",
+      "factors": [
+        "3",
+        "151"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "455",
+      "factors": [
+        "5",
+        "7",
+        "13"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "457",
+      "factors": [
+        "457"
+      ],
+      "A32": "16",
+      "B8": "32",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "461",
+      "factors": [
+        "461"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "463",
+      "factors": [
+        "463"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "465",
+      "factors": [
+        "3",
+        "5",
+        "31"
+      ],
+      "A32": "32",
+      "B8": "64",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "467",
+      "factors": [
+        "467"
+      ],
+      "A32": "28",
+      "B8": "84",
+      "a": "-14",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "469",
+      "factors": [
+        "7",
+        "67"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "471",
+      "factors": [
+        "3",
+        "157"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "473",
+      "factors": [
+        "11",
+        "43"
+      ],
+      "A32": "20",
+      "B8": "48",
+      "a": "-4",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "479",
+      "factors": [
+        "479"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "481",
+      "factors": [
+        "13",
+        "37"
+      ],
+      "A32": "24",
+      "B8": "64",
+      "a": "-8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "483",
+      "factors": [
+        "3",
+        "7",
+        "23"
+      ],
+      "A32": "16",
+      "B8": "48",
+      "a": "-8",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "485",
+      "factors": [
+        "5",
+        "97"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "487",
+      "factors": [
+        "487"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "489",
+      "factors": [
+        "3",
+        "163"
+      ],
+      "A32": "44",
+      "B8": "80",
+      "a": "4",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "491",
+      "factors": [
+        "491"
+      ],
+      "A32": "60",
+      "B8": "108",
+      "a": "6",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "493",
+      "factors": [
+        "17",
+        "29"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "497",
+      "factors": [
+        "7",
+        "71"
+      ],
+      "A32": "40",
+      "B8": "96",
+      "a": "-8",
+      "matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "499",
+      "factors": [
+        "499"
+      ],
+      "A32": "20",
+      "B8": "36",
+      "a": "2",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 0,
+      "kernelSize": "1",
+      "analyticEvidence": "L(1)>0 by Tunnell Theorem 3",
+      "algebraicEvidence": "Rank 0 by Tunnell's stated Coates-Wiles implication"
+    },
+    {
+      "n": "501",
+      "factors": [
+        "3",
+        "167"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "503",
+      "factors": [
+        "503"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "505",
+      "factors": [
+        "5",
+        "101"
+      ],
+      "A32": "16",
+      "B8": "32",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 2,
+      "kernelSize": "4",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "509",
+      "factors": [
+        "509"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    },
+    {
+      "n": "511",
+      "factors": [
+        "7",
+        "73"
+      ],
+      "A32": "0",
+      "B8": "0",
+      "a": "0",
+      "matrix": [
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pureSelmerNullity": 1,
+      "kernelSize": "2",
+      "analyticEvidence": "L(1)=0; exact order not certified",
+      "algebraicEvidence": "Matrix gives rank upper bound only"
+    }
+  ]
+}

@@ -60,8 +60,18 @@ def check_counterexample_victory() -> None:
     found_file = REPO_ROOT / "COUNTEREXAMPLE_FOUND.json"
     if found_file.exists():
         print("\n" + "=" * 75)
-        print("VICTORY CONDITION CERTIFIED: BSD COUNTEREXAMPLE DISCOVERED!")
+        print("VICTORY CONDITION A CERTIFIED: BSD COUNTEREXAMPLE DISCOVERED!")
         print(found_file.read_text(encoding="utf-8"))
+        print("=" * 75)
+        sys.exit(0)
+
+
+def check_proof_victory() -> None:
+    proof_file = REPO_ROOT / "PROOF_VERIFIED.json"
+    if proof_file.exists():
+        print("\n" + "=" * 75)
+        print("VICTORY CONDITION B CERTIFIED: FULL BSD PROOF VERIFIED IN LEAN 4!")
+        print(proof_file.read_text(encoding="utf-8"))
         print("=" * 75)
         sys.exit(0)
 
@@ -113,6 +123,31 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
     except Exception as e:
         print(f"[Step 0] Jev call note: {e}")
 
+    # Jev Iwasawa Derived-Heights Advisor
+    try:
+        iwasawa_cmd = [
+            sys.executable,
+            str(REPO_ROOT / "code" / "jev_genius.py"),
+            "iwasawa-advisor",
+            "--id", f"cycle_{cycle}_iwasawa",
+            "--text", "Howard derived heights: higher augmentation blocks are controlled by nondegeneracy of p-adic height pairing."
+        ]
+        iwasawa_proc = subprocess.run(iwasawa_cmd, cwd=str(REPO_ROOT), capture_output=True, text=True, timeout=30)
+        if iwasawa_proc.returncode == 0:
+            print(f"[Step 0] Jev Iwasawa Advisor screened derived-height hypotheses.")
+    except Exception as e:
+        pass
+
+    # Aggressive Jev Pairwise Combination Screen
+    try:
+        combine_proc = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "U113_combine_and_salvage.py")],
+                                      cwd=str(REPO_ROOT), capture_output=True, text=True, timeout=30)
+        if combine_proc.returncode == 0:
+            top_line = [l for l in combine_proc.stdout.splitlines() if "Compat:" in l][:2]
+            print(f"[Step 0] Jev Pairwise Synergy: {'; '.join(top_line)}")
+    except Exception as e:
+        pass
+
     # -------------------------------------------------------------
     # Step 1: Hardware-Accelerated C Congruent Sieve
     # -------------------------------------------------------------
@@ -120,7 +155,7 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
     binary = REPO_ROOT / "code" / "congruent_sieve_fast"
     if not binary.exists():
         # compile on the fly
-        compile_cmd = f"clang -O3 -Xpreprocessor -fopenmp -lomp code/congruent_sieve_fast.c -o code/congruent_sieve_fast 2>/dev/null || clang -O3 code/congruent_sieve_fast.c -o code/congruent_sieve_fast"
+        compile_cmd = f"clang -O3 -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -L/opt/homebrew/opt/libomp/lib -lomp code/congruent_sieve_fast.c -o code/congruent_sieve_fast 2>/dev/null || clang -O3 code/congruent_sieve_fast.c -o code/congruent_sieve_fast"
         subprocess.run(compile_cmd, shell=True, cwd=str(REPO_ROOT), check=True)
 
     sieve_proc = subprocess.run([str(binary), str(bound), "--json"], capture_output=True, text=True)
@@ -217,6 +252,7 @@ def main() -> None:
     args = parser.parse_args()
 
     check_counterexample_victory()
+    check_proof_victory()
     state = load_state()
 
     print("===========================================================================")

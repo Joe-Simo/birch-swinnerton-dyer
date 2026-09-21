@@ -1,15 +1,15 @@
 {
   "engine_version": "1.0-bsd-autonomous",
-  "cycle": 3,
-  "sieve_bound": 5000,
-  "total_curves_tested": 811,
-  "certified_rank_zero_curves": 330,
-  "central_vanishing_curves": 481,
-  "even_order_ge_2_curves": 72,
-  "odd_order_ge_1_curves": 409,
+  "cycle": 12,
+  "sieve_bound": 4000000,
+  "total_curves_tested": 810591,
+  "certified_rank_zero_curves": 371679,
+  "central_vanishing_curves": 438912,
+  "even_order_ge_2_curves": 33611,
+  "odd_order_ge_1_curves": 405301,
   "burungale_tian_conflicts": 0,
   "counterexample_found": false,
-  "last_cycle_timestamp": 1790031040,
+  "last_cycle_timestamp": 1790031571,
   "history": [
     {
       "cycle": 1,
@@ -30,6 +30,96 @@
       "even_ge_2": 72,
       "odd_ge_1": 409,
       "timestamp": 1790031040
+    },
+    {
+      "cycle": 3,
+      "bound": 5000,
+      "total_curves": 2027,
+      "rank_zero": 855,
+      "vanishing": 1172,
+      "even_ge_2": 156,
+      "odd_ge_1": 1016,
+      "timestamp": 1790031197
+    },
+    {
+      "cycle": 4,
+      "bound": 10000,
+      "total_curves": 4056,
+      "rank_zero": 1742,
+      "vanishing": 2314,
+      "even_ge_2": 282,
+      "odd_ge_1": 2032,
+      "timestamp": 1790031250
+    },
+    {
+      "cycle": 5,
+      "bound": 25000,
+      "total_curves": 10134,
+      "rank_zero": 4414,
+      "vanishing": 5720,
+      "even_ge_2": 646,
+      "odd_ge_1": 5074,
+      "timestamp": 1790031270
+    },
+    {
+      "cycle": 6,
+      "bound": 50000,
+      "total_curves": 20267,
+      "rank_zero": 8863,
+      "vanishing": 11404,
+      "even_ge_2": 1262,
+      "odd_ge_1": 10142,
+      "timestamp": 1790031393
+    },
+    {
+      "cycle": 7,
+      "bound": 100000,
+      "total_curves": 40527,
+      "rank_zero": 17916,
+      "vanishing": 22611,
+      "even_ge_2": 2341,
+      "odd_ge_1": 20270,
+      "timestamp": 1790031397
+    },
+    {
+      "cycle": 8,
+      "bound": 250000,
+      "total_curves": 101318,
+      "rank_zero": 45269,
+      "vanishing": 56049,
+      "even_ge_2": 5383,
+      "odd_ge_1": 50666,
+      "timestamp": 1790031407
+    },
+    {
+      "cycle": 9,
+      "bound": 500000,
+      "total_curves": 202640,
+      "rank_zero": 91298,
+      "vanishing": 111342,
+      "even_ge_2": 10018,
+      "odd_ge_1": 101324,
+      "timestamp": 1790031441
+    },
+    {
+      "cycle": 10,
+      "bound": 1000000,
+      "total_curves": 405286,
+      "rank_zero": 184254,
+      "vanishing": 221032,
+      "even_ge_2": 18381,
+      "odd_ge_1": 202651,
+      "timestamp": 1790031468
+    },
+    {
+      "cycle": 11,
+      "bound": 2000000,
+      "total_curves": 810591,
+      "rank_zero": 371679,
+      "vanishing": 438912,
+      "even_ge_2": 33611,
+      "odd_ge_1": 405301,
+      "timestamp": 1790031571
     }
   ]
 }

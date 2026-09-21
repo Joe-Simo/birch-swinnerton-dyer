@@ -1,0 +1,51 @@
+{
+  "project": "Birch–Swinnerton-Dyer",
+  "conjecture": "ord_(s=1) L(E,s) = rank_Z E(Q)",
+  "salvaged_lemmas": [
+    {
+      "id": "LEMMA-001",
+      "candidate_id": "C001",
+      "title": "Lemma A: Length, Specialization, and Finite Jets over k[[t]]",
+      "type": "exact_algebraic_matrix_theorem",
+      "statement": "For any n-by-n matrix A(t) over k[[t]] with non-zero determinant and M = coker A: length(M) = ord_t(det A) = sum e_i, and dim_k(M/tM) = d. Then ord_t(det A) - d = sum_{e_i>0}(e_i - 1) >= 0, with equality iff tM = 0.",
+      "status": "PROVED",
+      "verification": "Self-reviewed algebraic derivation in RESEARCH.md; 155 SymPy matrix fixtures in specialization.py."
+    },
+    {
+      "id": "LEMMA-002",
+      "candidate_id": "C001",
+      "title": "Lemma B: First-Order Bockstein Derivative Criterion",
+      "type": "exact_algebraic_matrix_theorem",
+      "statement": "ord_t(det A) = dim ker A(0) if and only if the induced map beta: ker A_0 -> coker A_0 (v -> A_1*v mod im A_0) is invertible.",
+      "status": "PROVED",
+      "verification": "Proved via Schur complement in RESEARCH.md; checked across 155 test matrices."
+    },
+    {
+      "id": "LEMMA-003",
+      "candidate_id": "C001",
+      "title": "Lemma C: Anti-Hermitian Duality Obstruction Theorem",
+      "type": "exact_counterexample_model",
+      "statement": "Anti-Hermitian duality A(-t)^T = -A(t) alone does not eliminate higher augmentation blocks. Paired skew-symmetric matrices diag([[0, t^e], [-t^e, 0]]) satisfy all duality constraints but have order 2e and specialized dimension 2.",
+      "status": "PROVED",
+      "verification": "Proved in RESEARCH.md Section 3; verified in specialization.py."
+    },
+    {
+      "id": "LEMMA-004",
+      "candidate_id": "C002",
+      "title": "Lemma D: Kummer 2-Descent Point Independence on E_41",
+      "type": "exact_arithmetic_point_certification",
+      "statement": "Rational points P=(-9,120) and Q=(841, 24360) have Kummer square-class triples delta(P)=(-1,-2,2) and delta(Q)=(1,2,2) which are independent modulo rational torsion in (Q*/(Q*)^2)^3. Hence rank E_41(Q) = 2, matching Monsky's upper bound.",
+      "status": "PROVED",
+      "verification": "Exact coordinates on curve; 2-torsion injection checked at primes 3 and 5; Kummer homomorphism certified."
+    },
+    {
+      "id": "LEMMA-005",
+      "candidate_id": "C004",
+      "title": "Lemma E: Burungale-Tian 2-Converse Bridge for Congruent Curves",
+      "type": "exact_selmer_bridge",
+      "statement": "For congruent curves E_n with rational 2-torsion dimension 2, dim Sel_2(E_n) = 2 forces the full 2-primary Selmer group Sel_(2^infinity)(E_n) = 0 without assuming Sha finite. By Burungale-Tian Theorem 1.1, this forces L(E_n, 1) != 0.",
+      "status": "PROVED",
+      "verification": "Proven via Kummer exact sequences in experiments/converse.md; verified on 58/58 baseline curves."
+    }
+  ]
+}
