@@ -166,6 +166,33 @@ UNSOLVED_RANK_GE_2_CURVES = [
         root_number=1,
         expected_rank=2,
         generators=[(0, 1), (-1, 0)]
+    ),
+    # Cremona 563a1: Prime conductor rank 2 non-CM curve
+    NonCMEllipticCurve(
+        label="563a1",
+        ainvs=[1, 1, 1, -15, 16],
+        conductor=563,
+        root_number=1,
+        expected_rank=2,
+        generators=[(2, -2), (4, 4)]
+    ),
+    # Cremona 643a1: Prime conductor rank 2 non-CM curve
+    NonCMEllipticCurve(
+        label="643a1",
+        ainvs=[1, 0, 0, -4, 3],
+        conductor=643,
+        root_number=1,
+        expected_rank=2,
+        generators=[(1, 0), (2, 1)]
+    ),
+    # Cremona 709a1: Prime conductor rank 2 non-CM curve
+    NonCMEllipticCurve(
+        label="709a1",
+        ainvs=[0, -1, 1, -2, 0],
+        conductor=709,
+        root_number=1,
+        expected_rank=2,
+        generators=[(0, 0), (-1, 0)]
     )
 ]
 
