@@ -175,7 +175,18 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
     sieve_proc = subprocess.run([str(binary), str(sieve_bound), "--json"], capture_output=True, text=True)
     if sieve_proc.returncode == 0:
         s_res = json.loads(sieve_proc.stdout.strip())
-        print(f"         Evaluated {s_res['total_tested']:,} odd squarefree curves with OpenMP (0 converse conflicts).")
+        conflicts = s_res.get("converse_conflicts", 0)
+        print(f"         Evaluated {s_res['total_tested']:,} odd squarefree curves with OpenMP ({conflicts} converse conflicts).")
+        if conflicts > 0:
+            ce_path = REPO_ROOT / "COUNTEREXAMPLE_FOUND.json"
+            ce_record = {
+                "status": "BSD_CONVERSE_CONFLICT_DISCOVERED",
+                "timestamp": int(time.time()),
+                "sieve_result": s_res,
+                "proof": "Converse conflict discovered in OpenMP sieve violating Burungale-Tian converse theorem."
+            }
+            ce_path.write_text(json.dumps(ce_record, indent=2))
+            check_counterexample_victory()
 
     # -------------------------------------------------------------
     # Step 2: Sustained Multi-Core Exact Analytic Order-2 Certification
