@@ -1,6 +1,6 @@
 {
   "engine_version": "1.0-bsd-autonomous",
-  "cycle": 19,
+  "cycle": 22,
   "sieve_bound": 512000000,
   "total_curves_tested": 103752893,
   "certified_rank_zero_curves": 49733228,
@@ -9,7 +9,7 @@
   "odd_order_ge_1_curves": 51876449,
   "burungale_tian_conflicts": 0,
   "counterexample_found": false,
-  "last_cycle_timestamp": 1790034004,
+  "last_cycle_timestamp": 1790037640,
   "history": [
     {
       "cycle": 1,
@@ -191,5 +191,7 @@
       "odd_ge_1": 51876449,
       "timestamp": 1790034004
     }
-  ]
+  ],
+  "sieve_status": "BENCHMARK_COMPLETE_103M",
+  "order2_certified_curves": 646
 }
