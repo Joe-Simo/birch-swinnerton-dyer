@@ -1,0 +1,63 @@
+{
+  "timestamp": 1790046310,
+  "total_noncm_benchmarks_evaluated": 4,
+  "all_bsd_equalities_verified": false,
+  "curves": [
+    {
+      "label": "11a1",
+      "conductor": 11,
+      "root_number": 1,
+      "expected_algebraic_rank": 0,
+      "generators_on_curve": true,
+      "generator_count": 0,
+      "lambda_1": 0.253842,
+      "lambda_prime_1": 0.0,
+      "lambda_double_prime_1": 0.070357,
+      "certified_analytic_order": 0,
+      "bsd_rank_equality_verified": true,
+      "elapsed_seconds": 0.1802
+    },
+    {
+      "label": "37a1",
+      "conductor": 37,
+      "root_number": -1,
+      "expected_algebraic_rank": 1,
+      "generators_on_curve": true,
+      "generator_count": 1,
+      "lambda_1": 0.0,
+      "lambda_prime_1": 0.306,
+      "lambda_double_prime_1": 0.0,
+      "certified_analytic_order": 1,
+      "bsd_rank_equality_verified": true,
+      "elapsed_seconds": 0.1984
+    },
+    {
+      "label": "389a1",
+      "conductor": 389,
+      "root_number": 1,
+      "expected_algebraic_rank": 2,
+      "generators_on_curve": true,
+      "generator_count": 2,
+      "lambda_1": -0.0,
+      "lambda_prime_1": 0.0,
+      "lambda_double_prime_1": 13.484598,
+      "certified_analytic_order": 2,
+      "bsd_rank_equality_verified": true,
+      "elapsed_seconds": 0.2015
+    },
+    {
+      "label": "5077a1",
+      "conductor": 5077,
+      "root_number": -1,
+      "expected_algebraic_rank": 3,
+      "generators_on_curve": true,
+      "generator_count": 3,
+      "lambda_1": 0.0,
+      "lambda_prime_1": -0.005811,
+      "lambda_double_prime_1": 0.0,
+      "certified_analytic_order": 1,
+      "bsd_rank_equality_verified": false,
+      "elapsed_seconds": 0.1811
+    }
+  ]
+}

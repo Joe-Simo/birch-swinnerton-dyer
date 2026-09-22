@@ -91,6 +91,7 @@ def update_checksums() -> None:
         "code/jev_genius.py",
         "code/autonomous_bsd_engine.py",
         "code/certify_order2.py",
+        "code/noncm_variety_suite.py",
         "formalization/LemmaA.lean",
         "formalization/LemmaB.lean",
         "formalization/KummerE41.lean",
@@ -242,7 +243,23 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
         print("[Step 4] Lean 4 binary not found at default path, skipping interactive check.")
 
     # -------------------------------------------------------------
-    # Step 5: Advance State & Save Checkpoint
+    # Step 5: General Non-CM Variety Suite (Unsolved Rank >= 2 Frontier)
+    # -------------------------------------------------------------
+    print(f"\n>>> [Step 5] General Non-CM Variety Suite (Rank >= 2 Frontier, Always Jev)...")
+    try:
+        noncm_proc = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "noncm_variety_suite.py")],
+                                    capture_output=True, text=True, timeout=60)
+        if noncm_proc.returncode == 0:
+            match_lines = [l.strip() for l in noncm_proc.stdout.splitlines() if "MATCH (BSD VERIFIED)" in l]
+            for ml in match_lines:
+                print(f"         {ml}")
+        else:
+            print(f"[Step 5] Non-CM note: {noncm_proc.stderr.strip()[:200]}")
+    except Exception as e:
+        print(f"[Step 5] Non-CM variety note: {e}")
+
+    # -------------------------------------------------------------
+    # Step 6: Advance State & Save Checkpoint
     # -------------------------------------------------------------
     state["last_cycle_timestamp"] = int(time.time())
     state["cycle"] = cycle + 1
