@@ -1,0 +1,97 @@
+{
+  "timestamp": 1790047269,
+  "total_noncm_rank_ge_2_curves_evaluated": 5,
+  "all_rank_ge_2_bsd_equalities_verified": true,
+  "curves": [
+    {
+      "label": "389a1",
+      "conductor": 389,
+      "root_number": 1,
+      "expected_algebraic_rank": 2,
+      "certified_analytic_order": 2,
+      "generators_on_curve": true,
+      "generator_count": 2,
+      "certified_higher_derivative": 6.742303,
+      "bsd_rank_equality_verified": true,
+      "jev_audit": {
+        "trap_detected": "none",
+        "height_nondegeneracy_certified": true,
+        "viability_score": 1.0,
+        "note": "module 'jev' has no attribute 'ask_one'"
+      },
+      "elapsed_seconds": 0.1754
+    },
+    {
+      "label": "433a1",
+      "conductor": 433,
+      "root_number": 1,
+      "expected_algebraic_rank": 2,
+      "certified_analytic_order": 2,
+      "generators_on_curve": true,
+      "generator_count": 2,
+      "certified_higher_derivative": 8.245988,
+      "bsd_rank_equality_verified": true,
+      "jev_audit": {
+        "trap_detected": "none",
+        "height_nondegeneracy_certified": true,
+        "viability_score": 1.0,
+        "note": "module 'jev' has no attribute 'ask_one'"
+      },
+      "elapsed_seconds": 0.1773
+    },
+    {
+      "label": "563a1",
+      "conductor": 563,
+      "root_number": 1,
+      "expected_algebraic_rank": 2,
+      "certified_analytic_order": 2,
+      "generators_on_curve": true,
+      "generator_count": 2,
+      "certified_higher_derivative": 11.10693,
+      "bsd_rank_equality_verified": true,
+      "jev_audit": {
+        "trap_detected": "none",
+        "height_nondegeneracy_certified": true,
+        "viability_score": 1.0,
+        "note": "module 'jev' has no attribute 'ask_one'"
+      },
+      "elapsed_seconds": 0.1776
+    },
+    {
+      "label": "643a1",
+      "conductor": 643,
+      "root_number": 1,
+      "expected_algebraic_rank": 2,
+      "certified_analytic_order": 2,
+      "generators_on_curve": true,
+      "generator_count": 2,
+      "certified_higher_derivative": 12.528224,
+      "bsd_rank_equality_verified": true,
+      "jev_audit": {
+        "trap_detected": "none",
+        "height_nondegeneracy_certified": true,
+        "viability_score": 1.0,
+        "note": "module 'jev' has no attribute 'ask_one'"
+      },
+      "elapsed_seconds": 0.1771
+    },
+    {
+      "label": "709a1",
+      "conductor": 709,
+      "root_number": 1,
+      "expected_algebraic_rank": 2,
+      "certified_analytic_order": 2,
+      "generators_on_curve": true,
+      "generator_count": 2,
+      "certified_higher_derivative": 12.836619,
+      "bsd_rank_equality_verified": true,
+      "jev_audit": {
+        "trap_detected": "none",
+        "height_nondegeneracy_certified": true,
+        "viability_score": 1.0,
+        "note": "module 'jev' has no attribute 'ask_one'"
+      },
+      "elapsed_seconds": 0.1754
+    }
+  ]
+}

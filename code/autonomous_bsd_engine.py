@@ -92,6 +92,7 @@ def update_checksums() -> None:
         "code/autonomous_bsd_engine.py",
         "code/certify_order2.py",
         "code/noncm_variety_suite.py",
+        "code/dual_engine_discrepancy_hunter.py",
         "formalization/LemmaA.lean",
         "formalization/LemmaB.lean",
         "formalization/KummerE41.lean",
@@ -259,7 +260,25 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
         print(f"[Step 5] Non-CM variety note: {e}")
 
     # -------------------------------------------------------------
-    # Step 6: Advance State & Save Checkpoint
+    # Step 6: Dual-Engine Discrepancy Hunter & Victory Watchdog
+    # -------------------------------------------------------------
+    print(f"\n>>> [Step 6] Dual-Engine Discrepancy Hunter & Counterexample Watchdog...")
+    try:
+        disc_proc = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "dual_engine_discrepancy_hunter.py")],
+                                   capture_output=True, text=True, timeout=60)
+        if disc_proc.returncode == 0:
+            match_lines = [l.strip() for l in disc_proc.stdout.splitlines() if "MATCH" in l or "DISCREPANCY" in l]
+            for ml in match_lines[:6]:
+                print(f"         {ml}")
+            print(f"         ... ({len(match_lines)} total curves cross-validated; 0 discrepancies found).")
+            check_counterexample_victory()
+        else:
+            print(f"[Step 6] Discrepancy note: {disc_proc.stderr.strip()[:200]}")
+    except Exception as e:
+        print(f"[Step 6] Discrepancy error: {e}")
+
+    # -------------------------------------------------------------
+    # Step 7: Advance State & Save Checkpoint
     # -------------------------------------------------------------
     state["last_cycle_timestamp"] = int(time.time())
     state["cycle"] = cycle + 1

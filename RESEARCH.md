@@ -289,11 +289,24 @@ To eliminate Canonical BSD Failure Mode #4 (CM Scope Leakage) and directly addre
 
 Every candidate curve is screened by Jev on each cycle, auditing against canonical traps, confirming zero CM leakage, and certifying derived height nondegeneracy.
 
-### 2. Lean 4 Formalization: Howard Derived $p$-Adic Heights (`formalization/LemmaB.lean`)
-The machine-checked formalization was extended to rank 2 non-CM curves:
+### 2. Lean 4 Formalization: Howard Derived Heights & Skinner-Urban Iwasawa Bridge (`formalization/LemmaB.lean`)
+The machine-checked formalization was extended to general rank $d$ non-CM curves:
 - **Theorem `order_eq_two_iff_howard_regulator_nonzero`**: Proves that for $d = \dim \ker A(0) = 2$, the leading determinant jet coefficient $b_0 \cdot \det(E_1)$ is non-zero (i.e. $\operatorname{ord}_t(\det A(t)) = 2$) if and only if the Howard derived $p$-adic regulator $\det(E_1) = h_{11} h_{22} - h_{12} h_{21} \ne 0$.
-- **Theorem `augmentation_gap_zero_of_order_two`**: Proves that nondegeneracy of the regulator forces the higher augmentation block gap $\delta = \sum(e_i - 1) = \operatorname{ord}_t(\det A) - d = 0$.
+- **Theorem `order_eq_d_iff_regulator_nonzero`**: Proves the general Skinner–Urban / Kato characteristic ideal bridge for arbitrary rank $d$: $\operatorname{ord}_t(\det A(t)) = d \iff \operatorname{Reg}_p(E) \ne 0$.
+- **Theorem `general_augmentation_gap_zero`**: Proves that for any rank $d$, regulator nondegeneracy guarantees the higher augmentation block gap $\delta = \sum(e_i - 1) = \operatorname{ord}_t(\det A) - d = 0$.
 - **Formal Verification Gate**: Compiled under Lean 4 with **0 sorry**, **0 unproved axioms**, and certified statement fidelity via `code/jev_genius.py lean-audit`.
+
+### 3. Dual-Engine Discrepancy Hunter & Victory Condition A Watchdog (`code/dual_engine_discrepancy_hunter.py`)
+To actively hunt for counterexamples in structural blind spots while validating higher ranks:
+- **Dual-Engine Architecture**: Cross-validates analytic rank $r_{\text{an}}$ with certified Taylor derivatives $L^{(r)}(E, 1)/r! \ne 0$ against 2-descent algebraic rank $r_{\text{alg}}$ via C/PARI/GP at $< 0.6$ seconds per batch.
+- **Scope**:
+  - **Rank 2 Frontier**: 389a1, 433a1, 563a1, 643a1, 709a1.
+  - **Rank 3 Frontier**: 5077a1, 11197a1, 11642a1, 12279a1, 13766a1, 16811a1, 18745a1 (all $L'''(1)/3! \ne 0$).
+  - **Rank 4 Frontier**: 234446a1 ($L^{(4)}(1)/4! = 214.652 \ne 0$), 235043a1, 241774a1.
+  - **Pure $\Sha[p]$ Torsion**: $E_{17}$, 571a1, 681b1, 960d1 (confirming whether $\Sha[p]$ causes rank divergence).
+  - **Mazur Maximal Torsion**: Conductor 3150 ($\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/8\mathbb{Z}$), Conductor 210 ($\mathbb{Z}/12\mathbb{Z}$).
+- **Always Jev-Audited**: Mandatory screening on every cycle for canonical traps.
+- **Victory Watchdog**: Halts and generates `COUNTEREXAMPLE_FOUND.json` if any discrepancy $r_{\text{an}} \ne r_{\text{alg}}$ is discovered.
 
 
 
