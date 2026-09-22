@@ -170,12 +170,12 @@ Storage facts, hashes, actual logs and source provenance are recorded separately
 ## 7. Autonomous Scaling, Order-2 Certification, and Lean 4 Machine Formalization
 
 ### A. Autonomous C Sieve Scaling
-The hardware-accelerated OpenMP additive scatter sieve (`code/congruent_sieve_fast.c` and `code/autonomous_bsd_engine.py`) operates with $O(N^{3/2})$ complexity, scaling through Cycle 17 ($n \le 128,000,000$):
-- Total odd squarefree curves tested: **51,876,433**
-- Nonzero central value $L(E_n, 1) \ne 0$ (rank 0 certified): **24,744,511** (47.70%)
-- Central vanishing $L(E_n, 1) = 0$: **27,131,922** (52.30%)
-  * Even analytic order $\ge 2$ ($n \equiv 1, 3 \pmod 8$): **1,193,694**
-  * Odd analytic order $\ge 1$ ($n \equiv 5, 7 \pmod 8$): **25,938,228**
+The hardware-accelerated OpenMP additive scatter sieve (`code/congruent_sieve_fast.c` and `code/autonomous_bsd_engine.py`) operates with $O(N^{3/2})$ complexity, scaling through Cycle 18 ($n \le 256,000,000$) with Cycle 19 ($n \le 512,000,000$) actively in progress:
+- Total odd squarefree curves tested: **103,752,893**
+- Nonzero central value $L(E_n, 1) \ne 0$ (rank 0 certified): **49,733,228** (47.93%)
+- Central vanishing $L(E_n, 1) = 0$: **54,019,665** (52.07%)
+  * Even analytic order $\ge 2$ ($n \equiv 1, 3 \pmod 8$): **2,143,216**
+  * Odd analytic order $\ge 1$ ($n \equiv 5, 7 \pmod 8$): **51,876,449**
 - Burungale–Tian 2-converse conflicts: **0**
 - Counterexamples discovered: **0**
 
