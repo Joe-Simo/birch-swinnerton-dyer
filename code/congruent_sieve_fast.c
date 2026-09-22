@@ -89,9 +89,12 @@ void compute_counts_scatter(i64 max_n, int32_t *a32, int32_t *b8) {
 int main(int argc, char **argv) {
     i64 max_n = 511;
     bool json_output = false;
+    const char *candidates_file = NULL;
     for (int i = 1; i < argc; i++) {
         if (strcmp(argv[i], "--json") == 0) {
             json_output = true;
+        } else if (strcmp(argv[i], "--export-candidates") == 0 && i + 1 < argc) {
+            candidates_file = argv[++i];
         } else if (argv[i][0] != '-') {
             max_n = atoll(argv[i]);
         }
@@ -113,6 +116,11 @@ int main(int argc, char **argv) {
 
     compute_counts_scatter(max_n, a32, b8);
 
+    FILE *cand_fp = NULL;
+    if (candidates_file) {
+        cand_fp = fopen(candidates_file, "w");
+    }
+
     i64 total_tested = 0;
     i64 nonzero_a = 0;
     i64 zero_a = 0;
@@ -130,11 +138,13 @@ int main(int argc, char **argv) {
             zero_a++;
             if ((n % 8 == 1) || (n % 8 == 3)) {
                 even_parity_order_ge_2++;
+                if (cand_fp) fprintf(cand_fp, "%lld\n", (long long)n);
             } else {
                 odd_parity_order_ge_1++;
             }
         }
     }
+    if (cand_fp) fclose(cand_fp);
 
     if (json_output) {
         printf("{\"max_n\": %lld, \"total_tested\": %lld, \"rank_zero_count\": %lld, \"vanishing_count\": %lld, \"even_order_ge_2\": %lld, \"odd_order_ge_1\": %lld}\n",

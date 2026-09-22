@@ -1,10 +1,11 @@
 {
   "status": "CERTIFIED_EXACT_ORDER_2",
-  "timestamp": 1790037639,
+  "timestamp": 1790037907,
+  "max_n": 25000,
   "total_curves_certified": 646,
   "curves_with_ord_2": 646,
-  "min_abs_L_pp": 6.356399372739638,
-  "max_abs_L_pp": 262.5572625502962,
+  "min_abs_L_pp": 6.35639937,
+  "max_abs_L_pp": 262.55726255,
   "e_41_certification": {
     "n": 41,
     "root_number": "+1",

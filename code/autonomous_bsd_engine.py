@@ -183,15 +183,22 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
             print(f"[Step 1] Sieve complete: {sieve_res['total_tested']:,} curves tested.")
 
     # -------------------------------------------------------------
-    # Step 2: Exact Analytic Order-2 Certification via Mellin Transforms
+    # Step 2: Multi-Core Exact Analytic Order-2 Certification via Mellin Transforms
     # -------------------------------------------------------------
-    print(f"\n>>> [Step 2] Exact Analytic Order-2 Certification (L''(E_n, 1) != 0)...")
-    cert_proc = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "certify_order2.py")],
-                               capture_output=True, text=True)
+    order2_bounds = [25_000, 50_000, 100_000, 250_000, 500_000, 1_000_000, 2_000_000, 4_000_000, 8_000_000]
+    target_order2_bound = order2_bounds[min((cycle - 1) % len(order2_bounds), len(order2_bounds) - 1)]
+    print(f"\n>>> [Step 2] Multi-Core Analytic Order-2 Certification (n <= {target_order2_bound:,}, 8 Cores)...")
+    cert_proc = subprocess.run([
+        sys.executable,
+        str(REPO_ROOT / "code" / "certify_order2.py"),
+        "--max-n", str(target_order2_bound),
+        "--workers", str(os.cpu_count() or 8)
+    ], capture_output=True, text=True)
     if cert_proc.returncode == 0:
-        state["order2_certified_curves"] = 646
-        print(f"[Step 2] 646 / 646 (100.0%) candidate curves certified with L''(E_n, 1) != 0.")
-        print(f"         E_41 Exact Status: L(E_41,1)=0, L'(E_41,1)=0, L''(E_41,1)=16.4258 != 0 -> ord_(s=1)=2.")
+        summary_lines = [l.strip() for l in cert_proc.stdout.splitlines() if "Strictly certified" in l or "Total even-parity" in l or "elapsed" in l]
+        for sl in summary_lines:
+            print(f"         {sl}")
+        state["order2_certified_bound"] = target_order2_bound
     else:
         print(f"[Step 2] Order-2 certifier warning: {cert_proc.stderr.strip()[:200]}")
 
