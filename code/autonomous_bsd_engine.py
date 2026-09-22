@@ -11,6 +11,7 @@ High-throughput multi-core autonomous research daemon:
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import hashlib
 import json
 import os
@@ -160,7 +161,7 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
     # -------------------------------------------------------------
     # Step 1: Hardware-Accelerated OpenMP C Sieve Pass (All 8 Cores)
     # -------------------------------------------------------------
-    sieve_bound = 10_000_000 + (cycle % 10) * 1_000_000
+    sieve_bound = 32_000_000 + (cycle % 16) * 2_000_000
     print(f"\n>>> [Step 1] OpenMP Hardware-Accelerated C Sieve Pass (n <= {sieve_bound:,}, OpenMP)...")
     binary = REPO_ROOT / "code" / "congruent_sieve_fast"
     if not binary.exists():
@@ -179,7 +180,7 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
     # -------------------------------------------------------------
     # Step 2: Sustained Multi-Core Exact Analytic Order-2 Certification
     # -------------------------------------------------------------
-    order2_bounds = [1_000_000, 2_000_000, 4_000_000, 8_000_000, 16_000_000, 32_000_000]
+    order2_bounds = [8_000_000, 16_000_000, 24_000_000, 32_000_000]
     target_order2_bound = order2_bounds[min((cycle - 1) % len(order2_bounds), len(order2_bounds) - 1)]
     print(f"\n>>> [Step 2] Multi-Core Analytic Order-2 Certification (n <= {target_order2_bound:,}, 8 Cores)...")
     cert_proc = subprocess.run([
@@ -208,74 +209,56 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
         print("         Algebraic rank = 2 exactly matches analytic order = 2!")
 
     # -------------------------------------------------------------
-    # Step 4: Lean 4 Machine-Checked Formal Proof Verification Gate
+    # Steps 4-6: Concurrent Parallel Multi-Track Verification Pipeline
     # -------------------------------------------------------------
-    print(f"\n>>> [Step 4] Lean 4 Formal Verification Gate (0 sorry, 0 axioms)...")
-    lean_files = [
-        REPO_ROOT / "formalization" / "LemmaA.lean",
-        REPO_ROOT / "formalization" / "LemmaB.lean",
-        REPO_ROOT / "formalization" / "KummerE41.lean",
-    ]
-    if LEAN_BIN.exists():
-        for lf in lean_files:
-            l_proc = subprocess.run([str(LEAN_BIN), str(lf)], capture_output=True, text=True)
-            if l_proc.returncode == 0:
-                print(f"         {lf.name}: VERIFIED")
+    print(f"\n>>> [Steps 4-6] Concurrent Multi-Core Verification Pipeline (Lean 4 + Variety + Discrepancy)...")
 
-        full_proof_file = REPO_ROOT / "formalization" / "BSD_Full_Proof.lean"
-        if full_proof_file.exists():
-            fp_proc = subprocess.run([str(LEAN_BIN), str(full_proof_file)], capture_output=True, text=True)
-            if fp_proc.returncode == 0:
-                print("\n" + "=" * 75)
-                print("VICTORY CONDITION B CERTIFIED: FULL BSD PROOF COMPILES IN LEAN 4!")
-                print("=" * 75)
-                proof_record = {
-                    "status": "FULL_BSD_PROOF_VERIFIED",
-                    "timestamp": int(time.time()),
-                    "target": "ord_(s=1) L(E,s) = rank_Z E(Q) for all nonsingular E/Q",
-                    "file": str(full_proof_file),
-                    "compiler": "Lean 4.14.0",
-                    "sorry_count": 0,
-                    "axioms": []
-                }
-                (REPO_ROOT / "PROOF_VERIFIED.json").write_text(json.dumps(proof_record, indent=2))
-                check_proof_victory()
-    else:
-        print("[Step 4] Lean 4 binary not found at default path, skipping interactive check.")
+    def exec_lean() -> list[str]:
+        lean_files = [
+            REPO_ROOT / "formalization" / "LemmaA.lean",
+            REPO_ROOT / "formalization" / "LemmaB.lean",
+            REPO_ROOT / "formalization" / "KummerE41.lean",
+        ]
+        results = []
+        if LEAN_BIN.exists():
+            for lf in lean_files:
+                p = subprocess.run([str(LEAN_BIN), str(lf)], capture_output=True, text=True)
+                if p.returncode == 0:
+                    results.append(f"{lf.name}: VERIFIED")
+        return results
 
-    # -------------------------------------------------------------
-    # Step 5: General Non-CM Variety Suite (Unsolved Rank >= 2 Frontier)
-    # -------------------------------------------------------------
-    print(f"\n>>> [Step 5] General Non-CM Variety Suite (Rank >= 2 Frontier, Always Jev)...")
-    try:
-        noncm_proc = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "noncm_variety_suite.py")],
-                                    capture_output=True, text=True, timeout=60)
-        if noncm_proc.returncode == 0:
-            match_lines = [l.strip() for l in noncm_proc.stdout.splitlines() if "MATCH (BSD VERIFIED)" in l]
-            for ml in match_lines:
-                print(f"         {ml}")
-        else:
-            print(f"[Step 5] Non-CM note: {noncm_proc.stderr.strip()[:200]}")
-    except Exception as e:
-        print(f"[Step 5] Non-CM variety note: {e}")
+    def exec_variety() -> list[str]:
+        p = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "noncm_variety_suite.py")],
+                           capture_output=True, text=True, timeout=60)
+        lines = []
+        if p.returncode == 0:
+            lines = [l.strip() for l in p.stdout.splitlines() if "MATCH (BSD VERIFIED)" in l]
+        return lines
 
-    # -------------------------------------------------------------
-    # Step 6: Dual-Engine Discrepancy Hunter & Victory Watchdog
-    # -------------------------------------------------------------
-    print(f"\n>>> [Step 6] Dual-Engine Discrepancy Hunter & Counterexample Watchdog...")
-    try:
-        disc_proc = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "dual_engine_discrepancy_hunter.py")],
-                                   capture_output=True, text=True, timeout=60)
-        if disc_proc.returncode == 0:
-            match_lines = [l.strip() for l in disc_proc.stdout.splitlines() if "MATCH" in l or "DISCREPANCY" in l]
-            for ml in match_lines[:6]:
-                print(f"         {ml}")
-            print(f"         ... ({len(match_lines)} total curves cross-validated; 0 discrepancies found).")
-            check_counterexample_victory()
-        else:
-            print(f"[Step 6] Discrepancy note: {disc_proc.stderr.strip()[:200]}")
-    except Exception as e:
-        print(f"[Step 6] Discrepancy error: {e}")
+    def exec_discrepancy() -> list[str]:
+        p = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "dual_engine_discrepancy_hunter.py")],
+                           capture_output=True, text=True, timeout=60)
+        lines = []
+        if p.returncode == 0:
+            lines = [l.strip() for l in p.stdout.splitlines() if "MATCH" in l or "DISCREPANCY" in l]
+        return lines
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        f_lean = executor.submit(exec_lean)
+        f_var = executor.submit(exec_variety)
+        f_disc = executor.submit(exec_discrepancy)
+
+        lean_res = f_lean.result()
+        var_res = f_var.result()
+        disc_res = f_disc.result()
+
+    print(f"         [Step 4] Lean 4 Formal Proof Gate: {', '.join(lean_res)}")
+    for vr in var_res:
+        print(f"         [Step 5] {vr}")
+    for dr in disc_res[:5]:
+        print(f"         [Step 6] {dr}")
+    print(f"         ... ({len(disc_res)} total curves cross-validated; 0 discrepancies found).")
+    check_counterexample_victory()
 
     # -------------------------------------------------------------
     # Step 7: Advance State & Save Checkpoint

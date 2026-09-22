@@ -1,0 +1,93 @@
+{
+  "state": "HYPOTHESIS_ONLY",
+  "candidate_id": "candidate",
+  "timestamp": "2026-09-21T23:35:13-0400",
+  "model": "jev-latest",
+  "request_state": {
+    "project": "Birch\u2013Swinnerton-Dyer",
+    "target": "ord_(s=1) L(E,s) = rank_Z E(Q)",
+    "candidate_id": "candidate",
+    "proposal_text": "Commit and push validation: verified state checkpoint and evidence logs, Lean 4 formalization gate with 0 sorry, and sustained multi-core pipeline throughput verification."
+  },
+  "questions": {
+    "avoids_selmer_rank_conflation": {
+      "type": "noul",
+      "instructions": "Does the argument avoid equating finite-level Selmer dimension (e.g. dim Sel_2) with Mordell-Weil rank?",
+      "criteria": {
+        "true": "Explicitly accounts for the difference r = dim Sel_2 - dim E[2] - dim Sha[2], or only claims an inequality",
+        "false": "Assumes or implies that positive finite Selmer dimension implies positive rank without checking Sha"
+      }
+    },
+    "avoids_duality_semisimplicity_trap": {
+      "type": "noul",
+      "instructions": "Does the hypothesis avoid assuming that anti-Hermitian duality alone forces length equal to specialized dimension?",
+      "criteria": {
+        "true": "Recognizes paired skew-symmetric blocks can double determinant order while preserving duality",
+        "false": "Claims duality or parity forces semisimplicity or eliminates higher augmentation blocks"
+      }
+    },
+    "higher_order_certification": {
+      "type": "choice",
+      "instructions": "How does the proposal handle curves with L(E,1) = 0 and even sign?",
+      "criteria": {
+        "explicit_derivative": "Proposes explicit computation or bound for L''(E,1) to certify order 2",
+        "parity_only": "Relies solely on root number without certifying the second derivative is nonzero",
+        "unaddressed": "Does not address curves with analytic order >= 2"
+      }
+    },
+    "viability_score": {
+      "type": "score",
+      "instructions": "Score the research candidate's rigor and potential for BSD progress",
+      "criteria": [
+        "Mathematically sound, explicit hypotheses, respects proven barriers",
+        "Clear proof path, relies on established external theorems with stated scope",
+        "Exploratory but contains identifiable gaps or unverified dependencies",
+        "Contains a known fatal flaw, circularity, or unproved shortcut"
+      ]
+    }
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "avoids_selmer_rank_conflation": {
+        "type": "noul",
+        "noul": 0.43
+      },
+      "avoids_duality_semisimplicity_trap": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "higher_order_certification": {
+        "type": "choice",
+        "choice": "unaddressed",
+        "confidence": 1.0,
+        "probabilities": {
+          "explicit_derivative": 0.0,
+          "parity_only": 0.0,
+          "unaddressed": 1.0
+        }
+      },
+      "viability_score": {
+        "type": "score",
+        "score": 2.62,
+        "confidence": 0.62,
+        "legend": {
+          "0": "Mathematically sound, explicit hypotheses, respects proven barriers",
+          "1": "Clear proof path, relies on established external theorems with stated scope",
+          "2": "Exploratory but contains identifiable gaps or unverified dependencies",
+          "3": "Contains a known fatal flaw, circularity, or unproved shortcut"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.01,
+          "2": 0.32,
+          "3": 0.66
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 737,
+      "output_tokens": 117
+    }
+  }
+}
