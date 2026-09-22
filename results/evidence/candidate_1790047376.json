@@ -1,0 +1,93 @@
+{
+  "state": "HYPOTHESIS_ONLY",
+  "candidate_id": "candidate",
+  "timestamp": "2026-09-21T23:22:56-0400",
+  "model": "jev-latest",
+  "request_state": {
+    "project": "Birch\u2013Swinnerton-Dyer",
+    "target": "ord_(s=1) L(E,s) = rank_Z E(Q)",
+    "candidate_id": "candidate",
+    "proposal_text": "Status audit of BSD autonomous engine: Cycle 530+ dual-engine discrepancy hunter with PARI/GP and OpenMP C sieve across ranks 2, 3, 4, pure Sha[2], and Mazur boundary curves, formal Lean 4 verification gate, and non-CM variety suite."
+  },
+  "questions": {
+    "avoids_selmer_rank_conflation": {
+      "type": "noul",
+      "instructions": "Does the argument avoid equating finite-level Selmer dimension (e.g. dim Sel_2) with Mordell-Weil rank?",
+      "criteria": {
+        "true": "Explicitly accounts for the difference r = dim Sel_2 - dim E[2] - dim Sha[2], or only claims an inequality",
+        "false": "Assumes or implies that positive finite Selmer dimension implies positive rank without checking Sha"
+      }
+    },
+    "avoids_duality_semisimplicity_trap": {
+      "type": "noul",
+      "instructions": "Does the hypothesis avoid assuming that anti-Hermitian duality alone forces length equal to specialized dimension?",
+      "criteria": {
+        "true": "Recognizes paired skew-symmetric blocks can double determinant order while preserving duality",
+        "false": "Claims duality or parity forces semisimplicity or eliminates higher augmentation blocks"
+      }
+    },
+    "higher_order_certification": {
+      "type": "choice",
+      "instructions": "How does the proposal handle curves with L(E,1) = 0 and even sign?",
+      "criteria": {
+        "explicit_derivative": "Proposes explicit computation or bound for L''(E,1) to certify order 2",
+        "parity_only": "Relies solely on root number without certifying the second derivative is nonzero",
+        "unaddressed": "Does not address curves with analytic order >= 2"
+      }
+    },
+    "viability_score": {
+      "type": "score",
+      "instructions": "Score the research candidate's rigor and potential for BSD progress",
+      "criteria": [
+        "Mathematically sound, explicit hypotheses, respects proven barriers",
+        "Clear proof path, relies on established external theorems with stated scope",
+        "Exploratory but contains identifiable gaps or unverified dependencies",
+        "Contains a known fatal flaw, circularity, or unproved shortcut"
+      ]
+    }
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "avoids_selmer_rank_conflation": {
+        "type": "noul",
+        "noul": 0.47
+      },
+      "avoids_duality_semisimplicity_trap": {
+        "type": "noul",
+        "noul": 0.65
+      },
+      "higher_order_certification": {
+        "type": "choice",
+        "choice": "unaddressed",
+        "confidence": 0.81,
+        "probabilities": {
+          "explicit_derivative": 0.09,
+          "unaddressed": 0.88,
+          "parity_only": 0.03
+        }
+      },
+      "viability_score": {
+        "type": "score",
+        "score": 2.06,
+        "confidence": 0.83,
+        "legend": {
+          "0": "Mathematically sound, explicit hypotheses, respects proven barriers",
+          "1": "Clear proof path, relies on established external theorems with stated scope",
+          "2": "Exploratory but contains identifiable gaps or unverified dependencies",
+          "3": "Contains a known fatal flaw, circularity, or unproved shortcut"
+        },
+        "probabilities": {
+          "0": 0.01,
+          "1": 0.02,
+          "2": 0.86,
+          "3": 0.11
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 768,
+      "output_tokens": 117
+    }
+  }
+}
