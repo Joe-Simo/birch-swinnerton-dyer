@@ -112,6 +112,10 @@ def get_candidate_curves_fast(max_n: int, candidates_file: str | None = None) ->
         return [int(l.strip()) for l in lines if l.strip()]
 
     tmp_cand = REPO_ROOT / "results" / f"candidates_{max_n}.txt"
+    if tmp_cand.exists() and tmp_cand.stat().st_size > 0:
+        lines = tmp_cand.read_text(encoding="utf-8").strip().splitlines()
+        return [int(l.strip()) for l in lines if l.strip()]
+
     tmp_cand.parent.mkdir(parents=True, exist_ok=True)
     binary = REPO_ROOT / "code" / "congruent_sieve_fast"
 
