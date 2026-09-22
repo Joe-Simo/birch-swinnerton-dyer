@@ -1,0 +1,128 @@
+{
+  "state": "HYPOTHESIS_ONLY",
+  "candidate_id": "cycle_106_rank2_screen",
+  "timestamp": "2026-09-21T21:03:03-0400",
+  "model": "jev-latest",
+  "request_state": {
+    "project": "Birch\u2013Swinnerton-Dyer",
+    "spec": "Birch and Swinnerton-Dyer Conjecture: For every nonsingular elliptic curve E over Q, ord_(s=1) L(E, s) = rank_Z E(Q). Rank is the number of infinite-order generators of E(Q). L(E, s) is the Hasse-Weil L-function with analytic continuation given by modularity. Full target requires equality of vanishing order with Mordell-Weil rank across all curves and ranks.",
+    "candidate_id": "cycle_106_rank2_screen",
+    "candidate_text": "Evaluating whether derived-height nondegeneracy in Howard (2004) Theorem 4.2 eliminates higher augmentation blocks delta=sum(e_i-1)=0 for rank >= 2 curves (cycle 106)."
+  },
+  "questions": {
+    "target_fidelity": {
+      "type": "noul",
+      "instructions": "Does this proposal target the exact BSD statement: ord_(s=1) L(E,s) = rank_Z E(Q) for elliptic curves over Q, without silently substituting a weaker target (such as only rank 0/1, or only the finite/infinite dichotomy) as a full solution?",
+      "criteria": {
+        "true": "Explicitly targets the full rank equality, or clearly labels its restricted scope.",
+        "false": "Claims a general solution while only addressing a special case or weaker dichotomy."
+      }
+    },
+    "avoids_selmer_rank_conflation": {
+      "type": "noul",
+      "instructions": "Does the argument strictly distinguish between the finite Selmer dimension dim Sel_2(E/Q) and the Mordell-Weil rank r, recognizing that Sel_2 nullity contains Sha[2]?",
+      "criteria": {
+        "true": "Accounts for r = dim Sel_2 - dim E[2] - dim Sha[2] and checks for non-trivial Sha[2].",
+        "false": "Conflates positive Selmer dimension with positive rank without eliminating Sha[2]."
+      }
+    },
+    "avoids_duality_trap": {
+      "type": "noul",
+      "instructions": "Does the candidate avoid assuming that anti-Hermitian duality alone forces Iwasawa characteristic multiplicity to equal specialized Selmer dimension?",
+      "criteria": {
+        "true": "Recognizes paired skew-symmetric blocks satisfy duality while doubling multiplicity.",
+        "false": "Asserts that duality or parity alone eliminates higher augmentation blocks."
+      }
+    },
+    "higher_order_rigor": {
+      "type": "choice",
+      "instructions": "How does the proposal certify the exact analytic order for curves with L(E,1) = 0?",
+      "criteria": {
+        "rigorous_derivative": "Computes or bounds higher derivatives (e.g. L''(E,1)) to certify exact order",
+        "root_number_only": "Relies solely on root number / parity without certifying derivative nonvanishing",
+        "unaddressed": "Does not address curves with analytic order >= 2"
+      }
+    },
+    "canonical_trap_detected": {
+      "type": "choice",
+      "instructions": "Which canonical BSD failure mode, if any, is present in this candidate?",
+      "criteria": {
+        "none": "No canonical failure mode detected; hypotheses are clean and explicit",
+        "selmer_conflation": "Conflates finite Selmer space with Mordell-Weil rank",
+        "duality_conflation": "Assumes duality forces semisimplicity in Iwasawa modules",
+        "uncertified_derivative": "Assumes central zero + parity certifies exact order 2",
+        "cm_scope_leak": "Applies CM-specific theorems (e.g. Burungale-Tian) to general curves"
+      }
+    },
+    "viability_score": {
+      "type": "score",
+      "instructions": "Rate the mathematical viability and depth of this BSD research candidate",
+      "criteria": [
+        "Exceptional: addresses a core structural bottleneck with rigorous arithmetic hypotheses",
+        "Solid: provides a valid conditional bridge or exact computational invariant",
+        "Heuristic: contains interesting observations but unproved analytic/algebraic gaps",
+        "Fatal: flawed by a canonical trap, circularity, or false shortcut"
+      ]
+    }
+  },
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "target_fidelity": {
+        "type": "noul",
+        "noul": 0.22
+      },
+      "avoids_selmer_rank_conflation": {
+        "type": "noul",
+        "noul": 0.13
+      },
+      "avoids_duality_trap": {
+        "type": "noul",
+        "noul": 0.61
+      },
+      "higher_order_rigor": {
+        "type": "choice",
+        "choice": "unaddressed",
+        "confidence": 0.74,
+        "probabilities": {
+          "rigorous_derivative": 0.15,
+          "unaddressed": 0.83,
+          "root_number_only": 0.02
+        }
+      },
+      "canonical_trap_detected": {
+        "type": "choice",
+        "choice": "none",
+        "confidence": 0.67,
+        "probabilities": {
+          "none": 0.74,
+          "selmer_conflation": 0.14,
+          "cm_scope_leak": 0.01,
+          "uncertified_derivative": 0.09,
+          "duality_conflation": 0.02
+        }
+      },
+      "viability_score": {
+        "type": "score",
+        "score": 2.0,
+        "confidence": 0.48,
+        "legend": {
+          "0": "Exceptional: addresses a core structural bottleneck with rigorous arithmetic hypotheses",
+          "1": "Solid: provides a valid conditional bridge or exact computational invariant",
+          "2": "Heuristic: contains interesting observations but unproved analytic/algebraic gaps",
+          "3": "Fatal: flawed by a canonical trap, circularity, or false shortcut"
+        },
+        "probabilities": {
+          "0": 0.07,
+          "1": 0.12,
+          "2": 0.55,
+          "3": 0.26
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 1169,
+      "output_tokens": 201
+    }
+  }
+}
