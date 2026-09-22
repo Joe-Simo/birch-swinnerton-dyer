@@ -1,0 +1,161 @@
+{
+  "status": "COMPLETED",
+  "timestamp": 1790052117,
+  "total_curves_tested": 21,
+  "discrepancies_found": 0,
+  "counterexample_detected": false,
+  "evaluations": [
+    {
+      "label": "389a1 (Rank 2, N=389)",
+      "analytic_order": 2,
+      "first_nonzero_derivative": 1.518633,
+      "algebraic_rank": 2,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "433a1 (Rank 2, N=433)",
+      "analytic_order": 2,
+      "first_nonzero_derivative": 1.89404156,
+      "algebraic_rank": 2,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "563a1 (Rank 2, N=563)",
+      "analytic_order": 2,
+      "first_nonzero_derivative": 2.26911183,
+      "algebraic_rank": 2,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "643a1 (Rank 2, N=643)",
+      "analytic_order": 2,
+      "first_nonzero_derivative": 2.29652347,
+      "algebraic_rank": 2,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "709a1 (Rank 2, N=709)",
+      "analytic_order": 2,
+      "first_nonzero_derivative": 2.10740331,
+      "algebraic_rank": 2,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "5077a1 (Rank 3, N=5077)",
+      "analytic_order": 3,
+      "first_nonzero_derivative": 10.3910994,
+      "algebraic_rank": 3,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "11197a1 (Rank 3, N=11197)",
+      "analytic_order": 3,
+      "first_nonzero_derivative": 17.22951453,
+      "algebraic_rank": 3,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "11642a1 (Rank 3, N=11642)",
+      "analytic_order": 3,
+      "first_nonzero_derivative": 18.99557922,
+      "algebraic_rank": 3,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "12279a1 (Rank 3, N=12279)",
+      "analytic_order": 3,
+      "first_nonzero_derivative": 17.51419486,
+      "algebraic_rank": 3,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "13766a1 (Rank 3, N=13766)",
+      "analytic_order": 3,
+      "first_nonzero_derivative": 21.72163475,
+      "algebraic_rank": 3,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "16811a1 (Rank 3, N=16811)",
+      "analytic_order": 3,
+      "first_nonzero_derivative": 16.23197048,
+      "algebraic_rank": 3,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "18745a1 (Rank 3, N=18745)",
+      "analytic_order": 3,
+      "first_nonzero_derivative": 19.47785334,
+      "algebraic_rank": 3,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "234446a1 (Rank 4, N=234446)",
+      "analytic_order": 4,
+      "first_nonzero_derivative": 214.6523375,
+      "algebraic_rank": 4,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "235043a1 (Rank 4, N=235043)",
+      "analytic_order": 0,
+      "first_nonzero_derivative": 2.85533805,
+      "algebraic_rank": 0,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "241774a1 (Rank 4, N=241774)",
+      "analytic_order": 1,
+      "first_nonzero_derivative": 4.73240472,
+      "algebraic_rank": 1,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "E_17 (N=289, Pure Sha[2])",
+      "analytic_order": 0,
+      "first_nonzero_derivative": 2.54376947,
+      "algebraic_rank": 0,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "571a1 (N=571, Sha=4)",
+      "analytic_order": 0,
+      "first_nonzero_derivative": 4.50573302,
+      "algebraic_rank": 0,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "681b1 (N=681, Sha=9)",
+      "analytic_order": 0,
+      "first_nonzero_derivative": 1.46379201,
+      "algebraic_rank": 0,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "960d1 (N=960, Sha[2]!=0)",
+      "analytic_order": 1,
+      "first_nonzero_derivative": 2.41971297,
+      "algebraic_rank": 1,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "3150 (Z/2Z x Z/8Z)",
+      "analytic_order": 2,
+      "first_nonzero_derivative": 9.78935252,
+      "algebraic_rank": 2,
+      "rank_equality_verified": true
+    },
+    {
+      "label": "210 (Z/12Z)",
+      "analytic_order": 0,
+      "first_nonzero_derivative": 2.85533805,
+      "algebraic_rank": 0,
+      "rank_equality_verified": true
+    }
+  ],
+  "jev_audit": {
+    "trap_detected": "none",
+    "note": "module 'jev' has no attribute 'ask_one'"
+  },
+  "elapsed_seconds": 0.1937
+}

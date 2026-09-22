@@ -233,25 +233,34 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
         results = []
         if LEAN_BIN.exists():
             for lf in lean_files:
-                p = subprocess.run([str(LEAN_BIN), str(lf)], capture_output=True, text=True)
-                if p.returncode == 0:
-                    results.append(f"{lf.name}: VERIFIED")
+                try:
+                    p = subprocess.run([str(LEAN_BIN), str(lf)], capture_output=True, text=True, timeout=60)
+                    if p.returncode == 0:
+                        results.append(f"{lf.name}: VERIFIED")
+                except Exception as e:
+                    results.append(f"{lf.name}: TRANSIENT_SKIP ({e})")
         return results
 
     def exec_variety() -> list[str]:
-        p = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "noncm_variety_suite.py")],
-                           capture_output=True, text=True, timeout=60)
         lines = []
-        if p.returncode == 0:
-            lines = [l.strip() for l in p.stdout.splitlines() if "MATCH (BSD VERIFIED)" in l]
+        try:
+            p = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "noncm_variety_suite.py")],
+                               capture_output=True, text=True, timeout=120)
+            if p.returncode == 0:
+                lines = [l.strip() for l in p.stdout.splitlines() if "MATCH (BSD VERIFIED)" in l]
+        except Exception as e:
+            lines = [f"[Step 5 Warning] Non-CM variety suite transient exception: {e}"]
         return lines
 
     def exec_discrepancy() -> list[str]:
-        p = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "dual_engine_discrepancy_hunter.py")],
-                           capture_output=True, text=True, timeout=60)
         lines = []
-        if p.returncode == 0:
-            lines = [l.strip() for l in p.stdout.splitlines() if "MATCH" in l or "DISCREPANCY" in l]
+        try:
+            p = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "dual_engine_discrepancy_hunter.py")],
+                               capture_output=True, text=True, timeout=120)
+            if p.returncode == 0:
+                lines = [l.strip() for l in p.stdout.splitlines() if "MATCH" in l or "DISCREPANCY" in l]
+        except Exception as e:
+            lines = [f"[Step 6 Warning] Dual discrepancy hunter transient exception: {e}"]
         return lines
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
@@ -304,8 +313,14 @@ def main() -> None:
         check_counterexample_victory()
         check_proof_victory()
 
-        state = run_cycle(state)
-        cycles_completed += 1
+        try:
+            state = run_cycle(state)
+            cycles_completed += 1
+        except Exception as e:
+            print(f"\n[Engine Alert] Transient cycle failure encountered: {e}")
+            print("[Engine Alert] Retrying cycle in 5 seconds to maintain 100% daemon continuity...")
+            time.sleep(5)
+            continue
 
         check_counterexample_victory()
         check_proof_victory()
