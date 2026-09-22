@@ -163,7 +163,7 @@ def evaluate_curve_worker(n: int) -> dict[str, Any]:
 
     Lambda_pp = 2.0 * float(np.sum(twist_a * I_vals))
     L_pp = X * Lambda_pp
-    is_nonzero = abs(L_pp) > 1e-4
+    is_nonzero = (abs(Lambda_pp) > 1e-3) and (abs(L_pp) > 1e-12)
 
     return {
         "n": n,
