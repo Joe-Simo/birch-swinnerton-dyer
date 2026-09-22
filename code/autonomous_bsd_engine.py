@@ -112,37 +112,48 @@ def run_cycle(state: dict[str, Any]) -> dict[str, Any]:
     print("=" * 75)
 
     # -------------------------------------------------------------
-    # Step 0: JevGenius BSD Hypothesis Screening & Advisor (Epoch-Based)
     # -------------------------------------------------------------
-    if cycle == 1 or cycle % 5 == 0:
-        print(f"\n>>> [Step 0] JevGenius BSD Advisory & Hypothesis Triage (Epoch Cycle {cycle})...")
-        jev_triage_cmd = [
+    # Step 0: JevGenius BSD Hypothesis Screening & Advisor (Every Cycle)
+    # -------------------------------------------------------------
+    print(f"\n>>> [Step 0] JevGenius BSD Advisory & Hypothesis Triage (Cycle {cycle})...")
+    jev_triage_cmd = [
+        sys.executable,
+        str(REPO_ROOT / "code" / "jev_genius.py"),
+        "triage",
+        "--id", f"cycle_{cycle}_rank2_screen",
+        "--text", f"Evaluating whether derived-height nondegeneracy in Howard (2004) Theorem 4.2 eliminates higher augmentation blocks delta=sum(e_i-1)=0 for rank >= 2 curves (cycle {cycle})."
+    ]
+    try:
+        triage_proc = subprocess.run(jev_triage_cmd, cwd=str(REPO_ROOT), capture_output=True, text=True, timeout=30)
+        if triage_proc.returncode == 0:
+            print(f"[Step 0] Jev Triage completed successfully.")
+        else:
+            print(f"[Step 0] Jev Triage note: {triage_proc.stderr.strip()[:200]}")
+    except Exception as e:
+        print(f"[Step 0] Jev call note: {e}")
+
+    try:
+        iwasawa_cmd = [
             sys.executable,
             str(REPO_ROOT / "code" / "jev_genius.py"),
-            "triage",
-            "--id", f"cycle_{cycle}_rank2_screen",
-            "--text", "Evaluating whether derived-height nondegeneracy in Howard (2004) Theorem 4.2 eliminates higher augmentation blocks delta=sum(e_i-1)=0 for rank >= 2 curves."
+            "iwasawa-advisor",
+            "--id", f"cycle_{cycle}_iwasawa",
+            "--text", "Howard derived heights: higher augmentation blocks are controlled by nondegeneracy of p-adic height pairing."
         ]
-        try:
-            triage_proc = subprocess.run(jev_triage_cmd, cwd=str(REPO_ROOT), capture_output=True, text=True, timeout=30)
-            if triage_proc.returncode == 0:
-                print(f"[Step 0] Jev Triage completed successfully.")
-        except Exception as e:
-            pass
+        iwasawa_proc = subprocess.run(iwasawa_cmd, cwd=str(REPO_ROOT), capture_output=True, text=True, timeout=30)
+        if iwasawa_proc.returncode == 0:
+            print(f"[Step 0] Jev Iwasawa Advisor screened derived-height hypotheses.")
+    except Exception as e:
+        pass
 
-        try:
-            iwasawa_cmd = [
-                sys.executable,
-                str(REPO_ROOT / "code" / "jev_genius.py"),
-                "iwasawa-advisor",
-                "--id", f"cycle_{cycle}_iwasawa",
-                "--text", "Howard derived heights: higher augmentation blocks are controlled by nondegeneracy of p-adic height pairing."
-            ]
-            subprocess.run(iwasawa_cmd, cwd=str(REPO_ROOT), capture_output=True, text=True, timeout=30)
-        except Exception as e:
-            pass
-    else:
-        print(f"\n>>> [Step 0] Jev Screen Active (Epoch checkpoint verified at Cycle {(cycle // 5) * 5})...")
+    try:
+        combine_proc = subprocess.run([sys.executable, str(REPO_ROOT / "code" / "U113_combine_and_salvage.py")],
+                                      cwd=str(REPO_ROOT), capture_output=True, text=True, timeout=30)
+        if combine_proc.returncode == 0:
+            top_line = [l for l in combine_proc.stdout.splitlines() if "Compat:" in l][:2]
+            print(f"[Step 0] Jev Pairwise Synergy: {'; '.join(top_line)}")
+    except Exception as e:
+        pass
 
     # -------------------------------------------------------------
     # Step 1: Hardware-Accelerated OpenMP C Sieve Pass (All 8 Cores)
